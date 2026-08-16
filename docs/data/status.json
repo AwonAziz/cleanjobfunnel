@@ -1,0 +1,113 @@
+{
+  "generated_at": "2026-08-16T06:46:11.402225+00:00",
+  "sources": [
+    {
+      "source": "Grafana Labs",
+      "ok": true,
+      "count": 148,
+      "error": null
+    },
+    {
+      "source": "Arize AI",
+      "ok": true,
+      "count": 27,
+      "error": null
+    },
+    {
+      "source": "Datadog",
+      "ok": true,
+      "count": 425,
+      "error": null
+    },
+    {
+      "source": "PagerDuty",
+      "ok": true,
+      "count": 26,
+      "error": null
+    },
+    {
+      "source": "Elastic",
+      "ok": true,
+      "count": 257,
+      "error": null
+    },
+    {
+      "source": "BigPanda",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/bigpanda/jobs?content=true"
+    },
+    {
+      "source": "Weights & Biases",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/wandb/jobs?content=true"
+    },
+    {
+      "source": "Fiddler AI",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/fiddlerlabs/jobs?content=true"
+    },
+    {
+      "source": "WhyLabs",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://api.lever.co/v0/postings/whylabs?mode=json"
+    },
+    {
+      "source": "Evidently AI",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://api.lever.co/v0/postings/evidentlyai?mode=json"
+    },
+    {
+      "source": "OpenAI",
+      "ok": true,
+      "count": 746,
+      "error": null
+    },
+    {
+      "source": "Anthropic",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/anthropic?includeCompensation=false"
+    },
+    {
+      "source": "Scale AI",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/scaleai?includeCompensation=false"
+    },
+    {
+      "source": "Perplexity",
+      "ok": true,
+      "count": 100,
+      "error": null
+    },
+    {
+      "source": "RemoteOK",
+      "ok": true,
+      "count": 100,
+      "error": null
+    },
+    {
+      "source": "weworkremotely (remote-programming-jobs.rss)",
+      "ok": true,
+      "count": 25,
+      "error": null
+    },
+    {
+      "source": "weworkremotely (remote-devops-sysadmin-jobs.rss)",
+      "ok": true,
+      "count": 40,
+      "error": null
+    },
+    {
+      "source": "remotive (feed)",
+      "ok": false,
+      "count": 0,
+      "error": "404 Client Error: Not Found for url: https://remotive.com/feed"
+    }
+  ]
+}
