@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Job Funnel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bg: #0a0e14;
+    --bg-elevated: #11161f;
+    --bg-hover: #161c28;
+    --border: #1f2733;
+    --text: #e6edf3;
+    --text-muted: #8b95a1;
+    --text-dim: #4d5866;
+    --cyan: #22d3ee;
+    --purple: #a78bfa;
+    --green: #4ade80;
+    --amber: #fbbf24;
+    --red: #f87171;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+  }
+  a { color: inherit; }
+
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(10, 14, 20, 0.92);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar-glow {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--cyan), var(--purple), transparent);
+    opacity: 0.6;
+  }
+  .topbar-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; }
+  .brand-mark {
+    width: 10px; height: 10px; border-radius: 3px;
+    background: linear-gradient(135deg, var(--cyan), var(--purple));
+    flex-shrink: 0;
+  }
+  .brand h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+  }
+  .status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-muted);
+  }
+  .pulse {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: var(--green);
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.6);
+    animation: pulse 2s infinite;
+    flex-shrink: 0;
+  }
+  .pulse.stale { background: var(--amber); box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.6); animation: pulse-amber 2s infinite; }
+  .pulse.offline { background: var(--red); animation: none; }
+  @keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.5); }
+    70% { box-shadow: 0 0 0 6px rgba(74, 222, 128, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(74, 222, 128, 0); }
+  }
+  @keyframes pulse-amber {
+    0% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0.5); }
+    70% { box-shadow: 0 0 0 6px rgba(251, 191, 36, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(251, 191, 36, 0); }
+  }
+
+  main { max-width: 900px; margin: 0 auto; padding: 24px 20px 80px; }
+
+  .stats {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .stat-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin-top: 4px;
+  }
+  .stat-value.accent-green { color: var(--green); }
+
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  #searchInput {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    padding: 9px 12px;
+    border-radius: 6px;
+    flex: 1 1 220px;
+    min-width: 160px;
+    outline: none;
+  }
+  #searchInput:focus { border-color: var(--cyan); }
+  #searchInput::placeholder { color: var(--text-dim); }
+
+  .chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 7px 11px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: var(--bg-elevated);
+    color: var(--text-muted);
+    cursor: pointer;
+    user-select: none;
+    white-space: nowrap;
+  }
+  .chip.active { border-color: var(--cyan); color: var(--cyan); background: rgba(34, 211, 238, 0.08); }
+
+  .toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--text-muted);
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .toggle input { accent-color: var(--cyan); }
+
+  #sortSelect {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    outline: none;
+  }
+
+  .job-list { display: flex; flex-direction: column; gap: 10px; }
+
+  .job-card {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--text-dim);
+    border-radius: 8px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    flex-wrap: wrap;
+    transition: background 0.15s ease;
+  }
+  .job-card:hover { background: var(--bg-hover); }
+  .job-card.fresh-new { border-left-color: var(--green); }
+  .job-card.fresh-recent { border-left-color: var(--cyan); }
+
+  .job-main { flex: 1 1 320px; min-width: 0; }
+  .job-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 0 4px;
+  }
+  .job-meta {
+    font-size: 13px;
+    color: var(--text-muted);
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .job-meta .dot { color: var(--text-dim); }
+  .senior-flag {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-dim);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 1px 5px;
+  }
+
+  .job-side {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+  }
+  .source-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+  }
+  .source-badge.tier1-greenhouse { background: rgba(34, 211, 238, 0.12); color: var(--cyan); }
+  .source-badge.tier1-lever { background: rgba(167, 139, 250, 0.12); color: var(--purple); }
+  .source-badge.tier1-ashby { background: rgba(74, 222, 128, 0.12); color: var(--green); }
+  .source-badge.tier1-smartrecruiters { background: rgba(251, 191, 36, 0.12); color: var(--amber); }
+  .source-badge.tier2 { background: var(--bg); color: var(--text-dim); border: 1px solid var(--border); }
+
+  .job-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+    min-width: 56px;
+    text-align: right;
+  }
+  .apply-link {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--cyan);
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 6px 12px;
+    border: 1px solid rgba(34, 211, 238, 0.3);
+    border-radius: 6px;
+    transition: background 0.15s ease;
+  }
+  .apply-link:hover { background: rgba(34, 211, 238, 0.1); }
+
+  .empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+  }
+  .empty-state h2 { font-family: 'Space Grotesk', sans-serif; color: var(--text); font-size: 17px; }
+  .empty-state p { font-size: 14px; max-width: 420px; margin: 8px auto 0; line-height: 1.5; }
+
+  footer {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-dim);
+  }
+  footer a { color: var(--text-dim); }
+
+  @media (max-width: 520px) {
+    .job-card { flex-direction: column; align-items: flex-start; }
+    .job-side { width: 100%; justify-content: space-between; }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <span class="brand-mark"></span>
+      <h1>Job Funnel</h1>
+    </div>
+    <div class="status">
+      <span class="pulse" id="pulse"></span>
+      <span id="lastSync">connecting…</span>
+    </div>
+  </div>
+  <div class="topbar-glow"></div>
+</header>
+
+<main>
+  <div class="stats">
+    <div>
+      <div class="stat-value" id="statTotal">—</div>
+      <div class="stat-label">open matches</div>
+    </div>
+    <div>
+      <div class="stat-value accent-green" id="statNew">—</div>
+      <div class="stat-label">new in 24h</div>
+    </div>
+    <div>
+      <div class="stat-value" id="statSources">—</div>
+      <div class="stat-label">sources healthy</div>
+    </div>
+  </div>
+
+  <div class="filters">
+    <input type="search" id="searchInput" placeholder="filter by title or company…" />
+    <div class="chip-row" id="sourceChips" style="display:flex; gap:8px; flex-wrap:wrap;"></div>
+    <label class="toggle">
+      <input type="checkbox" id="hideSenior" />
+      <span>Hide senior / staff / lead</span>
+    </label>
+    <select id="sortSelect">
+      <option value="new">Newest first</option>
+      <option value="company">Company A–Z</option>
+    </select>
+  </div>
+
+  <div id="jobList" class="job-list"></div>
+  <div id="emptyState" class="empty-state" hidden>
+    <h2>Nothing here yet</h2>
+    <p id="emptyStateText">Once the scheduled scan runs for the first time, matching roles will show up here automatically.</p>
+  </div>
+</main>
+
+<footer>
+  <span id="sourceHealth"></span>
+</footer>
+
+<script>
+  let allJobs = [];
+  let activeSourceFilter = null; // null = all
+  const state = {
+    hideSenior: localStorage.getItem('jf_hideSenior') === '1',
+    sort: localStorage.getItem('jf_sort') || 'new',
+  };
+
+  function relTime(iso) {
+    if (!iso) return '—';
+    const diffMs = Date.now() - new Date(iso).getTime();
+    const mins = Math.floor(diffMs / 60000);
+    if (mins < 1) return 'now';
+    if (mins < 60) return mins + 'm ago';
+    const hrs = Math.floor(mins / 60);
+    if (hrs < 24) return hrs + 'h ago';
+    const days = Math.floor(hrs / 24);
+    return days + 'd ago';
+  }
+
+  function freshnessClass(iso) {
+    if (!iso) return '';
+    const hrs = (Date.now() - new Date(iso).getTime()) / 3600000;
+    if (hrs < 6) return 'fresh-new';
+    if (hrs < 24) return 'fresh-recent';
+    return '';
+  }
+
+  function sourceBadgeClass(source, tier) {
+    if (tier === 1) return 'tier1-' + source;
+    return 'tier2';
+  }
+
+  function escapeHtml(str) {
+    const div = document.createElement('div');
+    div.textContent = str == null ? '' : String(str);
+    return div.innerHTML;
+  }
+
+  function render() {
+    const q = document.getElementById('searchInput').value.trim().toLowerCase();
+
+    let jobs = allJobs.filter(j => {
+      if (activeSourceFilter && j.source !== activeSourceFilter) return false;
+      if (state.hideSenior && j.is_senior) return false;
+      if (q && !(j.title.toLowerCase().includes(q) || (j.company || '').toLowerCase().includes(q))) return false;
+      return true;
+    });
+
+    if (state.sort === 'company') {
+      jobs = jobs.slice().sort((a, b) => (a.company || '').localeCompare(b.company || ''));
+    } else {
+      jobs = jobs.slice().sort((a, b) => new Date(b.first_seen) - new Date(a.first_seen));
+    }
+
+    const list = document.getElementById('jobList');
+    const empty = document.getElementById('emptyState');
+    const emptyText = document.getElementById('emptyStateText');
+
+    if (jobs.length === 0) {
+      list.innerHTML = '';
+      empty.hidden = false;
+      emptyText.textContent = allJobs.length === 0
+        ? 'Once the scheduled scan runs for the first time, matching roles will show up here automatically.'
+        : 'No roles match the current filters. Try clearing the search or source filter.';
+      return;
+    }
+    empty.hidden = true;
+
+    list.innerHTML = jobs.map(j => `
+      <div class="job-card ${freshnessClass(j.first_seen)}">
+        <div class="job-main">
+          <p class="job-title">${escapeHtml(j.title)}</p>
+          <div class="job-meta">
+            <span>${escapeHtml(j.company)}</span>
+            ${j.location ? `<span class="dot">·</span><span>${escapeHtml(j.location)}</span>` : ''}
+            ${j.is_senior ? `<span class="senior-flag">senior-leaning</span>` : ''}
+          </div>
+        </div>
+        <div class="job-side">
+          <span class="source-badge ${sourceBadgeClass(j.source, j.tier)}">${escapeHtml(j.source)}</span>
+          <span class="job-time">${relTime(j.first_seen)}</span>
+          ${j.url ? `<a class="apply-link" href="${escapeHtml(j.url)}" target="_blank" rel="noopener noreferrer">Apply →</a>` : ''}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  function renderSourceChips() {
+    const sources = [...new Set(allJobs.map(j => j.source))].sort();
+    const container = document.getElementById('sourceChips');
+    container.innerHTML = ['all', ...sources].map(s => `
+      <span class="chip ${((s === 'all' && !activeSourceFilter) || s === activeSourceFilter) ? 'active' : ''}" data-source="${s}">${s}</span>
+    `).join('');
+    container.querySelectorAll('.chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        activeSourceFilter = chip.dataset.source === 'all' ? null : chip.dataset.source;
+        renderSourceChips();
+        render();
+      });
+    });
+  }
+
+  function updateStatus(generatedAt, sourcesOk, sourcesTotal) {
+    const pulse = document.getElementById('pulse');
+    const lastSync = document.getElementById('lastSync');
+    if (!generatedAt) {
+      pulse.className = 'pulse offline';
+      lastSync.textContent = 'no data yet — waiting on first scan';
+      return;
+    }
+    const ageMin = (Date.now() - new Date(generatedAt).getTime()) / 60000;
+    if (ageMin > 90) {
+      pulse.className = 'pulse stale';
+      lastSync.textContent = 'last sync ' + relTime(generatedAt) + ' (check Actions tab)';
+    } else {
+      pulse.className = 'pulse';
+      lastSync.textContent = 'last sync ' + relTime(generatedAt);
+    }
+    document.getElementById('sourceHealth').textContent =
+      sourcesTotal != null ? `${sourcesOk}/${sourcesTotal} sources returning data` : '';
+  }
+
+  async function load() {
+    try {
+      const res = await fetch('./data/jobs.json?_=' + Date.now());
+      const data = await res.json();
+      allJobs = data.jobs || [];
+
+      document.getElementById('statTotal').textContent = allJobs.length;
+      const newCount = allJobs.filter(j => {
+        const hrs = (Date.now() - new Date(j.first_seen).getTime()) / 3600000;
+        return hrs < 24;
+      }).length;
+      document.getElementById('statNew').textContent = newCount;
+
+      updateStatus(data.generated_at, null, null);
+      renderSourceChips();
+      render();
+
+      try {
+        const statusRes = await fetch('./data/status.json?_=' + Date.now());
+        const statusData = await statusRes.json();
+        const ok = (statusData.sources || []).filter(s => s.ok).length;
+        const total = (statusData.sources || []).length;
+        document.getElementById('statSources').textContent = `${ok}/${total}`;
+        updateStatus(data.generated_at, ok, total);
+      } catch (e) { /* status.json is optional */ }
+
+    } catch (e) {
+      updateStatus(null);
+      document.getElementById('statTotal').textContent = '0';
+      document.getElementById('statNew').textContent = '0';
+      document.getElementById('emptyStateText').textContent =
+        "Couldn't load data yet. If this is a brand-new repo, the first scheduled scan (or a manual run from the Actions tab) needs to finish before this page has anything to show.";
+      document.getElementById('jobList').innerHTML = '';
+      document.getElementById('emptyState').hidden = false;
+    }
+  }
+
+  document.getElementById('searchInput').addEventListener('input', render);
+  document.getElementById('hideSenior').checked = state.hideSenior;
+  document.getElementById('hideSenior').addEventListener('change', e => {
+    state.hideSenior = e.target.checked;
+    localStorage.setItem('jf_hideSenior', state.hideSenior ? '1' : '0');
+    render();
+  });
+  document.getElementById('sortSelect').value = state.sort;
+  document.getElementById('sortSelect').addEventListener('change', e => {
+    state.sort = e.target.value;
+    localStorage.setItem('jf_sort', state.sort);
+    render();
+  });
+
+  load();
+  setInterval(load, 2 * 60 * 1000); // soft auto-refresh while the tab stays open
+</script>
+
+</body>
+</html>

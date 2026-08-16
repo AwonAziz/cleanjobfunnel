@@ -1,0 +1,41 @@
+{
+  "_comment": "ats is one of: greenhouse | lever | ashby | smartrecruiters. 'verified' means the token was confirmed against a live job posting. 'verified: false' entries are educated guesses -- the scan will report if they fail so you know what to fix. See README.md 'Finding a company's token' to correct or add more.",
+
+  "companies": [
+    { "name": "Grafana Labs", "ats": "greenhouse", "token": "grafanalabs", "verified": true, "group": "aiops" },
+    { "name": "Arize AI", "ats": "greenhouse", "token": "arizeai", "verified": true, "group": "ml-lifecycle" },
+
+    { "name": "Datadog", "ats": "greenhouse", "token": "datadog", "verified": false, "group": "aiops" },
+    { "name": "PagerDuty", "ats": "greenhouse", "token": "pagerduty", "verified": false, "group": "aiops" },
+    { "name": "Elastic", "ats": "greenhouse", "token": "elastic", "verified": false, "group": "aiops" },
+    { "name": "BigPanda", "ats": "greenhouse", "token": "bigpanda", "verified": false, "group": "aiops" },
+
+    { "name": "Weights & Biases", "ats": "greenhouse", "token": "wandb", "verified": false, "group": "ml-lifecycle" },
+    { "name": "Fiddler AI", "ats": "greenhouse", "token": "fiddlerlabs", "verified": false, "group": "ml-lifecycle" },
+    { "name": "WhyLabs", "ats": "lever", "token": "whylabs", "verified": false, "group": "ml-lifecycle" },
+    { "name": "Evidently AI", "ats": "lever", "token": "evidentlyai", "verified": false, "group": "ml-lifecycle" },
+
+    { "name": "OpenAI", "ats": "ashby", "token": "openai", "verified": false, "group": "ai-native" },
+    { "name": "Anthropic", "ats": "ashby", "token": "anthropic", "verified": false, "group": "ai-native" },
+    { "name": "Scale AI", "ats": "ashby", "token": "scaleai", "verified": false, "group": "ai-native" },
+    { "name": "Perplexity", "ats": "ashby", "token": "perplexity", "verified": false, "group": "ai-native" }
+  ],
+
+  "role_keywords": [
+    "MLOps", "AIOps", "ML Engineer", "Machine Learning Engineer", "AI Engineer",
+    "AI/ML Engineer", "ML/AI Engineer", "Machine Learning Operations",
+    "ML Platform", "AI Platform", "ML Infrastructure", "Applied ML Engineer",
+    "Site Reliability Engineer", "SRE", "DevOps Engineer", "Platform Engineer"
+  ],
+
+  "location_allow": [
+    "remote", "worldwide", "anywhere", "pakistan", "united arab emirates", "uae",
+    "dubai", "abu dhabi", "saudi arabia", "riyadh", "jeddah", "qatar", "doha",
+    "emea", "apac", "global"
+  ],
+
+  "seniority_flags": [
+    "Senior", "Sr.", "Sr ", "Staff", "Principal", "Director", "Head of",
+    "VP", "Vice President", "Lead ", "Manager"
+  ]
+}
