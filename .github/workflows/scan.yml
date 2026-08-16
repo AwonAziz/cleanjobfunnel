@@ -1,0 +1,37 @@
+name: Job Funnel Scan
+
+on:
+  schedule:
+    - cron: "*/20 * * * *"   # every 20 minutes (UTC). GitHub may delay this under load -- see README.
+  workflow_dispatch: {}       # adds a "Run workflow" button in the Actions tab, for testing on demand
+
+permissions:
+  contents: write
+
+concurrency:
+  group: job-funnel-scan
+  cancel-in-progress: false   # let a running scan finish rather than racing it with the next one
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scan
+        run: python scripts/fetch_jobs.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "job-funnel-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add docs/data/jobs.json docs/data/seen.json docs/data/status.json
+          git diff --cached --quiet || git commit -m "chore: refresh job data [skip ci]"
+          git push
