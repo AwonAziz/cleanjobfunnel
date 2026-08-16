@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T15:55:31.187371+00:00",
+  "generated_at": "2026-08-16T16:27:20.105806+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 257,
+      "count": 256,
       "error": null
     },
     {
