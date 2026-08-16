@@ -33,5 +33,25 @@ jobs:
           git config user.name "job-funnel-bot"
           git config user.email "actions@users.noreply.github.com"
           git add docs/data/jobs.json docs/data/seen.json docs/data/status.json
-          git diff --cached --quiet || git commit -m "chore: refresh job data [skip ci]"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+
+          git commit -m "chore: refresh job data [skip ci]"
+
+          attempt=0
+          until git push; do
+            attempt=$((attempt + 1))
+            if [ "$attempt" -ge 5 ]; then
+              echo "Push failed after $attempt attempts."
+              exit 1
+            fi
+            echo "Push rejected -- pulling latest main and retrying (attempt $attempt)..."
+            git fetch origin main
+            git reset --soft origin/main
+            git add docs/data/jobs.json docs/data/seen.json docs/data/status.json
+            git commit -m "chore: refresh job data [skip ci]"
+            sleep $((RANDOM % 5 + 2))
+          done
