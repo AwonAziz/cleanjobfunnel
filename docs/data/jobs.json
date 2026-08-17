@@ -1,20 +1,7 @@
 {
-  "generated_at": "2026-08-17T19:29:23.422427+00:00",
+  "generated_at": "2026-08-17T19:56:54.569208+00:00",
   "count": 33,
   "jobs": [
-    {
-      "id": "520bbec4a057da66",
-      "title": "Senior AI Engineer - Grafana AI/ML | USA | Remote",
-      "company": "Grafana Labs",
-      "location": "United States (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6100724004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-24T18:37:28+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
     {
       "id": "d8099aebd330f871",
       "title": "Senior AI Engineer - Grafana AI/ML | USA | Remote",
@@ -25,6 +12,19 @@
       "tier": 1,
       "group": "aiops",
       "posted_at": "2026-06-24T18:37:29+00:00",
+      "is_senior": true,
+      "first_seen": "2026-08-16T06:46:11.402225+00:00"
+    },
+    {
+      "id": "520bbec4a057da66",
+      "title": "Senior AI Engineer - Grafana AI/ML | USA | Remote",
+      "company": "Grafana Labs",
+      "location": "United States (Remote)",
+      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6100724004",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "aiops",
+      "posted_at": "2026-06-24T18:37:28+00:00",
       "is_senior": true,
       "first_seen": "2026-08-16T06:46:11.402225+00:00"
     },
