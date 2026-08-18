@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T20:25:49.659651+00:00",
+  "generated_at": "2026-08-18T20:57:53.784681+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 264,
+      "count": 265,
       "error": null
     },
     {
@@ -100,7 +100,7 @@
     {
       "source": "weworkremotely (remote-devops-sysadmin-jobs.rss)",
       "ok": true,
-      "count": 39,
+      "count": 40,
       "error": null
     },
     {
