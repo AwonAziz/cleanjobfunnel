@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T07:39:55.231909+00:00",
+  "generated_at": "2026-08-19T08:16:10.360217+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -21,9 +21,9 @@
     },
     {
       "source": "PagerDuty",
-      "ok": false,
-      "count": 0,
-      "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Read timed out. (read timeout=20)"
+      "ok": true,
+      "count": 26,
+      "error": null
     },
     {
       "source": "Elastic",
