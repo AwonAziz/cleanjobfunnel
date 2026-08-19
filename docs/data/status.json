@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-19T18:44:34.257040+00:00",
+  "generated_at": "2026-08-19T19:27:12.443902+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -16,7 +16,7 @@
     {
       "source": "Datadog",
       "ok": true,
-      "count": 430,
+      "count": 432,
       "error": null
     },
     {
@@ -27,9 +27,9 @@
     },
     {
       "source": "Elastic",
-      "ok": false,
-      "count": 0,
-      "error": "HTTPSConnectionPool(host='boards-api.greenhouse.io', port=443): Read timed out. (read timeout=20)"
+      "ok": true,
+      "count": 263,
+      "error": null
     },
     {
       "source": "BigPanda",
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 733,
+      "count": 731,
       "error": null
     },
     {
