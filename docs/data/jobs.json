@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-20T15:15:55.510753+00:00",
-  "count": 33,
+  "generated_at": "2026-08-20T15:52:36.166885+00:00",
+  "count": 31,
   "jobs": [
     {
       "id": "b6e631131d339f62",
@@ -402,32 +402,6 @@
       "tier": 2,
       "group": null,
       "posted_at": "2026-07-22T15:08:54+00:00",
-      "is_senior": false,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "c46613837e386a3e",
-      "title": "DevOps Engineer with Splunk",
-      "company": "Miratech",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/miratech-devops-engineer-with-splunk",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-07-21T15:35:41+00:00",
-      "is_senior": false,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "85c341eb34cfb160",
-      "title": "OCI DevOps Engineer",
-      "company": "Leidos",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/leidos-oci-devops-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-07-21T15:35:41+00:00",
       "is_senior": false,
       "first_seen": "2026-08-16T06:46:11.402225+00:00"
     }
