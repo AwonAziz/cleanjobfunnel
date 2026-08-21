@@ -1,32 +1,32 @@
 {
-  "generated_at": "2026-08-21T06:50:02.442096+00:00",
+  "generated_at": "2026-08-21T07:43:23.897836+00:00",
   "count": 32,
   "jobs": [
     {
-      "id": "b6e631131d339f62",
-      "title": "Machine Learning Engineer",
-      "company": "Twilio",
+      "id": "3264bcbc9327765a",
+      "title": "Senior Machine Learning Engineer, CX Intelligence",
+      "company": "Coinbase",
       "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/twilio-machine-learning-engineer",
+      "url": "https://weworkremotely.com/remote-jobs/coinbase-senior-machine-learning-engineer-cx-intelligence",
       "source": "weworkremotely",
       "tier": 2,
       "group": null,
-      "posted_at": "2026-07-22T07:03:46+00:00",
-      "is_senior": false,
-      "first_seen": "2026-08-20T15:15:55.510753+00:00"
+      "posted_at": "2026-07-23T07:02:37+00:00",
+      "is_senior": true,
+      "first_seen": "2026-08-21T07:43:23.897836+00:00"
     },
     {
-      "id": "b6e631131d339f62",
-      "title": "Machine Learning Engineer",
-      "company": "Twilio",
+      "id": "30c91b7f53ab7dfd",
+      "title": "Senior Machine Learning Engineer",
+      "company": "Coinbase",
       "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/twilio-machine-learning-engineer",
+      "url": "https://weworkremotely.com/remote-jobs/coinbase-senior-machine-learning-engineer",
       "source": "weworkremotely",
       "tier": 2,
       "group": null,
-      "posted_at": "2026-07-22T07:03:46+00:00",
-      "is_senior": false,
-      "first_seen": "2026-08-20T15:15:55.510753+00:00"
+      "posted_at": "2026-07-23T07:02:37+00:00",
+      "is_senior": true,
+      "first_seen": "2026-08-21T07:43:23.897836+00:00"
     },
     {
       "id": "83ac8e1f19d02704",
