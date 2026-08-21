@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-21T14:56:47.111442+00:00",
-  "count": 32,
+  "generated_at": "2026-08-21T15:39:05.819737+00:00",
+  "count": 31,
   "jobs": [
     {
       "id": "3264bcbc9327765a",
@@ -402,19 +402,6 @@
       "tier": 2,
       "group": null,
       "posted_at": "2026-08-06T07:30:49+00:00",
-      "is_senior": false,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "514d941e4d4eee4b",
-      "title": "DevOps Engineer",
-      "company": "ProctorU",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/proctoru-devops-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-07-22T15:08:54+00:00",
       "is_senior": false,
       "first_seen": "2026-08-16T06:46:11.402225+00:00"
     }
