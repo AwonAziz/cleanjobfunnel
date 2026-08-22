@@ -1,32 +1,45 @@
 {
-  "generated_at": "2026-08-22T06:54:11.769605+00:00",
-  "count": 31,
+  "generated_at": "2026-08-22T07:32:40.078227+00:00",
+  "count": 32,
   "jobs": [
     {
-      "id": "3264bcbc9327765a",
-      "title": "Senior Machine Learning Engineer, CX Intelligence",
-      "company": "Coinbase",
+      "id": "dba065ee45145195",
+      "title": "Full Stack AI Engineer",
+      "company": "Reveleer",
       "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/coinbase-senior-machine-learning-engineer-cx-intelligence",
+      "url": "https://weworkremotely.com/remote-jobs/reveleer-full-stack-ai-engineer",
       "source": "weworkremotely",
       "tier": 2,
       "group": null,
-      "posted_at": "2026-07-23T07:02:37+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-21T07:43:23.897836+00:00"
+      "posted_at": "2026-04-02T20:46:00+00:00",
+      "is_senior": false,
+      "first_seen": "2026-08-22T07:32:40.078227+00:00"
     },
     {
-      "id": "30c91b7f53ab7dfd",
-      "title": "Senior Machine Learning Engineer",
-      "company": "Coinbase",
+      "id": "6247c1b78b08e710",
+      "title": "AI Engineer",
+      "company": "GitLab",
       "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/coinbase-senior-machine-learning-engineer",
+      "url": "https://weworkremotely.com/remote-jobs/gitlab-ai-engineer",
       "source": "weworkremotely",
       "tier": 2,
       "group": null,
-      "posted_at": "2026-07-23T07:02:37+00:00",
+      "posted_at": "2026-07-24T07:00:48+00:00",
+      "is_senior": false,
+      "first_seen": "2026-08-22T07:32:40.078227+00:00"
+    },
+    {
+      "id": "84785a065478dc90",
+      "title": "Ads Conversion Modeling, Machine Learning Engineering Manager",
+      "company": "Reddit",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/reddit-ads-conversion-modeling-machine-learning-engineering-manager",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-07-24T05:21:03+00:00",
       "is_senior": true,
-      "first_seen": "2026-08-21T07:43:23.897836+00:00"
+      "first_seen": "2026-08-22T07:32:40.078227+00:00"
     },
     {
       "id": "83ac8e1f19d02704",
