@@ -1,7 +1,46 @@
 {
-  "generated_at": "2026-08-23T09:30:00.656124+00:00",
-  "count": 29,
+  "generated_at": "2026-08-23T09:57:18.852101+00:00",
+  "count": 32,
   "jobs": [
+    {
+      "id": "b22fca0d8e6586ef",
+      "title": "Forward Deployed AI Engineer, East",
+      "company": "Arize AI",
+      "location": "Remote (New York)",
+      "url": "https://job-boards.greenhouse.io/arizeai/jobs/5993755004",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "ml-lifecycle",
+      "posted_at": "2026-05-11T20:56:00+00:00",
+      "is_senior": false,
+      "first_seen": "2026-08-23T09:57:18.852101+00:00"
+    },
+    {
+      "id": "e5ff5194bcd6a039",
+      "title": "Forward Deployed AI Engineer, West",
+      "company": "Arize AI",
+      "location": "Remote (San Francisco)",
+      "url": "https://job-boards.greenhouse.io/arizeai/jobs/6030953004",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "ml-lifecycle",
+      "posted_at": "2026-06-15T19:56:09+00:00",
+      "is_senior": false,
+      "first_seen": "2026-08-23T09:57:18.852101+00:00"
+    },
+    {
+      "id": "1f0c6431d762269b",
+      "title": "Open Source AI Engineer (Typescript)",
+      "company": "Arize AI",
+      "location": "Remote (United States)",
+      "url": "https://job-boards.greenhouse.io/arizeai/jobs/6119757004",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "ml-lifecycle",
+      "posted_at": "2026-07-29T22:10:40+00:00",
+      "is_senior": false,
+      "first_seen": "2026-08-23T09:57:18.852101+00:00"
+    },
     {
       "id": "4675dcb83f4418ab",
       "title": "Senior Independent AI Engineer / Architect",
