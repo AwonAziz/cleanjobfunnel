@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-23T05:08:09.627277+00:00",
-  "count": 32,
+  "generated_at": "2026-08-23T05:49:45.123242+00:00",
+  "count": 31,
   "jobs": [
     {
       "id": "dba065ee45145195",
@@ -26,19 +26,6 @@
       "group": null,
       "posted_at": "2026-07-24T07:00:48+00:00",
       "is_senior": false,
-      "first_seen": "2026-08-22T07:32:40.078227+00:00"
-    },
-    {
-      "id": "84785a065478dc90",
-      "title": "Ads Conversion Modeling, Machine Learning Engineering Manager",
-      "company": "Reddit",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/reddit-ads-conversion-modeling-machine-learning-engineering-manager",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-07-24T05:21:03+00:00",
-      "is_senior": true,
       "first_seen": "2026-08-22T07:32:40.078227+00:00"
     },
     {
