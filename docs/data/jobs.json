@@ -1,7 +1,33 @@
 {
-  "generated_at": "2026-08-23T06:42:13.387467+00:00",
-  "count": 31,
+  "generated_at": "2026-08-23T07:34:15.105375+00:00",
+  "count": 32,
   "jobs": [
+    {
+      "id": "4675dcb83f4418ab",
+      "title": "Senior Independent AI Engineer / Architect",
+      "company": "A.Team",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2024-06-16T18:08:52+00:00",
+      "is_senior": true,
+      "first_seen": "2026-08-23T07:34:15.105375+00:00"
+    },
+    {
+      "id": "04f7e1b61c1d670c",
+      "title": "Senior AI Engineer",
+      "company": "Lemon.io",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-ai-engineer-4",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-05T08:23:41+00:00",
+      "is_senior": true,
+      "first_seen": "2026-08-23T07:34:15.105375+00:00"
+    },
     {
       "id": "dba065ee45145195",
       "title": "Full Stack AI Engineer",
@@ -12,19 +38,6 @@
       "tier": 2,
       "group": null,
       "posted_at": "2026-04-02T20:46:00+00:00",
-      "is_senior": false,
-      "first_seen": "2026-08-22T07:32:40.078227+00:00"
-    },
-    {
-      "id": "6247c1b78b08e710",
-      "title": "AI Engineer",
-      "company": "GitLab",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/gitlab-ai-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-07-24T07:00:48+00:00",
       "is_senior": false,
       "first_seen": "2026-08-22T07:32:40.078227+00:00"
     },
