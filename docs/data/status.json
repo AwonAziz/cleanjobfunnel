@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T11:29:17.810101+00:00",
+  "generated_at": "2026-08-25T12:00:51.935172+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -93,9 +93,9 @@
     },
     {
       "source": "weworkremotely (remote-programming-jobs.rss)",
-      "ok": true,
-      "count": 25,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "HTTPSConnectionPool(host='weworkremotely.com', port=443): Read timed out. (read timeout=20)"
     },
     {
       "source": "weworkremotely (remote-devops-sysadmin-jobs.rss)",
