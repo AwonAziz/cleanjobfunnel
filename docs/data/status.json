@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T06:50:49.149973+00:00",
+  "generated_at": "2026-08-25T07:44:55.955092+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -22,13 +22,13 @@
     {
       "source": "PagerDuty",
       "ok": true,
-      "count": 36,
+      "count": 38,
       "error": null
     },
     {
       "source": "Elastic",
       "ok": true,
-      "count": 281,
+      "count": 280,
       "error": null
     },
     {
