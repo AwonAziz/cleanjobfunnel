@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-26T20:11:49.542219+00:00",
-  "count": 33,
+  "generated_at": "2026-08-26T23:43:57.460949+00:00",
+  "count": 32,
   "jobs": [
     {
       "id": "4675dcb83f4418ab",
@@ -26,19 +26,6 @@
       "group": null,
       "posted_at": "2026-08-05T08:23:41+00:00",
       "is_senior": true,
-      "first_seen": "2026-08-25T13:15:50.952713+00:00"
-    },
-    {
-      "id": "dba065ee45145195",
-      "title": "Full Stack AI Engineer",
-      "company": "Reveleer",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/reveleer-full-stack-ai-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-04-02T20:46:00+00:00",
-      "is_senior": false,
       "first_seen": "2026-08-25T13:15:50.952713+00:00"
     },
     {
