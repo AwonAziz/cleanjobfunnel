@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-08-27T08:04:06.875029+00:00",
+  "generated_at": "2026-08-27T19:08:31.328230+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
       "ok": true,
-      "count": 152,
+      "count": 145,
       "error": null
     },
     {
@@ -16,7 +16,7 @@
     {
       "source": "Datadog",
       "ok": true,
-      "count": 450,
+      "count": 449,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 292,
+      "count": 335,
       "error": null
     },
     {
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 744,
+      "count": 742,
       "error": null
     },
     {
@@ -82,7 +82,7 @@
     {
       "source": "Perplexity",
       "ok": true,
-      "count": 101,
+      "count": 98,
       "error": null
     },
     {
