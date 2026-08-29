@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T13:12:17.364798+00:00",
+  "generated_at": "2026-08-29T17:12:24.612650+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -82,7 +82,7 @@
     {
       "source": "Perplexity",
       "ok": true,
-      "count": 98,
+      "count": 97,
       "error": null
     },
     {
