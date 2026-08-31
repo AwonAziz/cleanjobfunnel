@@ -1,7 +1,20 @@
 {
-  "generated_at": "2026-08-31T20:11:29.946883+00:00",
-  "count": 27,
+  "generated_at": "2026-08-31T23:54:57.799203+00:00",
+  "count": 28,
   "jobs": [
+    {
+      "id": "4198518d3ec4c752",
+      "title": "AI Engineer Data APIs",
+      "company": "Benzinga",
+      "location": "Remote",
+      "url": "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
+      "source": "remoteok",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-30T21:00:01+00:00",
+      "is_senior": false,
+      "first_seen": "2026-08-31T23:54:57.799203+00:00"
+    },
     {
       "id": "9ae89c5f1ef865b6",
       "title": "Tech Lead - Manufacturing Data & AI Platforms - Global Pharmaceutical Company",
