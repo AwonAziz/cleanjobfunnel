@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-02T15:00:09.667036+00:00",
+  "generated_at": "2026-09-02T18:35:08.270042+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
       "ok": true,
-      "count": 134,
+      "count": 132,
       "error": null
     },
     {
@@ -22,13 +22,13 @@
     {
       "source": "PagerDuty",
       "ok": true,
-      "count": 43,
+      "count": 44,
       "error": null
     },
     {
       "source": "Elastic",
       "ok": true,
-      "count": 355,
+      "count": 358,
       "error": null
     },
     {
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 767,
+      "count": 765,
       "error": null
     },
     {
@@ -82,7 +82,7 @@
     {
       "source": "Perplexity",
       "ok": true,
-      "count": 100,
+      "count": 110,
       "error": null
     },
     {
