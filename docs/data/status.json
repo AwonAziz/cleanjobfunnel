@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-02T05:54:59.321259+00:00",
+  "generated_at": "2026-09-02T10:50:16.385457+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -16,7 +16,7 @@
     {
       "source": "Datadog",
       "ok": true,
-      "count": 444,
+      "count": 441,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 342,
+      "count": 343,
       "error": null
     },
     {
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 769,
+      "count": 770,
       "error": null
     },
     {
@@ -82,7 +82,7 @@
     {
       "source": "Perplexity",
       "ok": true,
-      "count": 98,
+      "count": 100,
       "error": null
     },
     {
@@ -100,7 +100,7 @@
     {
       "source": "weworkremotely (remote-devops-sysadmin-jobs.rss)",
       "ok": true,
-      "count": 15,
+      "count": 14,
       "error": null
     },
     {
