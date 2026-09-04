@@ -1,7 +1,20 @@
 {
-  "generated_at": "2026-09-04T16:46:12.883532+00:00",
+  "generated_at": "2026-09-04T19:20:06.694889+00:00",
   "count": 28,
   "jobs": [
+    {
+      "id": "4fd53beddca98b21",
+      "title": "AI/ML Engineer for an AI-Driven E-Commerce Platform",
+      "company": "Toptal",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/toptal-ai-ml-engineer-for-an-ai-driven-e-commerce-platform",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-17T14:10:09+00:00",
+      "is_senior": false,
+      "first_seen": "2026-09-04T19:20:06.694889+00:00"
+    },
     {
       "id": "ab00ae2849cbf5dc",
       "title": "Senior Software AI Engineer",
@@ -53,19 +66,6 @@
       "posted_at": "2026-08-06T15:31:53+00:00",
       "is_senior": true,
       "first_seen": "2026-08-27T19:08:31.328230+00:00"
-    },
-    {
-      "id": "4675dcb83f4418ab",
-      "title": "Senior Independent AI Engineer / Architect",
-      "company": "A.Team",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2024-06-16T18:08:52+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-25T13:15:50.952713+00:00"
     },
     {
       "id": "403691f265391dda",
