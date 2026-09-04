@@ -1,7 +1,20 @@
 {
-  "generated_at": "2026-09-04T03:24:52.720633+00:00",
-  "count": 28,
+  "generated_at": "2026-09-04T08:13:01.391066+00:00",
+  "count": 29,
   "jobs": [
+    {
+      "id": "ab00ae2849cbf5dc",
+      "title": "Senior Software AI Engineer",
+      "company": "Collaboration.Ai",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/collaboration-ai-senior-software-ai-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-17T11:57:38+00:00",
+      "is_senior": true,
+      "first_seen": "2026-09-04T08:13:01.391066+00:00"
+    },
     {
       "id": "4198518d3ec4c752",
       "title": "AI Engineer Data APIs",
