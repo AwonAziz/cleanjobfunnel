@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T08:13:01.391066+00:00",
-  "count": 29,
+  "generated_at": "2026-09-04T12:46:24.434441+00:00",
+  "count": 28,
   "jobs": [
     {
       "id": "ab00ae2849cbf5dc",
@@ -64,19 +64,6 @@
       "tier": 2,
       "group": null,
       "posted_at": "2024-06-16T18:08:52+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-25T13:15:50.952713+00:00"
-    },
-    {
-      "id": "04f7e1b61c1d670c",
-      "title": "Senior AI Engineer",
-      "company": "Lemon.io",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-ai-engineer-4",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-08-05T08:23:41+00:00",
       "is_senior": true,
       "first_seen": "2026-08-25T13:15:50.952713+00:00"
     },
