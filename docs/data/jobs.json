@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-05T05:51:13.634134+00:00",
-  "count": 28,
+  "generated_at": "2026-09-05T10:07:35.192385+00:00",
+  "count": 27,
   "jobs": [
     {
       "id": "4fd53beddca98b21",
@@ -351,19 +351,6 @@
       "group": "aiops",
       "posted_at": "2026-06-29T13:20:17+00:00",
       "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "82e5a7f22d0054b1",
-      "title": "DevOps Engineer IV (Obs)",
-      "company": "Jumio",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/jumio-devops-engineer-iv-obs",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-08-06T07:30:49+00:00",
-      "is_senior": false,
       "first_seen": "2026-08-16T06:46:11.402225+00:00"
     }
   ]

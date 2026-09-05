@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-05T05:51:13.634134+00:00",
+  "generated_at": "2026-09-05T10:07:35.192385+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -82,7 +82,7 @@
     {
       "source": "Perplexity",
       "ok": true,
-      "count": 111,
+      "count": 112,
       "error": null
     },
     {
@@ -100,7 +100,7 @@
     {
       "source": "weworkremotely (remote-devops-sysadmin-jobs.rss)",
       "ok": true,
-      "count": 13,
+      "count": 14,
       "error": null
     },
     {
