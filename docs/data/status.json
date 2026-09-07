@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-07T11:51:13.316635+00:00",
+  "generated_at": "2026-09-07T17:27:12.785184+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
       "ok": true,
-      "count": 128,
+      "count": 129,
       "error": null
     },
     {
@@ -16,7 +16,7 @@
     {
       "source": "Datadog",
       "ok": true,
-      "count": 443,
+      "count": 442,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 364,
+      "count": 368,
       "error": null
     },
     {
