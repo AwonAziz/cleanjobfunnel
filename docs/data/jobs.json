@@ -1,7 +1,33 @@
 {
-  "generated_at": "2026-09-08T06:01:25.000296+00:00",
-  "count": 30,
+  "generated_at": "2026-09-08T11:27:51.924779+00:00",
+  "count": 32,
   "jobs": [
+    {
+      "id": "fa5db8d1f6e16e77",
+      "title": "Senior Professional Services DevOps Engineer",
+      "company": "JFrog",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-09-08T07:31:09+00:00",
+      "is_senior": true,
+      "first_seen": "2026-09-08T11:27:51.924779+00:00"
+    },
+    {
+      "id": "41e367889a5ecc9e",
+      "title": "Professional Services DevOps Engineer",
+      "company": "JFrog",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-09-08T07:31:00+00:00",
+      "is_senior": false,
+      "first_seen": "2026-09-08T11:27:51.924779+00:00"
+    },
     {
       "id": "0d1c070cd8bc3e8d",
       "title": "Senior DevOps Engineer (m/f/d)",
