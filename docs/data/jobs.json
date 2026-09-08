@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T18:48:53.573426+00:00",
-  "count": 32,
+  "generated_at": "2026-09-08T21:38:41.605709+00:00",
+  "count": 31,
   "jobs": [
     {
       "id": "fa5db8d1f6e16e77",
@@ -168,19 +168,6 @@
       "tier": 1,
       "group": "ml-lifecycle",
       "posted_at": "2026-06-15T19:56:09+00:00",
-      "is_senior": false,
-      "first_seen": "2026-08-23T09:57:18.852101+00:00"
-    },
-    {
-      "id": "1f0c6431d762269b",
-      "title": "Open Source AI Engineer (Typescript)",
-      "company": "Arize AI",
-      "location": "Remote (United States)",
-      "url": "https://job-boards.greenhouse.io/arizeai/jobs/6119757004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "ml-lifecycle",
-      "posted_at": "2026-07-29T22:10:40+00:00",
       "is_senior": false,
       "first_seen": "2026-08-23T09:57:18.852101+00:00"
     },
