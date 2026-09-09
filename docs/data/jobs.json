@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T16:05:59.290824+00:00",
-  "count": 32,
+  "generated_at": "2026-09-09T19:19:26.711871+00:00",
+  "count": 29,
   "jobs": [
     {
       "id": "38a4f1ed5ad60595",
@@ -196,45 +196,6 @@
       "posted_at": "2026-08-18T16:32:27.941000+00:00",
       "is_senior": false,
       "first_seen": "2026-08-18T17:02:26.098919+00:00"
-    },
-    {
-      "id": "97058524924b20e5",
-      "title": "Senior Platform Engineer - Platform Metal | Ireland | Remote",
-      "company": "Grafana Labs",
-      "location": "Republic of Ireland (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6134519004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-08-05T10:43:51+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "18e1567a1b8b9a50",
-      "title": "Senior Platform Engineer - Platform Metal | Spain | Remote",
-      "company": "Grafana Labs",
-      "location": "Spain (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6134518004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-08-05T10:43:50+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "16fbc4c79b5cc429",
-      "title": "Senior Platform Engineer - Platform Metal | UK | Remote",
-      "company": "Grafana Labs",
-      "location": "United Kingdom (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6134516004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-08-05T10:43:48+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
     },
     {
       "id": "589002cb699ed168",
