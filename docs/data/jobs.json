@@ -1,20 +1,7 @@
 {
-  "generated_at": "2026-09-10T03:34:44.005875+00:00",
+  "generated_at": "2026-09-10T08:23:19.464682+00:00",
   "count": 29,
   "jobs": [
-    {
-      "id": "c4739570a1446a9a",
-      "title": "Senior AI Engineer \u2013 Notebooks",
-      "company": "Datadog",
-      "location": "Portugal, Remote",
-      "url": "https://careers.datadoghq.com/detail/8188027/?gh_jid=8188027",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-09-09T08:18:17+00:00",
-      "is_senior": true,
-      "first_seen": "2026-09-09T11:53:16.256957+00:00"
-    },
     {
       "id": "38a4f1ed5ad60595",
       "title": "Senior AI Engineer \u2013 Notebooks",
@@ -25,6 +12,19 @@
       "tier": 1,
       "group": "aiops",
       "posted_at": "2026-09-09T08:20:09+00:00",
+      "is_senior": true,
+      "first_seen": "2026-09-09T11:53:16.256957+00:00"
+    },
+    {
+      "id": "c4739570a1446a9a",
+      "title": "Senior AI Engineer \u2013 Notebooks",
+      "company": "Datadog",
+      "location": "Portugal, Remote",
+      "url": "https://careers.datadoghq.com/detail/8188027/?gh_jid=8188027",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "aiops",
+      "posted_at": "2026-09-09T08:18:17+00:00",
       "is_senior": true,
       "first_seen": "2026-09-09T11:53:16.256957+00:00"
     },
