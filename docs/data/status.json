@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-10T08:23:19.464682+00:00",
+  "generated_at": "2026-09-10T13:06:26.340831+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
       "ok": true,
-      "count": 126,
+      "count": 127,
       "error": null
     },
     {
@@ -15,9 +15,9 @@
     },
     {
       "source": "Datadog",
-      "ok": true,
-      "count": 451,
-      "error": null
+      "ok": false,
+      "count": 0,
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
     },
     {
       "source": "PagerDuty",
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 345,
+      "count": 347,
       "error": null
     },
     {
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 786,
+      "count": 785,
       "error": null
     },
     {

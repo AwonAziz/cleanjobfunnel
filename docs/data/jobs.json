@@ -1,33 +1,7 @@
 {
-  "generated_at": "2026-09-10T08:23:19.464682+00:00",
-  "count": 29,
+  "generated_at": "2026-09-10T13:06:26.340831+00:00",
+  "count": 26,
   "jobs": [
-    {
-      "id": "38a4f1ed5ad60595",
-      "title": "Senior AI Engineer \u2013 Notebooks",
-      "company": "Datadog",
-      "location": "France, Remote; Germany, Remote; Spain, Remote",
-      "url": "https://careers.datadoghq.com/detail/8188028/?gh_jid=8188028",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-09-09T08:20:09+00:00",
-      "is_senior": true,
-      "first_seen": "2026-09-09T11:53:16.256957+00:00"
-    },
-    {
-      "id": "c4739570a1446a9a",
-      "title": "Senior AI Engineer \u2013 Notebooks",
-      "company": "Datadog",
-      "location": "Portugal, Remote",
-      "url": "https://careers.datadoghq.com/detail/8188027/?gh_jid=8188027",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-09-09T08:18:17+00:00",
-      "is_senior": true,
-      "first_seen": "2026-09-09T11:53:16.256957+00:00"
-    },
     {
       "id": "fa5db8d1f6e16e77",
       "title": "Senior Professional Services DevOps Engineer",
@@ -131,19 +105,6 @@
       "posted_at": "2026-08-30T21:00:01+00:00",
       "is_senior": false,
       "first_seen": "2026-08-31T23:54:57.799203+00:00"
-    },
-    {
-      "id": "9ae89c5f1ef865b6",
-      "title": "Tech Lead - Manufacturing Data & AI Platforms - Global Pharmaceutical Company",
-      "company": "Toptal",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/toptal-tech-lead-manufacturing-data-ai-platforms-global-pharmaceutical-company",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-08-11T12:58:39+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-28T15:39:40.491039+00:00"
     },
     {
       "id": "403691f265391dda",
