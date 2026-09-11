@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-11T13:48:49.268914+00:00",
-  "count": 29,
+  "generated_at": "2026-09-11T17:37:03.808748+00:00",
+  "count": 24,
   "jobs": [
     {
       "id": "3c14d265ad343c9b",
@@ -16,19 +16,6 @@
       "first_seen": "2026-09-11T09:24:07.904464+00:00"
     },
     {
-      "id": "38a4f1ed5ad60595",
-      "title": "Senior AI Engineer \u2013 Notebooks",
-      "company": "Datadog",
-      "location": "France, Remote; Germany, Remote; Spain, Remote",
-      "url": "https://careers.datadoghq.com/detail/8188028/?gh_jid=8188028",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-09-09T08:20:09+00:00",
-      "is_senior": true,
-      "first_seen": "2026-09-10T17:02:33.455208+00:00"
-    },
-    {
       "id": "c4739570a1446a9a",
       "title": "Senior AI Engineer \u2013 Notebooks",
       "company": "Datadog",
@@ -38,6 +25,19 @@
       "tier": 1,
       "group": "aiops",
       "posted_at": "2026-09-09T08:18:17+00:00",
+      "is_senior": true,
+      "first_seen": "2026-09-10T17:02:33.455208+00:00"
+    },
+    {
+      "id": "38a4f1ed5ad60595",
+      "title": "Senior AI Engineer \u2013 Notebooks",
+      "company": "Datadog",
+      "location": "France, Remote; Germany, Remote; Spain, Remote",
+      "url": "https://careers.datadoghq.com/detail/8188028/?gh_jid=8188028",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "aiops",
+      "posted_at": "2026-09-09T08:20:09+00:00",
       "is_senior": true,
       "first_seen": "2026-09-10T17:02:33.455208+00:00"
     },
@@ -196,71 +196,6 @@
       "posted_at": "2026-08-18T16:32:27.941000+00:00",
       "is_senior": false,
       "first_seen": "2026-08-18T17:02:26.098919+00:00"
-    },
-    {
-      "id": "589002cb699ed168",
-      "title": "Staff AI Engineer - 2nd Horizon | Germany | Remote",
-      "company": "Grafana Labs",
-      "location": "Germany (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6117334004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-07-16T11:36:00+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "78c9c294a91d18b4",
-      "title": "Staff AI Engineer - 2nd Horizon | Ireland | Remote",
-      "company": "Grafana Labs",
-      "location": "Republic of Ireland (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6117338004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-07-16T11:40:15+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "ce068f0a3ca7d813",
-      "title": "Staff AI Engineer - 2nd Horizon | Spain | Remote",
-      "company": "Grafana Labs",
-      "location": "Spain (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6117336004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-07-16T11:38:27+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "d76fb078aac4fd0b",
-      "title": "Staff AI Engineer - 2nd Horizon | Sweden | Remote",
-      "company": "Grafana Labs",
-      "location": "Sweden (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6117340004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-07-16T11:44:18+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "aacf64f2ef29df94",
-      "title": "Staff AI Engineer - 2nd Horizon | UK | Remote",
-      "company": "Grafana Labs",
-      "location": "United Kingdom (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6117339004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-07-16T11:42:05+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
     },
     {
       "id": "253f4d0d7c5d8dad",
