@@ -1,7 +1,20 @@
 {
-  "generated_at": "2026-09-11T17:37:03.808748+00:00",
-  "count": 24,
+  "generated_at": "2026-09-11T20:01:05.500773+00:00",
+  "count": 25,
   "jobs": [
+    {
+      "id": "2f5dbfe536cd2be2",
+      "title": "AWS DevOps Engineer",
+      "company": "Stadium",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/stadium-aws-devops-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-18T20:33:08+00:00",
+      "is_senior": false,
+      "first_seen": "2026-09-11T20:01:05.500773+00:00"
+    },
     {
       "id": "3c14d265ad343c9b",
       "title": "DevOps Engineer",
@@ -16,19 +29,6 @@
       "first_seen": "2026-09-11T09:24:07.904464+00:00"
     },
     {
-      "id": "c4739570a1446a9a",
-      "title": "Senior AI Engineer \u2013 Notebooks",
-      "company": "Datadog",
-      "location": "Portugal, Remote",
-      "url": "https://careers.datadoghq.com/detail/8188027/?gh_jid=8188027",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-09-09T08:18:17+00:00",
-      "is_senior": true,
-      "first_seen": "2026-09-10T17:02:33.455208+00:00"
-    },
-    {
       "id": "38a4f1ed5ad60595",
       "title": "Senior AI Engineer \u2013 Notebooks",
       "company": "Datadog",
@@ -38,6 +38,19 @@
       "tier": 1,
       "group": "aiops",
       "posted_at": "2026-09-09T08:20:09+00:00",
+      "is_senior": true,
+      "first_seen": "2026-09-10T17:02:33.455208+00:00"
+    },
+    {
+      "id": "c4739570a1446a9a",
+      "title": "Senior AI Engineer \u2013 Notebooks",
+      "company": "Datadog",
+      "location": "Portugal, Remote",
+      "url": "https://careers.datadoghq.com/detail/8188027/?gh_jid=8188027",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "aiops",
+      "posted_at": "2026-09-09T08:18:17+00:00",
       "is_senior": true,
       "first_seen": "2026-09-10T17:02:33.455208+00:00"
     },
