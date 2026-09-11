@@ -1,19 +1,19 @@
 {
-  "generated_at": "2026-09-11T04:50:12.661615+00:00",
-  "count": 28,
+  "generated_at": "2026-09-11T09:24:07.904464+00:00",
+  "count": 29,
   "jobs": [
     {
-      "id": "38a4f1ed5ad60595",
-      "title": "Senior AI Engineer \u2013 Notebooks",
-      "company": "Datadog",
-      "location": "France, Remote; Germany, Remote; Spain, Remote",
-      "url": "https://careers.datadoghq.com/detail/8188028/?gh_jid=8188028",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-09-09T08:20:09+00:00",
-      "is_senior": true,
-      "first_seen": "2026-09-10T17:02:33.455208+00:00"
+      "id": "3c14d265ad343c9b",
+      "title": "DevOps Engineer",
+      "company": "Zowie",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/zowie-devops-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-18T20:32:42+00:00",
+      "is_senior": false,
+      "first_seen": "2026-09-11T09:24:07.904464+00:00"
     },
     {
       "id": "c4739570a1446a9a",
@@ -25,6 +25,19 @@
       "tier": 1,
       "group": "aiops",
       "posted_at": "2026-09-09T08:18:17+00:00",
+      "is_senior": true,
+      "first_seen": "2026-09-10T17:02:33.455208+00:00"
+    },
+    {
+      "id": "38a4f1ed5ad60595",
+      "title": "Senior AI Engineer \u2013 Notebooks",
+      "company": "Datadog",
+      "location": "France, Remote; Germany, Remote; Spain, Remote",
+      "url": "https://careers.datadoghq.com/detail/8188028/?gh_jid=8188028",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "aiops",
+      "posted_at": "2026-09-09T08:20:09+00:00",
       "is_senior": true,
       "first_seen": "2026-09-10T17:02:33.455208+00:00"
     },
