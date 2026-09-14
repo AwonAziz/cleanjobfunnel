@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T06:26:40.148815+00:00",
+  "generated_at": "2026-09-14T13:19:33.870113+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -16,7 +16,7 @@
     {
       "source": "Datadog",
       "ok": true,
-      "count": 442,
+      "count": 443,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 357,
+      "count": 356,
       "error": null
     },
     {
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 795,
+      "count": 797,
       "error": null
     },
     {
@@ -100,14 +100,14 @@
     {
       "source": "weworkremotely (remote-devops-sysadmin-jobs.rss)",
       "ok": true,
-      "count": 18,
+      "count": 19,
       "error": null
     },
     {
       "source": "remotive (feed)",
       "ok": false,
       "count": 0,
-      "error": "404 Client Error: Not Found for url: https://remotive.com/feed"
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
     }
   ]
 }
