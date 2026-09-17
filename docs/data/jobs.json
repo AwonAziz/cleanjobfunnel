@@ -1,32 +1,71 @@
 {
-  "generated_at": "2026-09-17T19:07:01.732826+00:00",
-  "count": 21,
+  "generated_at": "2026-09-17T22:15:48.477995+00:00",
+  "count": 22,
   "jobs": [
     {
-      "id": "2f5dbfe536cd2be2",
-      "title": "AWS DevOps Engineer",
-      "company": "Stadium",
+      "id": "3e924f437be00b55",
+      "title": "Senior Platform Engineer(DevOps)",
+      "company": "Sedona Digital",
       "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/stadium-aws-devops-engineer",
+      "url": "https://weworkremotely.com/remote-jobs/sedona-digital-senior-platform-engineer-devops",
       "source": "weworkremotely",
       "tier": 2,
       "group": null,
-      "posted_at": "2026-08-18T20:33:08+00:00",
-      "is_senior": false,
-      "first_seen": "2026-09-11T20:01:05.500773+00:00"
+      "posted_at": "2026-08-19T20:36:28+00:00",
+      "is_senior": true,
+      "first_seen": "2026-09-17T22:15:48.477995+00:00"
     },
     {
-      "id": "3c14d265ad343c9b",
+      "id": "cd36c0040168b049",
       "title": "DevOps Engineer",
-      "company": "Zowie",
+      "company": "Tenchi Security",
       "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/zowie-devops-engineer",
+      "url": "https://weworkremotely.com/remote-jobs/tenchi-security-devops-engineer",
       "source": "weworkremotely",
       "tier": 2,
       "group": null,
-      "posted_at": "2026-08-18T20:32:42+00:00",
+      "posted_at": "2026-08-19T20:36:24+00:00",
       "is_senior": false,
-      "first_seen": "2026-09-11T09:24:07.904464+00:00"
+      "first_seen": "2026-09-17T22:15:48.477995+00:00"
+    },
+    {
+      "id": "8c9c466075d07222",
+      "title": "Senior DevOps Engineer",
+      "company": "Truv",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/truv-senior-devops-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-19T20:35:52+00:00",
+      "is_senior": true,
+      "first_seen": "2026-09-17T22:15:48.477995+00:00"
+    },
+    {
+      "id": "945d0eee5bc36763",
+      "title": "Sr. Product Manager - AI Platform",
+      "company": "Highlevel",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/highlevel-sr-product-manager-ai-platform",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-19T20:35:44+00:00",
+      "is_senior": true,
+      "first_seen": "2026-09-17T22:15:48.477995+00:00"
+    },
+    {
+      "id": "c72035b3a9fe12c5",
+      "title": "DevOps Engineer - Contractor",
+      "company": "Coin Market Cap",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/coin-market-cap-devops-engineer-contractor",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-19T20:35:38+00:00",
+      "is_senior": false,
+      "first_seen": "2026-09-17T22:15:48.477995+00:00"
     },
     {
       "id": "fa5db8d1f6e16e77",
@@ -55,19 +94,6 @@
       "first_seen": "2026-09-08T11:27:51.924779+00:00"
     },
     {
-      "id": "0d1c070cd8bc3e8d",
-      "title": "Senior DevOps Engineer (m/f/d)",
-      "company": "Myneva",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/myneva-senior-devops-engineer-m-f-d",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-08-18T20:32:02+00:00",
-      "is_senior": true,
-      "first_seen": "2026-09-07T11:51:13.316635+00:00"
-    },
-    {
       "id": "add5dfe229c3fa2c",
       "title": "Senior SRE - Networks",
       "company": "Fastly",
@@ -79,19 +105,6 @@
       "posted_at": "2026-09-07T07:30:54+00:00",
       "is_senior": true,
       "first_seen": "2026-09-07T11:51:13.316635+00:00"
-    },
-    {
-      "id": "69108e0dbc4dc61b",
-      "title": "Junior DevOps Engineer (CI/CD & Developer Tooling) remote (m/f/d)",
-      "company": "Charisma-tec",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/charisma-tec-junior-devops-engineer-ci-cd-developer-tooling-remote-m-f-d",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-08-18T20:31:54+00:00",
-      "is_senior": false,
-      "first_seen": "2026-09-06T16:20:20.733579+00:00"
     },
     {
       "id": "4198518d3ec4c752",
