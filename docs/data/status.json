@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T00:27:31.207713+00:00",
+  "generated_at": "2026-09-18T05:10:23.078782+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 358,
+      "count": 357,
       "error": null
     },
     {
@@ -82,7 +82,7 @@
     {
       "source": "Perplexity",
       "ok": true,
-      "count": 113,
+      "count": 114,
       "error": null
     },
     {
