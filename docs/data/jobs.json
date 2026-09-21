@@ -1,7 +1,33 @@
 {
-  "generated_at": "2026-09-21T16:18:16.018923+00:00",
+  "generated_at": "2026-09-21T20:28:35.410383+00:00",
   "count": 18,
   "jobs": [
+    {
+      "id": "bf044f747992dc79",
+      "title": "Applied AI Engineer",
+      "company": "Arize AI",
+      "location": "Remote (San Francisco)",
+      "url": "https://job-boards.greenhouse.io/arizeai/jobs/6128122004",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "ml-lifecycle",
+      "posted_at": "2026-08-27T20:43:02+00:00",
+      "is_senior": false,
+      "first_seen": "2026-09-21T20:28:35.410383+00:00"
+    },
+    {
+      "id": "e3d09eaf5bff078c",
+      "title": "DevOps Engineer",
+      "company": "Arize AI",
+      "location": "Remote (United States)",
+      "url": "https://job-boards.greenhouse.io/arizeai/jobs/6203635004",
+      "source": "greenhouse",
+      "tier": 1,
+      "group": "ml-lifecycle",
+      "posted_at": "2026-09-21T18:32:21+00:00",
+      "is_senior": false,
+      "first_seen": "2026-09-21T20:28:35.410383+00:00"
+    },
     {
       "id": "4675dcb83f4418ab",
       "title": "Senior Independent AI Engineer / Architect",
@@ -129,32 +155,6 @@
       "tier": 1,
       "group": "aiops",
       "posted_at": "2026-06-18T18:14:46+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "1defa3bd19b16e19",
-      "title": "Staff AI Engineer - Grafana AI/ML | Canada | Remote",
-      "company": "Grafana Labs",
-      "location": "Canada (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6100673004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-24T18:37:40+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "e93f2ff3aff85126",
-      "title": "Staff AI Engineer - Grafana AI/ML | USA | Remote",
-      "company": "Grafana Labs",
-      "location": "United States (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6100672004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-24T18:37:39+00:00",
       "is_senior": true,
       "first_seen": "2026-08-16T06:46:11.402225+00:00"
     },
