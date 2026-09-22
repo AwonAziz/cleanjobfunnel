@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T01:51:26.980962+00:00",
+  "generated_at": "2026-09-22T07:26:13.535360+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 366,
+      "count": 364,
       "error": null
     },
     {
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 812,
+      "count": 810,
       "error": null
     },
     {
