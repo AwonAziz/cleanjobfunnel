@@ -1,7 +1,20 @@
 {
-  "generated_at": "2026-09-23T06:38:39.768900+00:00",
+  "generated_at": "2026-09-23T12:12:01.708964+00:00",
   "count": 17,
   "jobs": [
+    {
+      "id": "4198518d3ec4c752",
+      "title": "AI Engineer Data APIs",
+      "company": "Benzinga",
+      "location": "Remote",
+      "url": "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
+      "source": "remoteok",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-08-30T21:00:01+00:00",
+      "is_senior": false,
+      "first_seen": "2026-09-23T12:12:01.708964+00:00"
+    },
     {
       "id": "bf044f747992dc79",
       "title": "Applied AI Engineer",
@@ -79,19 +92,6 @@
       "posted_at": "2026-09-07T07:30:54+00:00",
       "is_senior": true,
       "first_seen": "2026-09-07T11:51:13.316635+00:00"
-    },
-    {
-      "id": "403691f265391dda",
-      "title": "Senior DevOps Engineer",
-      "company": "Lemon.io",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-08-24T11:52:38+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-24T12:52:50.361528+00:00"
     },
     {
       "id": "b22fca0d8e6586ef",
