@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-09-24T20:46:03.567426+00:00",
+  "generated_at": "2026-09-24T23:48:10.031944+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
       "ok": true,
-      "count": 147,
+      "count": 149,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 366,
+      "count": 378,
       "error": null
     },
     {
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 827,
+      "count": 830,
       "error": null
     },
     {
@@ -82,7 +82,7 @@
     {
       "source": "Perplexity",
       "ok": true,
-      "count": 122,
+      "count": 123,
       "error": null
     },
     {
