@@ -1,7 +1,20 @@
 {
-  "generated_at": "2026-09-24T23:48:10.031944+00:00",
-  "count": 17,
+  "generated_at": "2026-09-25T03:55:34.270984+00:00",
+  "count": 18,
   "jobs": [
+    {
+      "id": "69b1c0ab45b6e242",
+      "title": "DevOps Engineer (Remote)",
+      "company": "thehivecareers.co",
+      "location": "Remote",
+      "url": "https://weworkremotely.com/remote-jobs/thehivecareers-co-devops-engineer-remote",
+      "source": "weworkremotely",
+      "tier": 2,
+      "group": null,
+      "posted_at": "2026-09-25T00:33:21+00:00",
+      "is_senior": false,
+      "first_seen": "2026-09-25T03:55:34.270984+00:00"
+    },
     {
       "id": "4198518d3ec4c752",
       "title": "AI Engineer Data APIs",
