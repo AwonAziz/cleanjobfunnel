@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03T02:05:15.983548+00:00",
+  "generated_at": "2026-10-03T08:16:17.878716+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 829,
+      "count": 830,
       "error": null
     },
     {
@@ -100,7 +100,7 @@
     {
       "source": "weworkremotely (remote-devops-sysadmin-jobs.rss)",
       "ok": true,
-      "count": 15,
+      "count": 17,
       "error": null
     },
     {
