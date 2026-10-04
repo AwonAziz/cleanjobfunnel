@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-04T14:58:41.053687+00:00",
-  "count": 17,
+  "generated_at": "2026-10-04T18:36:00.804842+00:00",
+  "count": 16,
   "jobs": [
     {
       "id": "f299fb8bd583edb3",
@@ -66,19 +66,6 @@
       "posted_at": "2026-09-21T18:32:21+00:00",
       "is_senior": false,
       "first_seen": "2026-09-21T20:28:35.410383+00:00"
-    },
-    {
-      "id": "4675dcb83f4418ab",
-      "title": "Senior Independent AI Engineer / Architect",
-      "company": "A.Team",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/a-team-senior-independent-ai-engineer-architect",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2024-06-16T18:08:52+00:00",
-      "is_senior": true,
-      "first_seen": "2026-09-18T22:48:30.541074+00:00"
     },
     {
       "id": "fa5db8d1f6e16e77",
