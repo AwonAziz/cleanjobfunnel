@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-07T06:55:46.068384+00:00",
-  "count": 17,
+  "generated_at": "2026-10-07T14:18:17.879938+00:00",
+  "count": 16,
   "jobs": [
     {
       "id": "1defa3bd19b16e19",
@@ -92,19 +92,6 @@
       "posted_at": "2026-09-08T07:31:09+00:00",
       "is_senior": true,
       "first_seen": "2026-09-08T11:27:51.924779+00:00"
-    },
-    {
-      "id": "add5dfe229c3fa2c",
-      "title": "Senior SRE - Networks",
-      "company": "Fastly",
-      "location": "Remote",
-      "url": "https://weworkremotely.com/remote-jobs/fastly-senior-sre-networks",
-      "source": "weworkremotely",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-09-07T07:30:54+00:00",
-      "is_senior": true,
-      "first_seen": "2026-09-07T11:51:13.316635+00:00"
     },
     {
       "id": "e5ff5194bcd6a039",
