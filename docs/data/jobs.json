@@ -1,33 +1,7 @@
 {
-  "generated_at": "2026-10-08T13:43:18.233520+00:00",
-  "count": 15,
+  "generated_at": "2026-10-08T19:42:15.498003+00:00",
+  "count": 13,
   "jobs": [
-    {
-      "id": "1defa3bd19b16e19",
-      "title": "Staff AI Engineer - Grafana AI/ML | Canada | Remote",
-      "company": "Grafana Labs",
-      "location": "Canada (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6100673004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-24T18:37:40+00:00",
-      "is_senior": true,
-      "first_seen": "2026-10-06T16:01:08.562656+00:00"
-    },
-    {
-      "id": "e93f2ff3aff85126",
-      "title": "Staff AI Engineer - Grafana AI/ML | USA | Remote",
-      "company": "Grafana Labs",
-      "location": "United States (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6100672004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-24T18:37:39+00:00",
-      "is_senior": true,
-      "first_seen": "2026-10-06T16:01:08.562656+00:00"
-    },
     {
       "id": "69b1c0ab45b6e242",
       "title": "DevOps Engineer (Remote)",
