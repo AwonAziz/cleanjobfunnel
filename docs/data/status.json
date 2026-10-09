@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T13:30:32.229601+00:00",
+  "generated_at": "2026-10-09T18:59:14.923381+00:00",
   "sources": [
     {
       "source": "Grafana Labs",
@@ -16,7 +16,7 @@
     {
       "source": "Datadog",
       "ok": true,
-      "count": 432,
+      "count": 436,
       "error": null
     },
     {
@@ -28,7 +28,7 @@
     {
       "source": "Elastic",
       "ok": true,
-      "count": 417,
+      "count": 408,
       "error": null
     },
     {
@@ -64,7 +64,7 @@
     {
       "source": "OpenAI",
       "ok": true,
-      "count": 817,
+      "count": 818,
       "error": null
     },
     {
