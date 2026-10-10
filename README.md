@@ -1,5 +1,7 @@
 # Job Funnel
 
+**Live dashboard: <https://awonaziz.github.io/cleanjobfunnel/>**
+
 A self-updating dashboard of open AI / MLOps / AIOps roles, pulled straight
 from the same public APIs that power company career pages — no scraping, no
 middleman job board.
@@ -82,7 +84,7 @@ module exists to prevent, so the profile carries the negatives explicitly.
 Junior-ness is therefore asserted from the *title*, where it leads, and only from
 phrases that are written about the role everywhere else.
 
-### Scoring
+### Relevance scoring
 
 | Signal | Points |
 |---|---|
@@ -203,7 +205,75 @@ All in `config/companies.json`:
 Every kept job gets a 0–100 score: title match (+30 per keyword, capped at
 +50), direct-from-company board (+15), remote-friendly or unspecified
 location (+10), and recency (+10 within a week, +5 within a month). The
-dashboard sorts by it and shows the individual reasons on hover.
+dashboard sorts by it and shows the individual reasons.
+
+That is the *keyword* score, and it is deliberately demoted. It answers
+"does this look like the kind of role I want", which is a coarse filter and
+nothing more. The headline number on every card is the **relevance score**
+from `config/profile.json`, which answers "can I get this, and why is it a
+fit". Sort by "Best keyword match" if you want the older behaviour.
+
+---
+
+## The dashboard
+
+<https://awonaziz.github.io/cleanjobfunnel/>
+
+### What it shows
+
+Four stats across the top — **worth applying to**, **not eligible**, **new in
+24h**, **sources healthy** — then a **Best bets** block of the five
+highest-scoring eligible roles, then all matches below.
+
+Each card carries the relevance score, and **the reasons are always on**, not a
+hover tooltip. On a touch device, or for anyone who never hovers, the most
+valuable thing on the page was previously invisible. Three kinds of line:
+
+- **why** — what the job has going for it (skill overlap, location tier, age)
+- **gaps** — what the job wants that the profile does not have, shown as amber
+  chips. A missing skill you could close in a month should read as "ranked
+  eighth for this reason", not as silence.
+- **blocked** — the reason a job is not eligible, in a red-tinted banner
+
+**Blocked jobs stay visible.** One that vanished teaches nothing. A role
+gated because it wants an Emirati national, or because it asks for five years,
+is information — it tells you the posting was a trap, and it is a filter you
+would otherwise have to re-discover from scratch next time.
+
+### Why the headline changed
+
+The thesis of this change is that a ranking nobody can inspect is a ranking
+nobody trusts. Every point on every score has a sentence attached to it, and
+the sentences are on the page by default. If a job ranks where it ranks, the
+dashboard can say why; if it cannot, the number is decoration.
+
+---
+
+### Descriptions are scoring input, not stored data
+
+jobs.json is committed on every scan, so it stores **the relevance verdict, not
+the posting text**. The description is read in memory to produce skill hits,
+gaps, and experience floors, then dropped. Holding it would have grown the
+repository every twenty minutes for prose nothing reads past the first
+paragraph.
+
+This also means `suggest` reading jobs.json is reading a *verdict*, not a
+summary of the evidence — the two are not the same thing, and recomputing from
+a truncated summary would have been quietly worse.
+
+### Reading a card
+
+- **Left border** — green: first seen in the last 6 hours. Cyan: last 24
+  hours. No colour: older. This is the practical stand-in for "under 100
+  applicants"; LinkedIn is the only board that exposes that figure, and it
+  doesn't expose it outside its own app.
+- **also on …** — the same role was found on another source; they've been
+  merged into this card.
+- **Salary** — shown when the source publishes one.
+- **Source badge** — coloured: Tier 1, one of your named companies. Gray: Tier
+  2, an aggregator catch.
+- **Pulse dot** in the header — green: data is fresh. Amber: last scan was over
+  90 minutes ago. Red: no scan has completed yet.
 
 ### Duplicate merging
 
@@ -274,24 +344,6 @@ python -m pytest                       # 87 tests, offline
 ruff check . && ruff format --check .  # lint
 mypy jobfunnel                         # typecheck
 ```
-
-## Reading the dashboard
-
-- **Score badge** — hover it for the reasons: which keyword matched, tier,
-  recency. Sorted best-first by default.
-- **also on …** — the same role was found on another source; they've been
-  merged into this card.
-- **Salary** — shown when the source publishes one (Remotive, Himalayas,
-  RemoteOK, Breezy…).
-- **Pulse dot** — green: data is fresh. Amber: last scan was over 90 minutes
-  ago, worth a look at the Actions tab. Red: no scan has ever completed yet.
-- **Card's left border** — green: first seen in the last 6 hours. Cyan: last
-  24 hours. No color: older. This is the practical stand-in for "under 100
-  applicants" — LinkedIn is the only board that exposes that figure, and it
-  doesn't expose it outside its own app (see the note above about why this
-  funnel doesn't attempt LinkedIn/Indeed automation).
-- **Source badge** — colored: Tier 1, one of your named companies. Gray:
-  Tier 2, an aggregator catch.
 
 ## Known limitations
 

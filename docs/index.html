@@ -257,6 +257,116 @@
   }
   .score-badge.hot { color: var(--green); border-color: rgba(74, 222, 128, 0.4); }
   .score-badge.warm { color: var(--cyan); border-color: rgba(34, 211, 238, 0.4); }
+
+  /* --- relevance: resume fit, the number that decides what you apply to --- */
+
+  .rel-score {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    font-weight: 600;
+    min-width: 34px;
+    text-align: center;
+    padding: 3px 7px;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    color: var(--text-dim);
+    cursor: default;
+  }
+  .rel-score.tier-hot {
+    color: var(--green);
+    border-color: rgba(74, 222, 128, 0.45);
+    background: rgba(74, 222, 128, 0.08);
+  }
+  .rel-score.tier-good {
+    color: var(--cyan);
+    border-color: rgba(34, 211, 238, 0.35);
+  }
+
+  /* Reasons were a hover tooltip, which means the most valuable thing on the
+     page was invisible by default and entirely absent on touch. They are
+     always rendered now. */
+  .reason-list {
+    margin: 7px 0 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-muted);
+  }
+  .reason-list li { padding-left: 13px; position: relative; }
+  .reason-list li::before {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 7px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--text-dim);
+  }
+  .reason-list li.why::before { background: var(--green); }
+  .reason-list li.gap::before { background: var(--amber); }
+  .reason-list li.gap { color: var(--amber); }
+  .reason-list b { color: var(--text); font-weight: 500; }
+
+  .skill-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 9px; }
+  .skill-chip {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: rgba(74, 222, 128, 0.1);
+    color: var(--green);
+    border: 1px solid rgba(74, 222, 128, 0.2);
+  }
+  .skill-chip.gap {
+    background: rgba(251, 191, 36, 0.1);
+    color: var(--amber);
+    border-color: rgba(251, 191, 36, 0.22);
+  }
+
+  /* Blocked jobs stay visible. One that vanished taught nothing. */
+  .job-card.blocked { opacity: 0.62; }
+  .job-card.blocked .rel-score { color: var(--red, #f87171); border-color: rgba(248, 113, 113, 0.35); }
+  .block-banner {
+    margin-top: 8px;
+    padding: 6px 9px;
+    border-radius: 5px;
+    background: rgba(248, 113, 113, 0.08);
+    border: 1px solid rgba(248, 113, 113, 0.22);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: #fca5a5;
+  }
+  .block-banner strong { color: #f87171; }
+
+  /* --- best bets: the direct answer to "what do I apply to today" --- */
+
+  .section-head {
+    max-width: 900px;
+    margin: 26px auto 12px;
+    padding: 0 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+  }
+  .section-head h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text);
+    margin: 0;
+  }
+  .section-head span { font-size: 12px; color: var(--text-dim); }
+
+  .best-bets .job-card {
+    background: linear-gradient(180deg, rgba(34, 211, 238, 0.035), transparent 60%), var(--card);
+    border-color: rgba(34, 211, 238, 0.16);
+  }
+
   .job-salary {
     font-family: 'JetBrains Mono', monospace;
     font-size: 11px;
@@ -332,11 +442,15 @@
 <main>
   <div class="stats">
     <div>
-      <div class="stat-value" id="statTotal">—</div>
-      <div class="stat-label">open matches</div>
+      <div class="stat-value accent-green" id="statEligible">—</div>
+      <div class="stat-label">worth applying to</div>
     </div>
     <div>
-      <div class="stat-value accent-green" id="statNew">—</div>
+      <div class="stat-value" id="statBlocked">—</div>
+      <div class="stat-label">not eligible</div>
+    </div>
+    <div>
+      <div class="stat-value" id="statNew">—</div>
       <div class="stat-label">new in 24h</div>
     </div>
     <div>
@@ -345,6 +459,12 @@
     </div>
   </div>
 
+  <div class="section-head" id="bestBetsHead" hidden>
+    <h2>Best bets</h2>
+    <span>highest resume fit, with the reasons spelled out</span>
+  </div>
+  <div id="bestBets" class="job-list best-bets"></div>
+
   <div class="filters">
     <input type="search" id="searchInput" placeholder="filter by title or company…" />
     <div class="chip-row" id="sourceChips" style="display:flex; gap:8px; flex-wrap:wrap;"></div>
@@ -352,13 +472,22 @@
       <input type="checkbox" id="hideSenior" />
       <span>Hide senior / staff / lead</span>
     </label>
+    <label class="toggle">
+      <input type="checkbox" id="hideBlocked" />
+      <span>Hide not-eligible</span>
+    </label>
     <select id="sortSelect">
-      <option value="score">Best match</option>
+      <option value="relevance">Best fit</option>
+      <option value="keyword">Best keyword match</option>
       <option value="new">Newest first</option>
       <option value="company">Company A–Z</option>
     </select>
   </div>
 
+  <div class="section-head">
+    <h2>All matches</h2>
+    <span id="allCount"></span>
+  </div>
   <div id="jobList" class="job-list"></div>
   <div id="emptyState" class="empty-state" hidden>
     <h2>Nothing here yet</h2>
@@ -375,7 +504,8 @@
   let activeSourceFilter = null; // null = all
   const state = {
     hideSenior: localStorage.getItem('jf_hideSenior') === '1',
-    sort: localStorage.getItem('jf_sort') || 'score',
+    hideBlocked: localStorage.getItem('jf_hideBlocked') === '1',
+    sort: localStorage.getItem('jf_sort') || 'relevance',
   };
 
   function relTime(iso) {
@@ -428,12 +558,105 @@
     return escapeAttr(trimmed);
   }
 
+  // Relevance is the number that decides what gets applied to; the keyword
+  // score stays one click away but is no longer the headline.
+  function relevanceOf(j) {
+    return j.relevance && typeof j.relevance === 'object' ? j.relevance : null;
+  }
+
+  function relScoreOf(j) {
+    const r = relevanceOf(j);
+    return r ? (r.score || 0) : (j.score || 0);
+  }
+
+  function relTier(score) {
+    if (score >= 60) return 'tier-hot';
+    if (score >= 45) return 'tier-good';
+    return '';
+  }
+
+  function relScoreHtml(j) {
+    const r = relevanceOf(j);
+    const score = relScoreOf(j);
+    const tip = r
+      ? (r.reasons || []).join(' · ')
+      : (j.match_reasons || []).join(' · ');
+    return `<span class="rel-score ${relTier(score)}" title="${escapeAttr(tip)}">${score}</span>`;
+  }
+
+  // Reasons are always on, grouped so a reader can tell at a glance what a job
+  // has going for it, what it wants that you have not got, and what blocks it.
+  function reasonsHtml(j) {
+    const r = relevanceOf(j);
+    if (!r) return '';
+    const out = [];
+    for (const why of (r.reasons || [])) {
+      if (/^required but absent/i.test(why)) continue;
+      out.push(`<li class="why">${escapeHtml(why)}</li>`);
+    }
+    for (const g of (r.skill_gaps || [])) {
+      out.push(`<li class="gap">required but absent: <b>${escapeHtml(g)}</b></li>`);
+    }
+    if (!out.length) return '';
+    return `<ul class="reason-list">${out.join('')}</ul>`;
+  }
+
+  function skillChipsHtml(j) {
+    const r = relevanceOf(j);
+    if (!r) return '';
+    const hits = (r.skill_hits || []).slice(0, 7).map(s => `<span class="skill-chip">${escapeHtml(s)}</span>`);
+    const gaps = (r.skill_gaps || []).slice(0, 4).map(s => `<span class="skill-chip gap">${escapeHtml(s)}</span>`);
+    if (!hits.length && !gaps.length) return '';
+    return `<div class="skill-chips">${[...hits, ...gaps].join('')}</div>`;
+  }
+
+  function blockerHtml(j) {
+    const r = relevanceOf(j);
+    const b = r && (r.blockers || []);
+    if (!b || !b.length) return '';
+    return `<div class="block-banner"><strong>not eligible</strong> &middot; ${escapeHtml(b.join(' · '))}</div>`;
+  }
+
+  function jobCard(j) {
+    const r = relevanceOf(j);
+    const blocked = !!r && r.eligible === false;
+    const salary = j.salary ? `<span class="job-salary">${escapeHtml(j.salary)}</span>` : '';
+    const also = (j.also_on || []).length
+      ? `<span class="also-on">also on ${escapeHtml(j.also_on.join(', '))}</span>`
+      : '';
+    return `
+    <div class="job-card ${freshnessClass(j.first_seen)} ${blocked ? 'blocked' : ''}">
+      <div class="job-main">
+        <p class="job-title">${escapeHtml(j.title)}</p>
+        <div class="job-meta">
+          <span>${escapeHtml(j.company)}</span>
+          ${j.location ? `<span class="dot">·</span><span>${escapeHtml(j.location)}</span>` : ''}
+          ${salary ? `<span class="dot">·</span>${salary}` : ''}
+          ${j.is_senior ? `<span class="senior-flag">senior-leaning</span>` : ''}
+        </div>
+        ${reasonsHtml(j)}
+        ${skillChipsHtml(j)}
+        ${blockerHtml(j)}
+      </div>
+      <div class="job-side">
+        ${relScoreHtml(j)}
+        <span class="source-badge ${sourceBadgeClass(j.source, j.tier)}">${escapeHtml(j.source)}</span>
+        <span class="job-time">${relTime(j.first_seen)}</span>
+        ${also}
+        ${j.url ? `<a class="apply-link" href="${safeHref(j.url)}" target="_blank" rel="noopener noreferrer">Apply →</a>` : ''}
+      </div>
+    </div>
+  `;
+  }
+
   function render() {
     const q = document.getElementById('searchInput').value.trim().toLowerCase();
 
     let jobs = allJobs.filter(j => {
       if (activeSourceFilter && j.source !== activeSourceFilter) return false;
       if (state.hideSenior && j.is_senior) return false;
+      const r = relevanceOf(j);
+      if (state.hideBlocked && r && r.eligible === false) return false;
       if (q) {
         const hay = [j.title, j.company, j.location, j.salary, (j.tags || []).join(' ')]
           .filter(Boolean).join(' ').toLowerCase();
@@ -444,19 +667,52 @@
 
     if (state.sort === 'company') {
       jobs = jobs.slice().sort((a, b) => (a.company || '').localeCompare(b.company || ''));
-    } else if (state.sort === 'score') {
-      jobs = jobs.slice().sort((a, b) => (b.score || 0) - (a.score || 0) || new Date(b.first_seen) - new Date(a.first_seen));
-    } else {
+    } else if (state.sort === 'keyword') {
+      jobs = jobs.slice().sort((a, b) => (b.score || 0) - (a.score || 0));
+    } else if (state.sort === 'new') {
       jobs = jobs.slice().sort((a, b) => new Date(b.first_seen) - new Date(a.first_seen));
+    } else {
+      // relevance: eligible first, then best fit, then newest
+      jobs = jobs.slice().sort((a, b) => {
+        const ra = relevanceOf(a), rb = relevanceOf(b);
+        if (ra && rb && ra.eligible !== rb.eligible) return ra.eligible ? -1 : 1;
+        return (relScoreOf(b) - relScoreOf(a)) || (new Date(b.first_seen) - new Date(a.first_seen));
+      });
     }
 
     const list = document.getElementById('jobList');
     const empty = document.getElementById('emptyState');
     const emptyText = document.getElementById('emptyStateText');
+    const countLabel = document.getElementById('allCount');
+
+    // best bets: the top few eligible jobs, shown expanded at the top so the
+    // first thing on the page is the answer to "what do I apply to today"
+    const eligible = allJobs
+      .filter(j => {
+        const r = relevanceOf(j);
+        if (!r || r.eligible === false) return false;
+        if (state.hideSenior && j.is_senior) return false;
+        if (activeSourceFilter && j.source !== activeSourceFilter) return false;
+        if (q) {
+          const hay = [j.title, j.company, j.location, (j.tags || []).join(' ')]
+            .filter(Boolean).join(' ').toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      })
+      .sort((a, b) => relScoreOf(b) - relScoreOf(a))
+      .slice(0, 5);
+
+    const bets = document.getElementById('bestBets');
+    const betsHead = document.getElementById('bestBetsHead');
+    betsHead.hidden = false;
+    countLabel.textContent = jobs.length ? `${jobs.length} roles` : '';
 
     if (jobs.length === 0) {
       list.innerHTML = '';
       empty.hidden = false;
+      bets.innerHTML = '';
+      betsHead.hidden = true;
       emptyText.textContent = allJobs.length === 0
         ? 'Once the scheduled scan runs for the first time, matching roles will show up here automatically.'
         : 'No roles match the current filters. Try clearing the search or source filter.';
@@ -464,34 +720,14 @@
     }
     empty.hidden = true;
 
-    list.innerHTML = jobs.map(j => {
-      const reasons = (j.match_reasons || []).join(' · ');
-      const score = j.score == null ? '' :
-        `<span class="score-badge ${scoreClass(j.score)}" title="${escapeAttr(reasons)}">${j.score}</span>`;
-      const salary = j.salary ? `<span class="job-salary">${escapeHtml(j.salary)}</span>` : '';
-      const also = (j.also_on || []).length ?
-        `<span class="also-on">also on ${escapeHtml(j.also_on.join(', '))}</span>` : '';
-      return `
-      <div class="job-card ${freshnessClass(j.first_seen)}">
-        <div class="job-main">
-          <p class="job-title">${escapeHtml(j.title)}</p>
-          <div class="job-meta">
-            <span>${escapeHtml(j.company)}</span>
-            ${j.location ? `<span class="dot">·</span><span>${escapeHtml(j.location)}</span>` : ''}
-            ${salary ? `<span class="dot">·</span>${salary}` : ''}
-            ${j.is_senior ? `<span class="senior-flag">senior-leaning</span>` : ''}
-          </div>
-        </div>
-        <div class="job-side">
-          ${score}
-          <span class="source-badge ${sourceBadgeClass(j.source, j.tier)}">${escapeHtml(j.source)}</span>
-          <span class="job-time">${relTime(j.first_seen)}</span>
-          ${also}
-          ${j.url ? `<a class="apply-link" href="${safeHref(j.url)}" target="_blank" rel="noopener noreferrer">Apply →</a>` : ''}
-        </div>
-      </div>
-    `;
-    }).join('');
+    if (eligible.length) {
+      bets.innerHTML = eligible.map(jobCard).join('');
+    } else {
+      bets.innerHTML = '';
+      betsHead.hidden = true;
+    }
+
+    list.innerHTML = jobs.map(jobCard).join('');
   }
 
   function renderSourceChips() {
@@ -535,7 +771,10 @@
       const data = await res.json();
       allJobs = data.jobs || [];
 
-      document.getElementById('statTotal').textContent = allJobs.length;
+      document.getElementById('statEligible').textContent =
+        allJobs.filter(j => { const r = relevanceOf(j); return !r || r.eligible !== false; }).length;
+      document.getElementById('statBlocked').textContent =
+        allJobs.filter(j => { const r = relevanceOf(j); return r && r.eligible === false; }).length;
       const newCount = allJobs.filter(j => {
         const hrs = (Date.now() - new Date(j.first_seen).getTime()) / 3600000;
         return hrs < 24;
@@ -557,11 +796,14 @@
 
     } catch (e) {
       updateStatus(null);
-      document.getElementById('statTotal').textContent = '0';
+      document.getElementById('statEligible').textContent = '0';
+      document.getElementById('statBlocked').textContent = '0';
       document.getElementById('statNew').textContent = '0';
       document.getElementById('emptyStateText').textContent =
         "Couldn't load data yet. If this is a brand-new repo, the first scheduled scan (or a manual run from the Actions tab) needs to finish before this page has anything to show.";
       document.getElementById('jobList').innerHTML = '';
+      document.getElementById('bestBets').innerHTML = '';
+      document.getElementById('bestBetsHead').hidden = true;
       document.getElementById('emptyState').hidden = false;
     }
   }
@@ -571,6 +813,12 @@
   document.getElementById('hideSenior').addEventListener('change', e => {
     state.hideSenior = e.target.checked;
     localStorage.setItem('jf_hideSenior', state.hideSenior ? '1' : '0');
+    render();
+  });
+  document.getElementById('hideBlocked').checked = state.hideBlocked;
+  document.getElementById('hideBlocked').addEventListener('change', e => {
+    state.hideBlocked = e.target.checked;
+    localStorage.setItem('jf_hideBlocked', state.hideBlocked ? '1' : '0');
     render();
   });
   document.getElementById('sortSelect').value = state.sort;

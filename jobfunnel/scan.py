@@ -10,6 +10,7 @@ The order matters:
 
 from __future__ import annotations
 
+import json
 import logging
 import time
 from dataclasses import dataclass, field
@@ -22,6 +23,7 @@ from .dedupe import merge_duplicates
 from .http import Http
 from .matching import RuleSet, evaluate
 from .models import Job, SourceReport
+from .relevance import Profile, rank
 from .sources import ATS_FETCHERS, FEED_FETCHERS
 from .sources.base import coerce_location
 
@@ -117,6 +119,7 @@ def run_scan(
     data_dir: Path,
     only: set[str] | None = None,
     dry_run: bool = False,
+    profile_path: Path | str | None = None,
 ) -> ScanResult:
     t0 = time.monotonic()
     result = ScanResult(dry_run=dry_run)
@@ -172,6 +175,30 @@ def run_scan(
 
     merged, n_merged, id_groups = merge_duplicates(matched)
     result.merged_duplicates = n_merged
+
+    # Relevance runs after keyword matching and dedupe, on the survivors.
+    # Anything blocked here is recorded rather than dropped, so the dashboard
+    # can say "this one is not eligible, and here is why" instead of silently
+    # making it disappear -- a job you were rejected from for a stated reason is
+    # information, and a job that vanished is not.
+    if profile_path is not None:
+        try:
+            profile = Profile.from_dict(json.loads(Path(profile_path).read_text(encoding="utf-8")))
+            for job in merged:
+                # named apart from the keyword `verdict` above: these are two
+                # different scoring systems, and `verdict =` for both would
+                # read as though they were one
+                fit = rank(job, profile, now)
+                job.relevance = {
+                    "score": fit.score,
+                    "eligible": fit.keep,
+                    "reasons": fit.reasons,
+                    "blockers": fit.blockers,
+                    "skill_hits": fit.skill_hits,
+                    "skill_gaps": fit.skill_gaps,
+                }
+        except (OSError, ValueError) as e:
+            log.warning("relevance profile unusable (%s); continuing without it", e)
 
     # first_seen bookkeeping. Every member of a merged group shares the
     # group's earliest stamp, so a job that only exists as a duplicate

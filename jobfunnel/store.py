@@ -51,7 +51,12 @@ def write_json(path: Path, obj: Any) -> None:
 
 
 def write_jobs(path: Path, jobs: list[Job], generated_at: str) -> None:
-    write_json(path, {"generated_at": generated_at, "count": len(jobs), "jobs": [j.to_dict() for j in jobs]})
+    # to_dashboard_dict, not to_dict: the description is a scoring input and
+    # persisting it would grow this committed file every single scan.
+    write_json(
+        path,
+        {"generated_at": generated_at, "count": len(jobs), "jobs": [j.to_dashboard_dict() for j in jobs]},
+    )
 
 
 def write_seen(path: Path, seen: dict[str, str]) -> None:

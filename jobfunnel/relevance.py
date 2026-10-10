@@ -274,12 +274,21 @@ def eligibility(job: Job, profile: Profile, now: datetime | None = None) -> list
         blockers.append("senior title")
 
     # --- stated experience ---
-    span = years_range(text)
-    if span is not None:
-        floor, ceiling = span
-        if floor > profile.max_years:
-            ask = f"{floor}-{ceiling}" if ceiling and ceiling != floor else str(floor)
-            blockers.append(f"asks {ask} years (floor above {profile.max_years})")
+    # A board-published enum beats regexing prose, so it wins when present.
+    # Both agree in the common case; when they disagree the labelled field is
+    # the one the employer's own ATS is screening against.
+    if job.experience_years is not None:
+        if job.experience_years > profile.max_years:
+            blockers.append(
+                f"board-published experience {job.experience_years} yrs (floor above {profile.max_years})"
+            )
+    else:
+        span = years_range(text)
+        if span is not None:
+            floor, ceiling = span
+            if floor > profile.max_years:
+                ask = f"{floor}-{ceiling}" if ceiling and ceiling != floor else str(floor)
+                blockers.append(f"asks {ask} years (floor above {profile.max_years})")
 
     # --- pipeline rather than vacancy ---
     if text:
