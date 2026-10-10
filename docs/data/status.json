@@ -1,113 +1,476 @@
 {
-  "generated_at": "2026-10-10T02:25:02.525853+00:00",
+  "generated_at": "2026-10-10T07:23:09.140244+00:00",
   "sources": [
-    {
-      "source": "Grafana Labs",
-      "ok": true,
-      "count": 106,
-      "error": null
-    },
-    {
-      "source": "Arize AI",
-      "ok": true,
-      "count": 24,
-      "error": null
-    },
-    {
-      "source": "Datadog",
-      "ok": true,
-      "count": 435,
-      "error": null
-    },
-    {
-      "source": "PagerDuty",
-      "ok": true,
-      "count": 51,
-      "error": null
-    },
-    {
-      "source": "Elastic",
-      "ok": true,
-      "count": 409,
-      "error": null
-    },
-    {
-      "source": "BigPanda",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/bigpanda/jobs?content=true"
-    },
-    {
-      "source": "Weights & Biases",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/wandb/jobs?content=true"
-    },
-    {
-      "source": "Fiddler AI",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://boards-api.greenhouse.io/v1/boards/fiddlerlabs/jobs?content=true"
-    },
-    {
-      "source": "WhyLabs",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://api.lever.co/v0/postings/whylabs?mode=json"
-    },
-    {
-      "source": "Evidently AI",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://api.lever.co/v0/postings/evidentlyai?mode=json"
-    },
     {
       "source": "OpenAI",
       "ok": true,
       "count": 815,
-      "error": null
+      "error": null,
+      "duration_ms": 10
     },
     {
       "source": "Anthropic",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/anthropic?includeCompensation=false"
+      "ok": true,
+      "count": 645,
+      "error": null,
+      "duration_ms": 6
     },
     {
       "source": "Scale AI",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://api.ashbyhq.com/posting-api/job-board/scaleai?includeCompensation=false"
+      "ok": true,
+      "count": 183,
+      "error": null,
+      "duration_ms": 50
+    },
+    {
+      "source": "Cohere",
+      "ok": true,
+      "count": 119,
+      "error": null,
+      "duration_ms": 1
     },
     {
       "source": "Perplexity",
       "ok": true,
       "count": 132,
-      "error": null
+      "error": null,
+      "duration_ms": 1
     },
     {
-      "source": "RemoteOK",
+      "source": "Cursor (Anysphere)",
       "ok": true,
-      "count": 99,
-      "error": null
+      "count": 137,
+      "error": null,
+      "duration_ms": 1
     },
     {
-      "source": "weworkremotely (remote-programming-jobs.rss)",
+      "source": "Cognition",
       "ok": true,
-      "count": 25,
-      "error": null
+      "count": 102,
+      "error": null,
+      "duration_ms": 1
     },
     {
-      "source": "weworkremotely (remote-devops-sysadmin-jobs.rss)",
+      "source": "Sierra",
+      "ok": true,
+      "count": 195,
+      "error": null,
+      "duration_ms": 2
+    },
+    {
+      "source": "Harvey",
+      "ok": true,
+      "count": 350,
+      "error": null,
+      "duration_ms": 4
+    },
+    {
+      "source": "Glean",
+      "ok": true,
+      "count": 131,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Character",
+      "ok": true,
+      "count": 13,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Poolside",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Physical Intelligence",
+      "ok": true,
+      "count": 38,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Cartesia",
+      "ok": true,
+      "count": 28,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Deepgram",
+      "ok": true,
+      "count": 92,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "ElevenLabs",
+      "ok": true,
+      "count": 124,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Suno",
+      "ok": true,
+      "count": 73,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Writer",
+      "ok": true,
+      "count": 51,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Synthesia",
+      "ok": true,
+      "count": 46,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Runway",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "HeyGen",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Descript",
+      "ok": true,
+      "count": 11,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Letta",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Arize AI",
+      "ok": true,
+      "count": 24,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Databricks",
+      "ok": true,
+      "count": 892,
+      "error": null,
+      "duration_ms": 9
+    },
+    {
+      "source": "LangChain",
+      "ok": true,
+      "count": 103,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Modal",
+      "ok": true,
+      "count": 41,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Baseten",
+      "ok": true,
+      "count": 110,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Fireworks AI",
+      "ok": true,
+      "count": 85,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Together AI",
+      "ok": true,
+      "count": 80,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Cerebras",
+      "ok": true,
+      "count": 123,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Weaviate",
+      "ok": true,
+      "count": 3,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Pinecone",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Redis",
+      "ok": true,
+      "count": 31,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Confluent",
       "ok": true,
       "count": 17,
-      "error": null
+      "error": null,
+      "duration_ms": 0
     },
     {
-      "source": "remotive (feed)",
-      "ok": false,
-      "count": 0,
-      "error": "404 Client Error: Not Found for url: https://remotive.com/feed"
+      "source": "Temporal",
+      "ok": true,
+      "count": 67,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Supabase",
+      "ok": true,
+      "count": 54,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Stability AI",
+      "ok": true,
+      "count": 6,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "DeepL",
+      "ok": true,
+      "count": 7,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Grafana Labs",
+      "ok": true,
+      "count": 106,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Datadog",
+      "ok": true,
+      "count": 435,
+      "error": null,
+      "duration_ms": 4
+    },
+    {
+      "source": "PagerDuty",
+      "ok": true,
+      "count": 51,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Elastic",
+      "ok": true,
+      "count": 409,
+      "error": null,
+      "duration_ms": 4
+    },
+    {
+      "source": "New Relic",
+      "ok": true,
+      "count": 53,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Honeycomb",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Kentik",
+      "ok": true,
+      "count": 5,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Cloudflare",
+      "ok": true,
+      "count": 424,
+      "error": null,
+      "duration_ms": 4
+    },
+    {
+      "source": "Stripe",
+      "ok": true,
+      "count": 729,
+      "error": null,
+      "duration_ms": 7
+    },
+    {
+      "source": "Vercel",
+      "ok": true,
+      "count": 89,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Figma",
+      "ok": true,
+      "count": 150,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Airtable",
+      "ok": true,
+      "count": 4,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "PlanetScale",
+      "ok": true,
+      "count": 12,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "MongoDB",
+      "ok": true,
+      "count": 392,
+      "error": null,
+      "duration_ms": 7
+    },
+    {
+      "source": "Ramp",
+      "ok": true,
+      "count": 165,
+      "error": null,
+      "duration_ms": 2
+    },
+    {
+      "source": "Linear",
+      "ok": true,
+      "count": 31,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Notion",
+      "ok": true,
+      "count": 132,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "Thales",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Channable",
+      "ok": true,
+      "count": 10,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "OneDome",
+      "ok": true,
+      "count": 24,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Personio",
+      "ok": true,
+      "count": 1,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "Celus",
+      "ok": true,
+      "count": 2,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "remoteok",
+      "ok": true,
+      "count": 99,
+      "error": null,
+      "duration_ms": 1
+    },
+    {
+      "source": "remotive [{'category': 'software-dev'}]",
+      "ok": true,
+      "count": 17,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "himalayas",
+      "ok": true,
+      "count": 20,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "workingnomads",
+      "ok": true,
+      "count": 54,
+      "error": null,
+      "duration_ms": 0
+    },
+    {
+      "source": "hn_whoshiring [{'threads': 1}]",
+      "ok": true,
+      "count": 226,
+      "error": null,
+      "duration_ms": 21
+    },
+    {
+      "source": "weworkremotely",
+      "ok": true,
+      "count": 42,
+      "error": null,
+      "duration_ms": 3
     }
-  ]
+  ],
+  "filtered_out": 8645,
+  "merged_duplicates": 3
 }

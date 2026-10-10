@@ -1,0 +1,447 @@
+{
+  "offers": [
+    {
+      "position": 619,
+      "max_hours": 40,
+      "education_code": "bachelor_degree",
+      "options_photo": "off",
+      "postal_code": "3512 HL",
+      "country": "Netherlands",
+      "sharing_image": null,
+      "location_question_visible": false,
+      "sharing_description": "About the role We are looking for a true hiring partner for our operations and commercial teams. Culture is critical for our success and you will help shape it. Do you enjoy building strong partnershi",
+      "state_code": "UT",
+      "locations_question": "What is your preferred work location?",
+      "min_hours": 32,
+      "open_questions": [
+        {
+          "id": 4425941,
+          "position": 1,
+          "options": {},
+          "required": true,
+          "body": "How did you find out about Channable?",
+          "kind": "string",
+          "translations": {
+            "en": {
+              "body": "How did you find out about Channable?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4425942,
+          "position": 2,
+          "options": {},
+          "required": true,
+          "body": "Do you have EU citizenship or a valid work permit for the Netherlands? Or do you need sponsorship from us?",
+          "kind": "single_choice",
+          "translations": {
+            "en": {
+              "body": "Do you have EU citizenship or a valid work permit for the Netherlands? Or do you need sponsorship from us?"
+            }
+          },
+          "open_question_options": [
+            {
+              "id": 6816758,
+              "position": 0,
+              "body": "EU citizenship ",
+              "translations": {
+                "en": {
+                  "body": "EU citizenship "
+                }
+              }
+            },
+            {
+              "id": 6816759,
+              "position": 1,
+              "body": "Valid work permit",
+              "translations": {
+                "en": {
+                  "body": "Valid work permit"
+                }
+              }
+            },
+            {
+              "id": 6816760,
+              "position": 2,
+              "body": "I need sponsorship",
+              "translations": {
+                "en": {
+                  "body": "I need sponsorship"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "id": 4425943,
+          "position": 3,
+          "options": {},
+          "required": true,
+          "body": "Where do you live? (City)",
+          "kind": "string",
+          "translations": {
+            "en": {
+              "body": "Where do you live? (City)"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4425944,
+          "position": 4,
+          "options": {
+            "length": 120
+          },
+          "required": true,
+          "body": "Are you willing and able to work from our Utrecht office at least 2 days per week?",
+          "kind": "boolean",
+          "translations": {
+            "en": {
+              "body": "Are you willing and able to work from our Utrecht office at least 2 days per week?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4425945,
+          "position": 5,
+          "options": {},
+          "required": true,
+          "body": "How many hours per week are you available to work?",
+          "kind": "string",
+          "translations": {
+            "en": {
+              "body": "How many hours per week are you available to work?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4426021,
+          "position": 6,
+          "options": {},
+          "required": true,
+          "body": "Are you comfortable with the salary range for this role?",
+          "kind": "boolean",
+          "translations": {
+            "en": {
+              "body": "Are you comfortable with the salary range for this role?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4425946,
+          "position": 7,
+          "options": {},
+          "required": true,
+          "body": "Which one of our company values resonates the most with you and why?",
+          "kind": "string",
+          "translations": {
+            "en": {
+              "body": "Which one of our company values resonates the most with you and why?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4425947,
+          "position": 8,
+          "options": {
+            "length": 120
+          },
+          "required": true,
+          "body": "Can you please attach your motivational letter?",
+          "kind": "file",
+          "translations": {
+            "en": {
+              "body": "Can you please attach your motivational letter?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4425948,
+          "position": 9,
+          "options": {
+            "length": 120
+          },
+          "required": true,
+          "body": "A motivation letter is not required; instead, take this chance to introduce yourself! Please record a short video (max. 3 minutes) telling us about yourself and what motivates you to join both Channable and the People team within this role. It's your opportunity to leave a lasting impression! \n",
+          "kind": "video",
+          "translations": {
+            "en": {
+              "body": "A motivation letter is not required; instead, take this chance to introduce yourself! Please record a short video (max. 3 minutes) telling us about yourself and what motivates you to join both Channable and the People team within this role. It's your opportunity to leave a lasting impression! \n"
+            }
+          },
+          "open_question_options": []
+        }
+      ],
+      "country_code": "NL",
+      "options_cv": "required",
+      "min_hours_per_week": "32",
+      "sharing_title": "Talent Acquisition Partner",
+      "careers_apply_url": "https://jobs.channable.com/o/talent-acquisition-partner/c/new",
+      "guid": "73yvw",
+      "cover_image": null,
+      "updated_at": "2026-10-09 08:34:35 UTC",
+      "hybrid": true,
+      "locations_question_required": true,
+      "slug": "talent-acquisition-partner",
+      "tags": [],
+      "on_site": false,
+      "options_phone": "required",
+      "salary": {
+        "max": "5000",
+        "min": "4250",
+        "period": "month",
+        "currency": "EUR"
+      },
+      "company_name": "Channable",
+      "description": "<p><strong><span style=\"color:#000000\">About the role&nbsp;</span></strong></p><p><span style=\"color:#000000\">We are looking for a true hiring partner for our operations and commercial teams. Culture ...",
+      "max_hours_per_week": "40",
+      "category_code": "recruitment_hr",
+      "created_at": "2026-10-06 13:46:11 UTC",
+      "remote": false,
+      "close_at": null,
+      "dynamic_fields": [],
+      "careers_url": "https://jobs.channable.com/o/talent-acquisition-partner",
+      "highlight": null,
+      "city": "Utrecht",
+      "id": 2773400,
+      "options_cover_letter": "optional",
+      "mailbox_email": "job.73yvw@channable.recruitee.com",
+      "locations": [
+        {
+          "id": 64463,
+          "name": "Utrecht",
+          "state": "Utrecht",
+          "country": "Netherlands",
+          "city": "Utrecht",
+          "translations": {
+            "en": {
+              "name": "Utrecht",
+              "city": "Utrecht",
+              "postal_code": "3512 HL",
+              "street": "Kromme Nieuwegracht 66",
+              "note": null
+            }
+          },
+          "country_code": "NL",
+          "state_code": "UT",
+          "postal_code": "3512 HL",
+          "street": "Kromme Nieuwegracht 66",
+          "note": null
+        }
+      ],
+      "options_salutation": "off",
+      "published_at": "2026-10-08 08:03:01 UTC",
+      "experience_code": "mid_level",
+      "location": "Utrecht, Utrecht, Netherlands",
+      "employment_type_code": "fulltime_permanent",
+      "options_title": "off",
+      "locations_question_type": "multiple_choice",
+      "translations": {
+        "en": {
+          "description": "<p><strong><span style=\"color:#000000\">About the role&nbsp;</span></strong></p><p><span style=\"color:#000000\">We are looking for a true hiring partner for our operations and commercial teams. Culture ...",
+          "title": "Talent Acquisition Partner",
+          "highlight": null,
+          "requirements": "<p><strong><span style=\"color:#000000\">About you&nbsp;</span></strong></p><p><span style=\"color:#000000\">You take pride in the quality of your work and care deeply about the candidate experience. You ...",
+          "sharing_image": null,
+          "sharing_title": "Talent Acquisition Partner",
+          "sharing_description": "About the role We are looking for a true hiring partner for our operations and commercial teams. Culture is critical for our success and you will help shape it. Do you enjoy building strong partnershi",
+          "locations_question": "What is your preferred work location?"
+        }
+      },
+      "requirements": "<p><strong><span style=\"color:#000000\">About you&nbsp;</span></strong></p><p><span style=\"color:#000000\">You take pride in the quality of your work and care deeply about the candidate experience. You ...",
+      "status": "published",
+      "title": "Talent Acquisition Partner",
+      "department": "Operations",
+      "state_name": "Utrecht"
+    },
+    {
+      "position": 618,
+      "max_hours": 40,
+      "education_code": "bachelor_degree",
+      "options_photo": "off",
+      "postal_code": "3512 HL",
+      "country": "Netherlands",
+      "sharing_image": null,
+      "location_question_visible": false,
+      "sharing_description": "Do you speak French fluently and are you passionate about solving complex problems for a diverse range of customers? Do you want to help ecommerce businesses grow by delivering high-quality technical ",
+      "state_code": "UT",
+      "locations_question": "What is your preferred work location?",
+      "min_hours": 32,
+      "open_questions": [
+        {
+          "id": 4414848,
+          "position": 1,
+          "options": {},
+          "required": true,
+          "body": "Do you speak the French language on a C2 (Native Proficiency)level?",
+          "kind": "boolean",
+          "translations": {
+            "en": {
+              "body": "Do you speak the French language on a C2 (Native Proficiency)level?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4414849,
+          "position": 2,
+          "options": {},
+          "required": true,
+          "body": "How did you find out about Channable?",
+          "kind": "string",
+          "translations": {
+            "en": {
+              "body": "How did you find out about Channable?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4414850,
+          "position": 3,
+          "options": {},
+          "required": true,
+          "body": "Where do you live (City &amp; Country)?",
+          "kind": "string",
+          "translations": {
+            "en": {
+              "body": "Where do you live (City &amp; Country)?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4414851,
+          "position": 4,
+          "options": {},
+          "required": true,
+          "body": "Are you willing and able to work from out Utrecht office at least 2 days per week?",
+          "kind": "boolean",
+          "translations": {
+            "en": {
+              "body": "Are you willing and able to work from out Utrecht office at least 2 days per week?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4414852,
+          "position": 5,
+          "options": {},
+          "required": true,
+          "body": "How many hours a week are you available to work?",
+          "kind": "string",
+          "translations": {
+            "en": {
+              "body": "How many hours a week are you available to work?"
+            }
+          },
+          "open_question_options": []
+        },
+        {
+          "id": 4414854,
+          "position": 6,
+          "options": {
+            "length": 120
+          },
+          "required": true,
+          "body": "No motivation letter is required; instead, please take your chance to introduce yourself to us (max. 3 mins). We require this as past of the application. ",
+          "kind": "video",
+          "translations": {
+            "en": {
+              "body": "No motivation letter is required; instead, please take your chance to introduce yourself to us (max. 3 mins). We require this as past of the application. "
+            }
+          },
+          "open_question_options": []
+        }
+      ],
+      "country_code": "NL",
+      "options_cv": "required",
+      "min_hours_per_week": "32",
+      "sharing_title": "Technical Customer Support - French Speaking",
+      "careers_apply_url": "https://jobs.channable.com/o/technical-customer-support-french-speaking-1/c/new",
+      "guid": "1hppw",
+      "cover_image": null,
+      "updated_at": "2026-10-05 13:40:02 UTC",
+      "hybrid": true,
+      "locations_question_required": true,
+      "slug": "technical-customer-support-french-speaking-1",
+      "tags": [],
+      "on_site": false,
+      "options_phone": "required",
+      "salary": {
+        "max": "2950",
+        "min": "2850",
+        "period": "month",
+        "currency": "EUR"
+      },
+      "company_name": "Channable",
+      "description": "<p><span style=\"color:#000000\">Do you speak French fluently and are you passionate about solving complex problems for a diverse range of customers? Do you want to help ecommerce businesses grow by del...",
+      "max_hours_per_week": "40",
+      "category_code": "customer_service",
+      "created_at": "2026-10-05 07:28:09 UTC",
+      "remote": false,
+      "close_at": null,
+      "dynamic_fields": [],
+      "careers_url": "https://jobs.channable.com/o/technical-customer-support-french-speaking-1",
+      "highlight": null,
+      "city": "Utrecht",
+      "id": 2770498,
+      "options_cover_letter": "optional",
+      "mailbox_email": "job.1hppw@channable.recruitee.com",
+      "locations": [
+        {
+          "id": 64463,
+          "name": "Utrecht",
+          "state": "Utrecht",
+          "country": "Netherlands",
+          "city": "Utrecht",
+          "translations": {
+            "en": {
+              "name": "Utrecht",
+              "city": "Utrecht",
+              "postal_code": "3512 HL",
+              "street": "Kromme Nieuwegracht 66",
+              "note": null
+            }
+          },
+          "country_code": "NL",
+          "state_code": "UT",
+          "postal_code": "3512 HL",
+          "street": "Kromme Nieuwegracht 66",
+          "note": null
+        }
+      ],
+      "options_salutation": "off",
+      "published_at": "2026-10-05 13:40:02 UTC",
+      "experience_code": "entry_level",
+      "location": "Utrecht, Utrecht, Netherlands",
+      "employment_type_code": "fulltime_permanent",
+      "options_title": "off",
+      "locations_question_type": "multiple_choice",
+      "translations": {
+        "en": {
+          "description": "<p><span style=\"color:#000000\">Do you speak French fluently and are you passionate about solving complex problems for a diverse range of customers? Do you want to help ecommerce businesses grow by del...",
+          "title": "Technical Customer Support - French Speaking",
+          "highlight": null,
+          "requirements": "<h4 style=\"text-align:start;\"><strong><span style=\"color:#000000\">Your challenges</span></strong></h4><p><span style=\"color:#000000\">Channable is a powerful, flexible tool with a wide range of feature...",
+          "sharing_image": null,
+          "sharing_title": "Technical Customer Support - French Speaking",
+          "sharing_description": "Do you speak French fluently and are you passionate about solving complex problems for a diverse range of customers? Do you want to help ecommerce businesses grow by delivering high-quality technical ",
+          "locations_question": "What is your preferred work location?"
+        }
+      },
+      "requirements": "<h4 style=\"text-align:start;\"><strong><span style=\"color:#000000\">Your challenges</span></strong></h4><p><span style=\"color:#000000\">Channable is a powerful, flexible tool with a wide range of feature...",
+      "status": "published",
+      "title": "Technical Customer Support - French Speaking",
+      "department": "Support",
+      "state_name": "Utrecht"
+    }
+  ]
+}

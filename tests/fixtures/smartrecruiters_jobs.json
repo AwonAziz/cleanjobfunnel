@@ -1,0 +1,130 @@
+{
+  "content": [
+    {
+      "id": "743999690614888",
+      "name": "THALES DEFENCE TALENT PROGRAMME 2019/20",
+      "uuid": "cc9e17fb-91db-490c-84f4-9fa8596969e2",
+      "jobAdId": "19311b4f-7c6b-44be-90d0-6f981acfb49c",
+      "defaultJobAd": true,
+      "refNumber": "REF3W",
+      "company": {
+        "identifier": "Thales",
+        "name": "Thales"
+      },
+      "releasedDate": "2019-06-28T09:05:33.000Z",
+      "location": {
+        "city": "Leganés",
+        "region": "Comunidad de Madrid",
+        "country": "es",
+        "address": "Calle Diego Marin Aguilera",
+        "postalCode": "28919",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.35614959999999",
+        "longitude": "-3.7444818999999825",
+        "fullLocation": "Leganés, Comunidad de Madrid, Spain"
+      },
+      "industry": {
+        "id": "defense_and_space",
+        "label": "Defense And Space"
+      },
+      "department": {},
+      "function": {
+        "id": "other",
+        "label": "Other"
+      },
+      "typeOfEmployment": {
+        "id": "permanent",
+        "label": "Full-time"
+      },
+      "experienceLevel": {
+        "id": "internship",
+        "label": "Internship"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "es",
+          "valueLabel": "Spain"
+        },
+        {
+          "fieldId": "5d15ceaf40a0ea68628a01b8",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "Thales"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/thales/postings/743999690614888",
+      "language": {
+        "code": "es",
+        "label": "Spanish",
+        "labelNative": "español"
+      }
+    },
+    {
+      "id": "743999690613683",
+      "name": "THALES RAILWAY TALENT PROGRAMME 2019/20",
+      "uuid": "4cbcb3c7-696b-4750-9125-926670bbf093",
+      "jobAdId": "07b03bc9-9a21-4e45-92da-bbd3a6fe8e7c",
+      "defaultJobAd": true,
+      "refNumber": "REF2D",
+      "company": {
+        "identifier": "Thales",
+        "name": "Thales"
+      },
+      "releasedDate": "2019-06-28T08:28:47.000Z",
+      "location": {
+        "city": "Madrid",
+        "region": "Comunidad de Madrid",
+        "country": "es",
+        "address": "Calle de Serrano Galvache 56",
+        "postalCode": "28033",
+        "remote": false,
+        "hybrid": false,
+        "latitude": "40.47623129999999",
+        "longitude": "-3.67199770000002",
+        "fullLocation": "Madrid, Comunidad de Madrid, Spain"
+      },
+      "industry": {
+        "id": "transportation_trucking_railroad",
+        "label": "Transportation/Trucking/Railroad"
+      },
+      "department": {},
+      "function": {
+        "id": "other",
+        "label": "Other"
+      },
+      "typeOfEmployment": {
+        "id": "permanent",
+        "label": "Full-time"
+      },
+      "experienceLevel": {
+        "id": "internship",
+        "label": "Internship"
+      },
+      "customField": [
+        {
+          "fieldId": "COUNTRY",
+          "fieldLabel": "Country/Region",
+          "valueId": "es",
+          "valueLabel": "Spain"
+        },
+        {
+          "fieldId": "5d15ceaf40a0ea68628a01b8",
+          "fieldLabel": "Brands",
+          "valueId": "default",
+          "valueLabel": "Thales"
+        }
+      ],
+      "visibility": "PUBLIC",
+      "ref": "https://api.smartrecruiters.com/v1/companies/thales/postings/743999690613683",
+      "language": {
+        "code": "es",
+        "label": "Spanish",
+        "labelNative": "español"
+      }
+    }
+  ]
+}

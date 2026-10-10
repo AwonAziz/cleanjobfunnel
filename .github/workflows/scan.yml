@@ -22,11 +22,22 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Cache HTTP responses (ETag-aware)
+        uses: actions/cache@v4
+        with:
+          path: .cache/http
+          # stable key: every run replaces this entry instead of orphaning
+          # a full copy of every response body every 20 minutes
+          key: http-${{ github.ref_name }}-${{ hashFiles('config/companies.json') }}
+          restore-keys: |
+            http-${{ github.ref_name }}-
+            http-
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Run scan
-        run: python scripts/fetch_jobs.py
+        run: python -m jobfunnel scan
 
       - name: Commit updated data
         run: |

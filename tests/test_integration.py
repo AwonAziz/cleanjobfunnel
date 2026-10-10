@@ -1,129 +1,269 @@
-#!/usr/bin/env python3
-"""
-Integration smoke test for main(): runs the real orchestration (filter,
-dedupe, first_seen tracking, seen.json pruning, the all-failed safety
-net) against mocked network calls, in an isolated temp directory so it
-never touches the real config/docs. Run with: python3 tests/test_integration.py
+"""Integration tests: the whole pipeline through scan.run_scan.
+
+Runs the real orchestration (fetch -> match -> merge -> first_seen
+bookkeeping -> files) against mocked network calls in a temp directory,
+so the real config/docs are never touched.
 """
 
-import sys
+from __future__ import annotations
+
 import json
-import shutil
-import tempfile
 from pathlib import Path
-from unittest.mock import patch, MagicMock
 
-sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
-import fetch_jobs as fj  # noqa: E402
+from jobfunnel.config import Config
+from jobfunnel.scan import run_scan
 
-passed = 0
-failed = 0
+from .conftest import FakeHttp, feeds_only
 
-
-def check(label, condition):
-    global passed, failed
-    if condition:
-        passed += 1
-        print(f"  ok   {label}")
-    else:
-        failed += 1
-        print(f"  FAIL {label}")
-
-
-def fake_response(json_body=None, content_bytes=None):
-    resp = MagicMock()
-    resp.raise_for_status = MagicMock()
-    if json_body is not None:
-        resp.json.return_value = json_body
-    if content_bytes is not None:
-        resp.content = content_bytes
-    return resp
-
-
-GH_JOB = {"jobs": [{"id": 1, "title": "MLOps Engineer I", "location": {"name": "Remote"},
-                     "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/1",
-                     "first_published": "2026-08-15T00:00:00Z"}]}
+GH_JOB = {
+    "jobs": [
+        {
+            "id": 1,
+            "title": "MLOps Engineer",
+            "location": {"name": "Remote"},
+            "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/1",
+            "first_published": "2026-10-01T00:00:00Z",
+        }
+    ]
+}
 LEVER_EMPTY = []
-ASHBY_EMPTY = {"jobs": []}
-SR_EMPTY = {"content": []}
+REMOTEOK = [
+    {"legal": "n/a"},
+    {
+        "id": "rk1",
+        "position": "MLOps Engineer",
+        "company": "acme",
+        "location": "Worldwide",
+        "url": "https://remoteok.com/remote-jobs/acme-mlops-1",
+        "date": "2026-10-02T00:00:00Z",
+    },
+]
 REMOTEOK_EMPTY = [{"legal": "n/a"}]
-RSS_EMPTY = b"<?xml version='1.0'?><rss><channel></channel></rss>"
 
 
-def router(url, **kwargs):
-    if "greenhouse" in url:
-        return fake_response(json_body=GH_JOB)
-    if "lever" in url:
-        return fake_response(json_body=LEVER_EMPTY)
-    if "ashby" in url:
-        return fake_response(json_body=ASHBY_EMPTY)
-    if "smartrecruiters" in url:
-        return fake_response(json_body=SR_EMPTY)
-    if "remoteok" in url:
-        return fake_response(json_body=REMOTEOK_EMPTY)
-    return fake_response(content_bytes=RSS_EMPTY)
+def routes(gh=GH_JOB, remoteok=REMOTEOK):
+    return {
+        "boards-api.greenhouse.io": gh,
+        "api.lever.co": LEVER_EMPTY,
+        "remoteok.com/api": remoteok,
+    }
 
 
-tmp = Path(tempfile.mkdtemp())
-try:
-    (tmp / "config").mkdir()
-    (tmp / "docs" / "data").mkdir(parents=True)
-    (tmp / "config" / "companies.json").write_text(json.dumps({
-        "companies": [{"name": "Acme", "ats": "greenhouse", "token": "acme", "group": "aiops"}],
-        "role_keywords": ["MLOps", "AI Engineer"],
-        "location_allow": ["remote"],
-        "seniority_flags": ["Senior", "Staff"],
-    }))
+CONFIG = {
+    "companies": [
+        {"name": "Acme", "ats": "greenhouse", "token": "acme", "group": "aiops", "verified": True},
+        {"name": "Beta", "ats": "lever", "token": "beta", "group": None},
+    ],
+    "role_keywords": ["MLOps", "AI Engineer"],
+    "location_allow": ["remote", "worldwide"],
+    "location_exclude": [],
+    "seniority_flags": ["Senior", "Staff"],
+    "exclude_keywords": ["intern", "internship"],
+    "synonyms": {"MLOps": ["Machine Learning Operations"]},
+    "feeds": feeds_only("remoteok"),
+}
 
-    fj.CONFIG_PATH = tmp / "config" / "companies.json"
-    fj.DATA_DIR = tmp / "docs" / "data"
-    fj.JOBS_PATH = fj.DATA_DIR / "jobs.json"
-    fj.SEEN_PATH = fj.DATA_DIR / "seen.json"
-    fj.STATUS_PATH = fj.DATA_DIR / "status.json"
-    fj.RSS_FEEDS = [{"name": "weworkremotely", "url": "https://weworkremotely.com/x.rss"}]
 
-    print("run 1 (cold start)")
-    with patch.object(fj.requests, "get", side_effect=router), patch.object(fj.time, "sleep"):
-        fj.main()
+def make_config(**overrides):
+    raw = json.loads(json.dumps(CONFIG))
+    raw.update(overrides)
+    return Config.from_dict(
+        raw,
+        known_ats={"greenhouse", "lever"},
+        known_feeds={"remoteok", "remotive", "himalayas", "workingnomads", "hn_whoshiring", "weworkremotely"},
+    )
 
-    jobs1 = json.loads(fj.JOBS_PATH.read_text())
-    seen1 = json.loads(fj.SEEN_PATH.read_text())
-    check("jobs.json has 1 matching job", jobs1["count"] == 1)
-    check("first_seen was stamped", jobs1["jobs"][0]["first_seen"] == seen1[jobs1["jobs"][0]["id"]])
-    first_seen_run1 = jobs1["jobs"][0]["first_seen"]
 
-    print("run 2 (same job reappears -- first_seen must NOT reset)")
-    with patch.object(fj.requests, "get", side_effect=router), patch.object(fj.time, "sleep"):
-        fj.main()
-    jobs2 = json.loads(fj.JOBS_PATH.read_text())
-    check("still 1 job", jobs2["count"] == 1)
-    check("first_seen persisted across runs", jobs2["jobs"][0]["first_seen"] == first_seen_run1)
+def read(path: Path):
+    return json.loads(path.read_text(encoding="utf-8"))
 
-    print("run 3 (job disappears from source -- seen.json should prune it)")
-    def router_empty(url, **kwargs):
-        if "greenhouse" in url:
-            return fake_response(json_body={"jobs": []})
-        return router(url, **kwargs)
-    with patch.object(fj.requests, "get", side_effect=router_empty), patch.object(fj.time, "sleep"):
-        fj.main()
-    jobs3 = json.loads(fj.JOBS_PATH.read_text())
-    seen3 = json.loads(fj.SEEN_PATH.read_text())
-    check("job dropped from jobs.json once no longer posted", jobs3["count"] == 0)
-    check("seen.json pruned the stale id", len(seen3) == 0)
 
-    print("run 4 (every single source fails -- must NOT wipe previous jobs.json)")
-    # first restore a job so there's something to protect
-    with patch.object(fj.requests, "get", side_effect=router), patch.object(fj.time, "sleep"):
-        fj.main()
-    before = fj.JOBS_PATH.read_text()
-    with patch.object(fj.requests, "get", side_effect=fj.requests.RequestException("network down")), patch.object(fj.time, "sleep"):
-        fj.main()
-    after = fj.JOBS_PATH.read_text()
-    check("jobs.json untouched when all sources fail", before == after)
-    check("status.json still records the failure", "Every source failed" in fj.STATUS_PATH.read_text())
+def test_full_run_writes_expected_files(tmp_data_dir):
+    result = run_scan(FakeHttp(routes()), make_config(), tmp_data_dir)
+    assert result.fetched == 2  # 1 greenhouse + 1 remoteok (lever board is empty)
+    # remoteok copy of the Acme job merges with the greenhouse copy
+    assert result.merged_duplicates == 1
+    assert len(result.jobs) == 1
+    job = result.jobs[0]
+    assert job.source == "greenhouse" and job.also_on == ["remoteok"]
+    assert job.score > 0 and job.match_reasons
+    assert job.first_seen is not None
 
-finally:
-    shutil.rmtree(tmp, ignore_errors=True)
+    data = read(tmp_data_dir / "jobs.json")
+    assert data["count"] == 1
+    assert data["jobs"][0]["title"] == "MLOps Engineer"
+    assert "score" in data["jobs"][0] and "match_reasons" in data["jobs"][0]
 
-print(f"\n{passed} passed, {failed} failed")
-sys.exit(1 if failed else 0)
+    status = read(tmp_data_dir / "status.json")
+    assert status["merged_duplicates"] == 1
+    assert len(status["sources"]) == 3
+    assert all(s["ok"] for s in status["sources"])
+
+    seen = read(tmp_data_dir / "seen.json")
+    # both ids of the merged group stay alive, sharing the group's earliest stamp
+    assert len(seen) == 2
+    assert set(seen.values()) == {job.first_seen}
+    assert job.id in seen
+
+
+def test_first_seen_persists_across_runs(tmp_data_dir):
+    run_scan(FakeHttp(routes()), make_config(), tmp_data_dir)
+    seen1 = read(tmp_data_dir / "seen.json")
+
+    run_scan(FakeHttp(routes()), make_config(), tmp_data_dir)
+    seen2 = read(tmp_data_dir / "seen.json")
+    assert seen1 == seen2  # first_seen must NOT reset for a job that reappears
+
+
+def test_stale_ids_pruned_from_seen(tmp_data_dir):
+    run_scan(FakeHttp(routes()), make_config(), tmp_data_dir)
+    assert len(read(tmp_data_dir / "seen.json")) == 2  # both ids of the merged group
+
+    # job disappears from every source -> dropped from jobs.json + seen.json
+    run_scan(FakeHttp(routes(gh={"jobs": []}, remoteok=REMOTEOK_EMPTY)), make_config(), tmp_data_dir)
+    assert read(tmp_data_dir / "jobs.json")["count"] == 0
+    assert read(tmp_data_dir / "seen.json") == {}
+
+
+def test_all_sources_failed_keeps_previous_jobs(tmp_data_dir):
+    run_scan(FakeHttp(routes()), make_config(), tmp_data_dir)
+    before = (tmp_data_dir / "jobs.json").read_text(encoding="utf-8")
+
+    dead = FakeHttp({}, error=RuntimeError("network down"))
+    result = run_scan(dead, make_config(), tmp_data_dir)
+    assert result.all_failed
+    assert result.jobs == []
+    assert (tmp_data_dir / "jobs.json").read_text(encoding="utf-8") == before
+    assert "Every source failed" in read(tmp_data_dir / "status.json")["note"]
+
+
+def test_dry_run_writes_nothing(tmp_data_dir):
+    result = run_scan(FakeHttp(routes()), make_config(), tmp_data_dir, dry_run=True)
+    assert len(result.jobs) == 1
+    assert not (tmp_data_dir / "jobs.json").exists()
+    assert not (tmp_data_dir / "status.json").exists()
+
+
+def test_only_filters_sources(tmp_data_dir):
+    result = run_scan(FakeHttp(routes()), make_config(), tmp_data_dir, only={"remoteok"})
+    # remoteok alone: the single job still matches keywords
+    assert result.total_sources == 1
+    assert len(result.jobs) == 1
+    assert result.jobs[0].source == "remoteok"
+
+
+def test_keyword_filtering_and_reasons(tmp_data_dir):
+    gh = {
+        "jobs": [
+            {
+                "id": 1,
+                "title": "MLOps Engineer",
+                "location": {"name": "Remote"},
+                "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/1",
+                "first_published": "2026-10-01T00:00:00Z",
+            },
+            {
+                "id": 2,
+                "title": "Account Executive",
+                "location": {"name": "Remote"},
+                "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/2",
+                "first_published": "2026-10-01T00:00:00Z",
+            },
+            {
+                "id": 3,
+                "title": "MLOps Internship",
+                "location": {"name": "Remote"},
+                "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/3",
+                "first_published": "2026-10-01T00:00:00Z",
+            },
+        ]
+    }
+    result = run_scan(FakeHttp(routes(gh=gh, remoteok=REMOTEOK_EMPTY)), make_config(), tmp_data_dir)
+    titles = [j.title for j in result.jobs]
+    assert titles == ["MLOps Engineer"]
+    assert result.filtered_out == 2  # keyword miss + excluded internship
+    assert any("direct from company board" in r for r in result.jobs[0].match_reasons)
+
+
+def test_score_orders_results(tmp_data_dir):
+    gh = {
+        "jobs": [
+            {
+                "id": 1,
+                "title": "MLOps Engineer",
+                "location": {"name": "New York"},
+                "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/1",
+                "first_published": "2026-10-01T00:00:00Z",
+            },
+            {
+                "id": 2,
+                "title": "Machine Learning Operations Engineer",
+                "location": {"name": "Remote - EMEA"},
+                "absolute_url": "https://job-boards.greenhouse.io/acme/jobs/2",
+                "first_published": "2026-10-09T00:00:00Z",
+            },
+        ]
+    }
+    # widen the config so the New York job survives: allow everything, exclude nothing
+    cfg = make_config(location_allow=[], location_exclude=[])
+    result = run_scan(FakeHttp(routes(gh=gh, remoteok=REMOTEOK_EMPTY)), cfg, tmp_data_dir)
+    assert len(result.jobs) == 2
+    # fresh + remote + synonym title scores highest
+    assert result.jobs[0].title == "Machine Learning Operations Engineer"
+    assert result.jobs[0].score > result.jobs[1].score
+    assert result.jobs[0].score >= result.jobs[1].score
+
+
+def test_one_bad_board_does_not_kill_scan(tmp_data_dir):
+    class MixedHttp(FakeHttp):
+        def get_json(self, url, params=None):
+            self.calls.append(url)
+            if "lever" in url:
+                raise RuntimeError("lever board moved")
+            return super().get_json(url, params)
+
+    result = run_scan(MixedHttp(routes()), make_config(), tmp_data_dir)
+    assert any(not s.ok for s in result.reports)
+    assert len(result.jobs) == 1
+    assert result.merged_duplicates == 1
+
+
+def test_first_seen_survives_aggregator_to_board_flip(tmp_data_dir):
+    """A job that flips between aggregator-only and board+aggregator must
+    keep its original first_seen (the merged group's earliest stamp)."""
+    # run 1: aggregator only -> id A stamped
+    result1 = run_scan(FakeHttp(routes(gh={"jobs": []})), make_config(), tmp_data_dir)
+    assert len(result1.jobs) == 1 and result1.jobs[0].source == "remoteok"
+    stamp = result1.jobs[0].first_seen
+
+    # run 2: the company board appears, the two copies merge, board wins
+    result2 = run_scan(FakeHttp(routes()), make_config(), tmp_data_dir)
+    assert len(result2.jobs) == 1 and result2.jobs[0].source == "greenhouse"
+    assert result2.jobs[0].first_seen == stamp
+
+    # run 3: the board disappears again -> the aggregator id must NOT be new
+    seen_between = read(tmp_data_dir / "seen.json")
+    assert list(seen_between.values()) == [stamp] * 2  # both group members kept
+    result3 = run_scan(FakeHttp(routes(gh={"jobs": []})), make_config(), tmp_data_dir)
+    assert result3.jobs[0].first_seen == stamp
+
+
+def test_only_scan_writes_nothing(tmp_data_dir):
+    # seed the canonical data first
+    run_scan(FakeHttp(routes()), make_config(), tmp_data_dir)
+    before = (tmp_data_dir / "jobs.json").read_text(encoding="utf-8")
+    seen_before = (tmp_data_dir / "seen.json").read_text(encoding="utf-8")
+
+    result = run_scan(FakeHttp(routes()), make_config(), tmp_data_dir, only={"remoteok"})
+    assert result.persisted is False
+    assert len(result.jobs) == 1
+    # canonical data untouched - including everyone's first_seen history
+    assert (tmp_data_dir / "jobs.json").read_text(encoding="utf-8") == before
+    assert (tmp_data_dir / "seen.json").read_text(encoding="utf-8") == seen_before
+
+
+def test_only_typo_reports_nothing_selected(tmp_data_dir):
+    result = run_scan(FakeHttp(routes()), make_config(), tmp_data_dir, only={"nope"})
+    assert result.nothing_selected
+    assert result.total_sources == 0
+    assert not (tmp_data_dir / "jobs.json").exists()

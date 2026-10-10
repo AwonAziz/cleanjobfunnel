@@ -1,0 +1,94 @@
+[
+  {
+    "id": "2e60ef7a487e01",
+    "friendly_id": "2e60ef7a487e01-applied-sea-brokers",
+    "name": "Applied - SEA Brokers",
+    "url": "https://onedome.breezy.hr/p/2e60ef7a487e01-applied-sea-brokers",
+    "published_date": "2026-03-26T12:58:31.831Z",
+    "type": {
+      "id": "fullTime",
+      "name": "Full-Time"
+    },
+    "location": {
+      "country": {
+        "name": "United Kingdom",
+        "id": "GB"
+      },
+      "primary": true,
+      "is_remote": true,
+      "remote_details": {
+        "value": "remote",
+        "label": "Fully remote, no location restrictions"
+      },
+      "name": "United Kingdom",
+      "id": "522bb5df8335"
+    },
+    "department": null,
+    "salary": "£100,000 – £120,000 / year",
+    "company": {
+      "name": "OneDome",
+      "logo_url": null,
+      "friendly_id": "onedome",
+      "isMultipleLocationsEnabled": true
+    },
+    "locations": [
+      {
+        "country": {
+          "name": "United Kingdom",
+          "id": "GB"
+        },
+        "primary": true,
+        "is_remote": true,
+        "remote_details": {
+          "value": "remote",
+          "label": "Fully remote, no location restrictions"
+        },
+        "name": "United Kingdom",
+        "id": "522bb5df8335"
+      }
+    ]
+  },
+  {
+    "id": "0f082ff14fda01",
+    "friendly_id": "0f082ff14fda01-authorisations-onboarding-executive",
+    "name": "Authorisations & Onboarding Executive",
+    "url": "https://onedome.breezy.hr/p/0f082ff14fda01-authorisations-onboarding-executive",
+    "published_date": "2026-10-01T09:17:17.998Z",
+    "type": {
+      "id": "fullTime",
+      "name": "Full-Time"
+    },
+    "location": {
+      "country": {
+        "name": "United Kingdom",
+        "id": "GB"
+      },
+      "city": "Bournemouth",
+      "primary": true,
+      "is_remote": false,
+      "name": "Bournemouth, GB",
+      "id": "bcdf4331c548"
+    },
+    "department": "Compliance",
+    "salary": "£25,000 – £27,000 / year",
+    "company": {
+      "name": "OneDome",
+      "logo_url": null,
+      "friendly_id": "onedome",
+      "isMultipleLocationsEnabled": true
+    },
+    "locations": [
+      {
+        "country": {
+          "name": "United Kingdom",
+          "id": "GB"
+        },
+        "city": "Bournemouth",
+        "primary": true,
+        "is_remote": false,
+        "name": "Bournemouth, GB",
+        "id": "bcdf4331c548"
+      }
+    ]
+  }
+]

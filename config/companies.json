@@ -1,41 +1,153 @@
 {
-  "_comment": "ats is one of: greenhouse | lever | ashby | smartrecruiters. 'verified' means the token was confirmed against a live job posting. 'verified: false' entries are educated guesses -- the scan will report if they fail so you know what to fix. See README.md 'Finding a company's token' to correct or add more.",
+  "_comment": "See README.md 'How this is wired' for the full tour. Companies: every entry below was verified against its live board API on 2026-10-10 (the URL pattern on each company's careers page gives you ats + token). A wrong token just fails quietly in the scan log - nothing else breaks. groups are your own labels for later filtering.",
 
   "companies": [
+    { "name": "OpenAI", "ats": "ashby", "token": "openai", "verified": true, "group": "ai-native" },
+    { "name": "Anthropic", "ats": "greenhouse", "token": "anthropic", "verified": true, "group": "ai-native" },
+    { "name": "Scale AI", "ats": "greenhouse", "token": "scaleai", "verified": true, "group": "ai-native" },
+    { "name": "Cohere", "ats": "ashby", "token": "cohere", "verified": true, "group": "ai-native" },
+    { "name": "Perplexity", "ats": "ashby", "token": "perplexity", "verified": true, "group": "ai-native" },
+    { "name": "Cursor (Anysphere)", "ats": "ashby", "token": "cursor", "verified": true, "group": "ai-native" },
+    { "name": "Cognition", "ats": "ashby", "token": "cognition", "verified": true, "group": "ai-native" },
+    { "name": "Sierra", "ats": "ashby", "token": "sierra", "verified": true, "group": "ai-native" },
+    { "name": "Harvey", "ats": "ashby", "token": "harvey", "verified": true, "group": "ai-native" },
+    { "name": "Glean", "ats": "greenhouse", "token": "gleanwork", "verified": true, "group": "ai-native" },
+    { "name": "Character", "ats": "ashby", "token": "character", "verified": true, "group": "ai-native" },
+    { "name": "Poolside", "ats": "ashby", "token": "poolside", "verified": true, "group": "ai-native" },
+    { "name": "Physical Intelligence", "ats": "ashby", "token": "physicalintelligence", "verified": true, "group": "ai-native" },
+    { "name": "Cartesia", "ats": "ashby", "token": "cartesia", "verified": true, "group": "ai-native" },
+    { "name": "Deepgram", "ats": "ashby", "token": "deepgram", "verified": true, "group": "ai-native" },
+    { "name": "ElevenLabs", "ats": "ashby", "token": "elevenlabs", "verified": true, "group": "ai-native" },
+    { "name": "Suno", "ats": "ashby", "token": "suno", "verified": true, "group": "ai-native" },
+    { "name": "Writer", "ats": "ashby", "token": "writer", "verified": true, "group": "ai-native" },
+    { "name": "Synthesia", "ats": "ashby", "token": "synthesia", "verified": true, "group": "ai-native" },
+    { "name": "Runway", "ats": "ashby", "token": "runway", "verified": true, "group": "ai-native" },
+    { "name": "HeyGen", "ats": "greenhouse", "token": "heygen", "verified": true, "group": "ai-native" },
+    { "name": "Descript", "ats": "greenhouse", "token": "descript", "verified": true, "group": "ai-native" },
+    { "name": "Letta", "ats": "ashby", "token": "letta", "verified": true, "group": "ai-native" },
+
+    { "name": "Arize AI", "ats": "greenhouse", "token": "arizeai", "verified": true, "group": "ml-platform" },
+    { "name": "Databricks", "ats": "greenhouse", "token": "databricks", "verified": true, "group": "ml-platform" },
+    { "name": "LangChain", "ats": "ashby", "token": "langchain", "verified": true, "group": "ml-platform" },
+    { "name": "Modal", "ats": "ashby", "token": "modal", "verified": true, "group": "ml-platform" },
+    { "name": "Baseten", "ats": "ashby", "token": "baseten", "verified": true, "group": "ml-platform" },
+    { "name": "Fireworks AI", "ats": "ashby", "token": "fireworks", "verified": true, "group": "ml-platform" },
+    { "name": "Together AI", "ats": "greenhouse", "token": "togetherai", "verified": true, "group": "ml-platform" },
+    { "name": "Cerebras", "ats": "ashby", "token": "cerebras", "verified": true, "group": "ml-platform" },
+    { "name": "Weaviate", "ats": "ashby", "token": "weaviate", "verified": true, "group": "ml-platform" },
+    { "name": "Pinecone", "ats": "ashby", "token": "pinecone", "verified": true, "group": "ml-platform" },
+    { "name": "Redis", "ats": "ashby", "token": "redis", "verified": true, "group": "ml-platform" },
+    { "name": "Confluent", "ats": "ashby", "token": "confluent", "verified": true, "group": "ml-platform" },
+    { "name": "Temporal", "ats": "ashby", "token": "temporal", "verified": true, "group": "ml-platform" },
+    { "name": "Supabase", "ats": "ashby", "token": "supabase", "verified": true, "group": "ml-platform" },
+    { "name": "Stability AI", "ats": "greenhouse", "token": "stabilityai", "verified": true, "group": "ml-platform" },
+    { "name": "DeepL", "ats": "ashby", "token": "deepl", "verified": true, "group": "ml-platform" },
+
     { "name": "Grafana Labs", "ats": "greenhouse", "token": "grafanalabs", "verified": true, "group": "aiops" },
-    { "name": "Arize AI", "ats": "greenhouse", "token": "arizeai", "verified": true, "group": "ml-lifecycle" },
+    { "name": "Datadog", "ats": "greenhouse", "token": "datadog", "verified": true, "group": "aiops" },
+    { "name": "PagerDuty", "ats": "greenhouse", "token": "pagerduty", "verified": true, "group": "aiops" },
+    { "name": "Elastic", "ats": "greenhouse", "token": "elastic", "verified": true, "group": "aiops" },
+    { "name": "New Relic", "ats": "greenhouse", "token": "newrelic", "verified": true, "group": "aiops" },
+    { "name": "Honeycomb", "ats": "greenhouse", "token": "honeycomb", "verified": true, "group": "aiops" },
+    { "name": "Kentik", "ats": "greenhouse", "token": "kentik", "verified": true, "group": "aiops" },
 
-    { "name": "Datadog", "ats": "greenhouse", "token": "datadog", "verified": false, "group": "aiops" },
-    { "name": "PagerDuty", "ats": "greenhouse", "token": "pagerduty", "verified": false, "group": "aiops" },
-    { "name": "Elastic", "ats": "greenhouse", "token": "elastic", "verified": false, "group": "aiops" },
-    { "name": "BigPanda", "ats": "greenhouse", "token": "bigpanda", "verified": false, "group": "aiops" },
+    { "name": "Cloudflare", "ats": "greenhouse", "token": "cloudflare", "verified": true, "group": "infra" },
+    { "name": "Stripe", "ats": "greenhouse", "token": "stripe", "verified": true, "group": "infra" },
+    { "name": "Vercel", "ats": "greenhouse", "token": "vercel", "verified": true, "group": "infra" },
+    { "name": "Figma", "ats": "greenhouse", "token": "figma", "verified": true, "group": "infra" },
+    { "name": "Airtable", "ats": "greenhouse", "token": "airtable", "verified": true, "group": "infra" },
+    { "name": "PlanetScale", "ats": "greenhouse", "token": "planetscale", "verified": true, "group": "infra" },
+    { "name": "MongoDB", "ats": "greenhouse", "token": "mongodb", "verified": true, "group": "infra" },
+    { "name": "Ramp", "ats": "ashby", "token": "ramp", "verified": true, "group": "infra" },
+    { "name": "Linear", "ats": "ashby", "token": "linear", "verified": true, "group": "infra" },
+    { "name": "Notion", "ats": "ashby", "token": "notion", "verified": true, "group": "infra" },
 
-    { "name": "Weights & Biases", "ats": "greenhouse", "token": "wandb", "verified": false, "group": "ml-lifecycle" },
-    { "name": "Fiddler AI", "ats": "greenhouse", "token": "fiddlerlabs", "verified": false, "group": "ml-lifecycle" },
-    { "name": "WhyLabs", "ats": "lever", "token": "whylabs", "verified": false, "group": "ml-lifecycle" },
-    { "name": "Evidently AI", "ats": "lever", "token": "evidentlyai", "verified": false, "group": "ml-lifecycle" },
-
-    { "name": "OpenAI", "ats": "ashby", "token": "openai", "verified": false, "group": "ai-native" },
-    { "name": "Anthropic", "ats": "ashby", "token": "anthropic", "verified": false, "group": "ai-native" },
-    { "name": "Scale AI", "ats": "ashby", "token": "scaleai", "verified": false, "group": "ai-native" },
-    { "name": "Perplexity", "ats": "ashby", "token": "perplexity", "verified": false, "group": "ai-native" }
+    { "name": "Thales", "ats": "smartrecruiters", "token": "thales", "verified": true, "group": "other" },
+    { "name": "Channable", "ats": "recruitee", "token": "channable", "verified": true, "group": "other" },
+    { "name": "OneDome", "ats": "breezy", "token": "onedome", "verified": true, "group": "other" },
+    { "name": "Personio", "ats": "personio", "token": "personio", "verified": true, "group": "other" },
+    { "name": "Celus", "ats": "personio", "token": "celus", "verified": true, "group": "other" }
   ],
 
+  "_feeds_comment": "Tier 2 aggregators - the wide net. RemoteOK and We Work Remotely are the proven pair; the others were verified live on 2026-10-10. Disable any by setting enabled: false.",
+
+  "feeds": {
+    "remoteok":       { "enabled": true },
+    "remotive":       { "enabled": true, "category": "software-dev" },
+    "himalayas":      { "enabled": true },
+    "workingnomads":  { "enabled": true },
+    "hn_whoshiring":  { "enabled": true, "threads": 1 },
+    "weworkremotely": { "enabled": true }
+  },
+
+  "_matching_comment": "role_keywords are matched with word boundaries + light stemming, so 'SRE' no longer matches inside other words and 'Platform Engineer' still matches 'Platform Engineering'. synonyms widen a keyword to alternate spellings (the canonical still shows in the match reason). exclude_keywords are hard drops. location_allow is substring, case-insensitive; a job with no location text is kept (ambiguous beats silently missing a match). location_exclude is checked after location_allow and knocks out region-locked remote roles (e.g. 'Remote (US)').",
+
   "role_keywords": [
-    "MLOps", "AIOps", "ML Engineer", "Machine Learning Engineer", "AI Engineer",
-    "AI/ML Engineer", "ML/AI Engineer", "Machine Learning Operations",
-    "ML Platform", "AI Platform", "ML Infrastructure", "Applied ML Engineer",
-    "Site Reliability Engineer", "SRE", "DevOps Engineer", "Platform Engineer"
+    "MLOps", "AIOps", "ML Engineer", "Machine Learning Engineer",
+    "AI Engineer", "AI/ML Engineer", "ML/AI Engineer",
+    "Machine Learning Operations", "ML Platform", "AI Platform",
+    "ML Infrastructure", "AI Infrastructure", "Applied ML Engineer",
+    "Applied Scientist", "ML Systems", "AI Systems",
+    "Site Reliability Engineer", "SRE", "DevOps Engineer",
+    "Platform Engineer", "LLMOps", "LLM Engineer", "Research Engineer",
+    "Forward Deployed Engineer"
+  ],
+
+  "synonyms": {
+    "MLOps": ["ML Ops", "ML Operations", "Machine Learning Operations", "MLOps Engineer", "AI Ops Engineer"],
+    "AIOps": ["AI Ops", "AIOps Engineer"],
+    "ML Engineer": ["Machine Learning Engineer", "ML Eng", "Applied ML Engineer"],
+    "AI Engineer": ["AI/ML Engineer", "ML/AI Engineer", "Artificial Intelligence Engineer", "Applied AI Engineer"],
+    "ML Platform": ["ML Infrastructure", "ML Systems", "ML Frameworks", "ML Tooling"],
+    "AI Platform": ["AI Infrastructure", "AI Systems", "AI Tooling"],
+    "LLMOps": ["LLM Ops", "LLM Operations"],
+    "LLM Engineer": ["LLM Systems", "Large Language Model Engineer"],
+    "SRE": ["Site Reliability Engineer", "Site Reliability", "Reliability Engineer"],
+    "Platform Engineer": ["Infrastructure Engineer", "Systems Engineer", "Production Engineer"],
+    "DevOps Engineer": ["Development Operations Engineer", "Dev Ops"],
+    "Research Engineer": ["Research Scientist (Eng)"],
+    "Forward Deployed Engineer": ["FDE", "Forward Deployed Software Engineer"]
+  },
+
+  "exclude_keywords": [
+    "intern", "internship", "unpaid", "clearance", "apprentice", "volunteer"
   ],
 
   "location_allow": [
-    "remote", "worldwide", "anywhere", "pakistan", "united arab emirates", "uae",
-    "dubai", "abu dhabi", "saudi arabia", "riyadh", "jeddah", "qatar", "doha",
-    "emea", "apac", "global"
+    "remote", "worldwide", "anywhere", "global", "emea", "apac",
+    "pakistan", "karachi", "lahore", "islamabad",
+    "united arab emirates", "uae", "dubai", "abu dhabi",
+    "saudi arabia", "ksa", "riyadh", "jeddah",
+    "qatar", "doha", "kuwait", "bahrain", "oman",
+    "middle east", "mena", "egypt", "jordan"
+  ],
+
+  "_location_exclude_comment": "Region-locked remote roles that won't work from Pakistan/Gulf. 'Remote (US)' keeps the word 'remote' (allow) but dies here - which is the point. US states are listed because ATS boards love 'Remote - California' style locations. Trim this list if you relocate.",
+
+  "location_exclude": [
+    "united states", "usa", "u.s.", "us only", "us-based", "us citizens", "from the us", "us", "uk",
+    "canada", "united kingdom", "uk only", "ireland",
+    "australia", "new zealand",
+    "germany", "netherlands", "france", "spain", "poland", "brazil",
+    "travel-required", "travel required",
+    "virginia", "california", "new york", "texas", "washington", "massachusetts",
+    "colorado", "illinois", "georgia", "florida", "north carolina", "new jersey",
+    "pennsylvania", "ohio", "michigan", "arizona", "utah", "oregon", "maryland",
+    "minnesota", "wisconsin", "missouri", "indiana", "tennessee", "district of columbia",
+    "ukraine", "india", "sweden", "romania", "portugal", "czechia", "serbia", "croatia",
+    "bulgaria", "greece", "turkey", "israel", "south africa", "kenya", "nigeria",
+    "mexico", "argentina", "chile", "colombia", "philippines", "vietnam", "indonesia",
+    "malaysia", "singapore", "thailand", "japan", "korea", "taiwan",
+    "latin america", "latam", "northern america", "south america", "north america",
+    "san francisco", "seattle", "austin", "boston", "chicago", "atlanta", "denver",
+    "dallas", "houston", "phoenix", "portland", "san diego", "los angeles", "miami",
+    "philadelphia", "san jose", "mountain view", "palo alto", "menlo park", "nyc"
   ],
 
   "seniority_flags": [
-    "Senior", "Sr.", "Sr ", "Staff", "Principal", "Director", "Head of",
-    "VP", "Vice President", "Lead ", "Manager"
-  ]
+    "Senior", "Sr.", "Sr ", "Snr", "Staff", "Principal", "Director", "Head of",
+    "VP", "Vice President", "Lead ", "Manager", "Chief", "Fellow"
+  ],
+
+  "min_score": 0
 }

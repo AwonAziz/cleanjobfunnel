@@ -1,0 +1,96 @@
+{
+  "comments": "21/08/2026: Cursor pagination is now available and is the preferred way to page through the feed. Pass the nextCursor value from each response back as ?cursor=. It is faster than offset and will never return the same job twice. The offset parameter is deprecated and will be removed in a future release. 13/03/2026: The API has been updated to include the companySlug field in the response.",
+  "updatedAt": 1791608078,
+  "offset": 0,
+  "limit": 2,
+  "totalCount": 117036,
+  "nextCursor": "MjAyNi0xMC0xMFQwNDo1NDowOS44NTMzODRafDIzODI1Mjg",
+  "jobs": [
+    {
+      "title": "Manager, Customer Success and Technical Account Management",
+      "excerpt": "Everbridge is looking for a strategic, people-focused Manager of Customer Success & Technical Account Management to lead and develop a team of Customer Success Managers (CSMs) and Technical Account Managers (TAMs) responsible for helping our customers realize measurable value from their investment and achieve long-term success.",
+      "companyName": "Everbridge",
+      "companySlug": "everbridge",
+      "companyLogo": "https://cdn-images.himalayas.app/leodqdwojw5odi7ibfms3l70dsau",
+      "employmentType": "Full Time",
+      "minSalary": 120000,
+      "maxSalary": 131500,
+      "salaryPeriod": "annual",
+      "seniority": [
+        "Manager"
+      ],
+      "currency": "USD",
+      "locationRestrictions": [
+        "Canada"
+      ],
+      "timezoneRestrictions": [
+        -8,
+        -7,
+        -6,
+        -5,
+        -4,
+        -3.5
+      ],
+      "categories": [
+        "Customer-Success-Manager",
+        "Technical-Account-Manager",
+        "Account-Manager",
+        "Customer-Success-Lead",
+        "Technical-Account-Management-Manager",
+        "Sr.-Manager-Of-Customer-Success"
+      ],
+      "parentCategories": [
+        "Customer Service",
+        "Sales"
+      ],
+      "description": "<div>\n<a href=\"https://himalayas.app/companies/everbridge\">Everbridge</a> is looking for a strategic, people-focused Manager of Customer Success &amp; Technical Account Management to lead and develop a team of Customer Success Managers (CSMs) and Technical Account Managers (TAMs) responsible for helping our customers realize measurable value from their investment and achieve long-term success. The Manager, Customer Success &amp; Technical Account Management is a frontline leadership role responsible for people leadership, customer outcomes, service delivery, operational excellence, and retention and growth across an assigned segment of customers. You will empower CSMs to serve as strategic partners focused on business outcomes, adoption, value realization, and customer health, while enabling TAMs to serve as trusted technical advisors focused on solution optimization, technical adoption, resilience, and proactive risk management. You will create an environment where team members can do their best work, customers have a consistent and exceptional experience, and Customer Success operates as a proactive, accountable partner across the organization.</div><h3>What you'll do:</h3><ul>\n<li>Lead, coach, and develop Customer Success Managers and Technical Account Managers, setting clear expectations and fostering an inclusive culture of customer focus, accountability, collaboration, learning, and operational excellence.</li>\n<li>Support team growth through regular one-on-ones, team meetings, performance feedback, career planning, hiring, onboarding, succession planning, and targeted enablement.</li>\n<li>Build strong CSM–TAM partnerships, clarify roles, and ensure teams understand each customer’s business objectives, use cases, success criteria, and technical environment.</li>\n<li>Coach CSMs on strategic relationships, success planning, adoption, measurable value, and lifecycle risk and opportunity management. Coach TAMs on proactive technical guidance, solution optimization, adoption, and risk mitigation aligned with customer objectives.</li>\n<li>Ensure teams communicate customer value through success plans, executive engagement, business and technical reviews, and other strategic interactions.</li>\n<li>Monitor customer health and portfolio performance; ensure risks and opportunities are identified early, with clear action plans, ownership, and cross-functional support. Serve as a leadership contact for strategic customers and complex escalations when needed.</li>\n<li>Champion the voice of the customer internally, sharing feedback, recurring themes, technical challenges, and product gaps with relevant teams and leaders.</li>\n<li>Drive accountability for customer adoption, satisfaction, retention, and expansion. Partner with Sales and Account Management on customer health, renewal readiness, account strategy, and growth opportunities.</li>\n<li>Set and evolve KPIs and performance expectations across customer health, adoption, engagement, retention, and service delivery. Use customer and operational data to guide priorities, improve performance, and allocate resources.</li>\n<li>Ensure consistent execution of Customer Success and TAM programs, processes, playbooks, and engagement standards. Improve workflows, support capacity planning and portfolio balancing, and help TAM teams deliver customer commitments while managing capacity and utilization.</li>\n<li>Build cross-functional partnerships across Sales, Account Management, Support, Professional Services, Product, Engineering, and other teams to resolve customer needs, remove barriers, and improve the customer journey.</li>\n</ul><h3>What you'll bring:</h3><ul>\n<li>5+ years of experience in Customer Success, Technical Account Management, Professional Services, Support, Solutions Consulting, or another customer-facing SaaS role.</li>\n<li>2+ years of experience leading, coaching, and developing customer-facing professionals.</li>\n<li>Experience in SaaS, cloud platforms, enterprise technology, or mission-critical technology environments.</li>\n<li>A track record of leading teams responsible for customer adoption, value realization, retention, satisfaction, and growth.</li>\n<li>Strong understanding of strategic Customer Success and technical customer engagement, with the ability to coach across both disciplines.</li>\n<li>Experience developing talent through coaching, feedback, performance management, and career planning.</li>\n<li>Experience setting and managing team KPIs, customer health measures, operational metrics, and performance goals.</li>\n<li>Strong analytical skills and the ability to turn customer and operational data into clear priorities.</li>\n<li>Experience partnering with Sales and Account Management on account strategy, renewals, retention, and expansion.</li>\n<li>Ability to lead complex customer situations and escalations while maintaining trust with customers and internal stakeholders.</li>\n<li>Excellent written and verbal communication skills with technical, business, and executive audiences.</li>\n<li>Strong organizational, prioritization, delegation, and decision-making skills.</li>\n<li>Ability to lead in a fast-paced, changing environment with integrity, empathy, and accountability.</li>\n<li>Bachelor’s degree in Business, Technology, Computer Science, Management, or a related field, or equivalent practical experience.</li>\n</ul><div>\n<div>The reasonably estimated salary for this role at <a href=\"https://himalayas.app/companies/everbridge\">Everbridge</a> ranges from $120,000 - $131,500 and may also include variable compensation. Actual compensation is based on factors such as the candidate's skills, qualifications, and experience. In addition, <a href=\"https://himalayas.app/companies/everbridge\">Everbridge</a> offers a wide range of best in class, comprehensive and inclusive employee benefits for this role including healthcare, dental, parental planning, and mental health benefits, disability income benefits, life and AD&amp;D insurance, a 401(k) plan and match, paid time off, and fitness reimbursements.</div>\n<h3>Fair Chance Statement US &amp; Canada</h3>\n<div> We are committed to providing equal employment opportunities in compliance with all applicable Federal, Provincial/State and Local laws, including the California Fair Chance Act and any local County Fair Chance Ordinance (or local equivalent). Pursuant to these and other relevant regulations, we consider qualified applicants with criminal histories in a manner consistent with the law.</div>\n<div>For roles subject to background checks, the following material job duties may be affected by an applicant’s criminal history:</div>\n<div>- Access to sensitive or confidential information, such as financial records, proprietary data, or client information.</div>\n<div>- Management of cash, company funds, or other valuable assets.</div>\n<div>- Work in environments requiring heightened security measures.</div>\n<div>- Compliance with contractual or regulatory requirements specific to the position.</div>\n<div>We evaluate each applicant's criminal history individually, considering its nature, timing, and relevance to the specific job duties, while maintaining our commitment to fair hiring practices and promoting workplace equity.</div>\n</div><h3>About <a href=\"https://himalayas.app/companies/everbridge\">Everbridge</a>\n</h3><p><a href=\"https://himalayas.app/companies/everbridge\">Everbridge</a> empowers enterprises and government organizations to anticipate, mitigate, respond to, and recover from critical events. In an unpredictable world, resilient organizations protect their people and operations, adapt under pressure, and return to productivity faster. Our Critical Event Management (CEM) technology combines intelligent automation with comprehensive risk intelligence to help organizations strengthen resilience, keep people safe, and maintain operations.</p><p>Learn more at everbridge.com, explore the <a href=\"https://himalayas.app/companies/everbridge\">Everbridge</a> blog, and connect with us on social media.</p><h3>Equal Employment Opportunity</h3><p><a href=\"https://himalayas.app/companies/everbridge\">Everbridge</a> is an Equal Opportunity Employer. We consider all qualified applicants for employment without regard to race, color, creed, religion, national origin, ancestry, age, sex, pregnancy, sexual orientation, gender identity or expression, disability, protected veteran status, genetic information, marital status, or any other characteristic protected by applicable federal, state, or local law.</p><h3>Employment Practices</h3><p><a href=\"https://himalayas.app/companies/everbridge\">Everbridge</a> does not require or administer lie detector (polygraph) tests as a condition of employment or continued employment. In Massachusetts, it is unlawful to require or administer a lie detector test as a condition of employment or continued employment. Employers who violate this law may be subject to criminal penalties and civil liability.</p><p>Originally posted on <a href=\"https://himalayas.app\">Himalayas</a></p>",
+      "pubDate": 1791608078,
+      "expiryDate": 1796792077,
+      "applicationLink": "https://himalayas.app/companies/everbridge/jobs/manager-customer-success-and-technical-account-management",
+      "guid": "https://himalayas.app/companies/everbridge/jobs/manager-customer-success-and-technical-account-management"
+    },
+    {
+      "title": "Accounts Receivables Specialist",
+      "excerpt": "Job Title: Accounts Receivables Specialist Location: Caribbean Region (Remote) Job Type: Full-Time Industry: Finance/Accounting/Corporate Services About the Role:We are seeking a detail-oriented and analytical Accounts Receivables Specialist to join our finance team.",
+      "companyName": "TheHiveCareers",
+      "companySlug": "thehivecareers",
+      "companyLogo": "https://cdn-images.himalayas.app/cj85pdd0870xaq5xdxhby508bzul",
+      "employmentType": "Full Time",
+      "minSalary": null,
+      "maxSalary": null,
+      "salaryPeriod": "annual",
+      "seniority": [
+        "Mid-level"
+      ],
+      "currency": null,
+      "locationRestrictions": [
+        "Trinidad and Tobago"
+      ],
+      "timezoneRestrictions": [
+        -4
+      ],
+      "categories": [
+        "Accounts-Receivable-Specialist",
+        "AR-Specialist",
+        "Billing-Specialist",
+        "Accounts-Receivable-Clerk",
+        "Finance-Specialist",
+        "Receivables-Specialist",
+        "Accounts-Receivable-Collections-Specialist",
+        "Healthcare-Accounts-Receivable-Specialist",
+        "Account-Receivable-Analyst",
+        "Accounts-Receivable-Analyst",
+        "Accounts-Receivable-Representative",
+        "Finance"
+      ],
+      "parentCategories": [
+        "Finance"
+      ],
+      "description": "<p><strong> Job Title:</strong> Accounts Receivables Specialist<br><strong>Location:</strong> Caribbean Region (Remote)<br><strong>Job Type:</strong> Full-Time<br><strong>Industry:</strong> Finance/Accounting/Corporate Services</p><h3><strong>About the Role:</strong></h3><p>We are seeking a detail-oriented and analytical <strong>Accounts Receivables Specialist</strong> to join our finance team. This role is crucial in managing the incoming payments, ensuring accuracy in billing, and maintaining positive client relationships. The ideal candidate has a strong grasp of accounting principles and thrives in a fast-paced, deadline-driven environment.</p><h3><strong>Key Responsibilities:</strong></h3><ul>\n<li>Process, monitor, and reconcile incoming payments in compliance with financial policies and procedures</li>\n<li>Generate and distribute invoices in a timely and accurate manner</li>\n<li>Follow up on overdue accounts and coordinate collection efforts</li>\n<li>Maintain accurate records of accounts receivable transactions</li>\n<li>Reconcile customer accounts and resolve billing discrepancies</li>\n<li>Prepare regular reports and provide updates to management</li>\n<li>Work closely with sales and customer service teams to ensure billing accuracy</li>\n<li>Assist in month-end closing activities and audit preparation</li>\n</ul><h3><strong>Key Requirements:</strong></h3><ul>\n<li><p>Bachelor’s degree in Accounting, Finance, or related field </p></li>\n<li><h3> ACCA Level II or III is a plus</h3></li>\n<li><p>2-3 years of experience in accounts receivable or a similar finance role</p></li>\n<li><p>Strong knowledge of accounting software (e.g., QuickBooks, SAP)</p></li>\n<li><p>Excellent attention to detail and data accuracy</p></li>\n<li><p>Strong organizational and time-management skills</p></li>\n<li><p>Effective communication skills, both written and verbal</p></li>\n<li><p>Ability to work independently and in a team setting</p></li>\n</ul><p>Originally posted on <a href=\"https://himalayas.app\">Himalayas</a></p>",
+      "pubDate": 1791608049,
+      "expiryDate": 1796792049,
+      "applicationLink": "https://himalayas.app/companies/thehivecareers/jobs/accounts-receivables-specialist-5479063465",
+      "guid": "https://himalayas.app/companies/thehivecareers/jobs/accounts-receivables-specialist-5479063465"
+    }
+  ]
+}

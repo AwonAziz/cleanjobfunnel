@@ -238,11 +238,35 @@
     border-radius: 4px;
     white-space: nowrap;
   }
+  .source-badge.tier1 { background: rgba(230, 237, 243, 0.08); color: var(--text-muted); }
   .source-badge.tier1-greenhouse { background: rgba(34, 211, 238, 0.12); color: var(--cyan); }
   .source-badge.tier1-lever { background: rgba(167, 139, 250, 0.12); color: var(--purple); }
   .source-badge.tier1-ashby { background: rgba(74, 222, 128, 0.12); color: var(--green); }
   .source-badge.tier1-smartrecruiters { background: rgba(251, 191, 36, 0.12); color: var(--amber); }
   .source-badge.tier2 { background: var(--bg); color: var(--text-dim); border: 1px solid var(--border); }
+
+  .score-badge {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 2px 6px;
+    cursor: help;
+  }
+  .score-badge.hot { color: var(--green); border-color: rgba(74, 222, 128, 0.4); }
+  .score-badge.warm { color: var(--cyan); border-color: rgba(34, 211, 238, 0.4); }
+  .job-salary {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--green);
+  }
+  .also-on {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    color: var(--text-dim);
+  }
 
   .job-time {
     font-family: 'JetBrains Mono', monospace;
@@ -329,6 +353,7 @@
       <span>Hide senior / staff / lead</span>
     </label>
     <select id="sortSelect">
+      <option value="score">Best match</option>
       <option value="new">Newest first</option>
       <option value="company">Company A–Z</option>
     </select>
@@ -350,7 +375,7 @@
   let activeSourceFilter = null; // null = all
   const state = {
     hideSenior: localStorage.getItem('jf_hideSenior') === '1',
-    sort: localStorage.getItem('jf_sort') || 'new',
+    sort: localStorage.getItem('jf_sort') || 'score',
   };
 
   function relTime(iso) {
@@ -374,8 +399,15 @@
   }
 
   function sourceBadgeClass(source, tier) {
-    if (tier === 1) return 'tier1-' + source;
+    if (tier === 1) return 'tier1 tier1-' + source;
     return 'tier2';
+  }
+
+  function scoreClass(score) {
+    if (score == null) return '';
+    if (score >= 65) return 'hot';
+    if (score >= 50) return 'warm';
+    return '';
   }
 
   function escapeHtml(str) {
@@ -384,18 +416,36 @@
     return div.innerHTML;
   }
 
+  function escapeAttr(str) {
+    return escapeHtml(str).replace(/"/g, '&quot;');
+  }
+
+  // remote URLs are untrusted: escape for the attribute AND drop any
+  // non-http(s) scheme so a crafted link can't run javascript: on click
+  function safeHref(url) {
+    const trimmed = (url == null ? '' : String(url)).trim();
+    if (!/^https?:\/\//i.test(trimmed)) return '#';
+    return escapeAttr(trimmed);
+  }
+
   function render() {
     const q = document.getElementById('searchInput').value.trim().toLowerCase();
 
     let jobs = allJobs.filter(j => {
       if (activeSourceFilter && j.source !== activeSourceFilter) return false;
       if (state.hideSenior && j.is_senior) return false;
-      if (q && !(j.title.toLowerCase().includes(q) || (j.company || '').toLowerCase().includes(q))) return false;
+      if (q) {
+        const hay = [j.title, j.company, j.location, j.salary, (j.tags || []).join(' ')]
+          .filter(Boolean).join(' ').toLowerCase();
+        if (!hay.includes(q)) return false;
+      }
       return true;
     });
 
     if (state.sort === 'company') {
       jobs = jobs.slice().sort((a, b) => (a.company || '').localeCompare(b.company || ''));
+    } else if (state.sort === 'score') {
+      jobs = jobs.slice().sort((a, b) => (b.score || 0) - (a.score || 0) || new Date(b.first_seen) - new Date(a.first_seen));
     } else {
       jobs = jobs.slice().sort((a, b) => new Date(b.first_seen) - new Date(a.first_seen));
     }
@@ -414,23 +464,34 @@
     }
     empty.hidden = true;
 
-    list.innerHTML = jobs.map(j => `
+    list.innerHTML = jobs.map(j => {
+      const reasons = (j.match_reasons || []).join(' · ');
+      const score = j.score == null ? '' :
+        `<span class="score-badge ${scoreClass(j.score)}" title="${escapeAttr(reasons)}">${j.score}</span>`;
+      const salary = j.salary ? `<span class="job-salary">${escapeHtml(j.salary)}</span>` : '';
+      const also = (j.also_on || []).length ?
+        `<span class="also-on">also on ${escapeHtml(j.also_on.join(', '))}</span>` : '';
+      return `
       <div class="job-card ${freshnessClass(j.first_seen)}">
         <div class="job-main">
           <p class="job-title">${escapeHtml(j.title)}</p>
           <div class="job-meta">
             <span>${escapeHtml(j.company)}</span>
             ${j.location ? `<span class="dot">·</span><span>${escapeHtml(j.location)}</span>` : ''}
+            ${salary ? `<span class="dot">·</span>${salary}` : ''}
             ${j.is_senior ? `<span class="senior-flag">senior-leaning</span>` : ''}
           </div>
         </div>
         <div class="job-side">
+          ${score}
           <span class="source-badge ${sourceBadgeClass(j.source, j.tier)}">${escapeHtml(j.source)}</span>
           <span class="job-time">${relTime(j.first_seen)}</span>
-          ${j.url ? `<a class="apply-link" href="${escapeHtml(j.url)}" target="_blank" rel="noopener noreferrer">Apply →</a>` : ''}
+          ${also}
+          ${j.url ? `<a class="apply-link" href="${safeHref(j.url)}" target="_blank" rel="noopener noreferrer">Apply →</a>` : ''}
         </div>
       </div>
-    `).join('');
+    `;
+    }).join('');
   }
 
   function renderSourceChips() {

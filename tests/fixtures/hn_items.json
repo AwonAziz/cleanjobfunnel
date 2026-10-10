@@ -1,0 +1,98 @@
+{
+  "id": 24038520,
+  "children": [
+    {
+      "author": "avf",
+      "children": [
+        {
+          "author": "EugeneOZ",
+          "children": [],
+          "created_at": "2020-08-06T15:55:54.000Z",
+          "created_at_i": 1596729354,
+          "id": 24072120,
+          "options": [],
+          "parent_id": 24036220,
+          "points": null,
+          "story_id": 24038520,
+          "text": "I had an interview with a recruiter from this company (named &quot;Informal&quot;).\n&quot;Okay, &quot;informal&quot; you say, let&#x27;s try to stand out!&quot; - so I&#x27;m calling them from a walking area near the beach - beautiful background for <i>informal</i> video-interview.\nRecruiter refused to talk while I&#x27;m outside..<p>Maybe will help someone to pass their first line :)",
+          "title": null,
+          "type": "comment",
+          "url": null
+        }
+      ],
+      "created_at": "2020-08-03T10:53:44.000Z",
+      "created_at_i": 1596452024,
+      "id": 24036220,
+      "options": [],
+      "parent_id": 24038520,
+      "points": null,
+      "story_id": 24038520,
+      "text": "Informal Systems| Senior Distributed System Engineer (Berlin, Toronto, Remote)| Full Time|\nInformal Systems| Senior Rust Engineer (Berlin, Toronto, Remote)| Full Time| <a href=\"https:&#x2F;&#x2F;informal.systems&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;informal.systems&#x2F;</a><p>Informal is an R&amp;D institution that conducts fundamental research and development into the design, implementation, and formal verification of distributed systems and protocols, including blockchain systems like the Cosmos Network (<a href=\"https:&#x2F;&#x2F;cosmos.network&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;cosmos.network&#x2F;</a>). Our mission is to bring verifiability to distributed systems and organizations.<p>We’re hiring:<p>Senior Distributed Systems Engineer - working on open-source distributed systems software in Rust that forms the foundation for production blockchain networks securing billions of dollars in market capitalization.<p>Senior Rust Engineer- working on open-source products and developing correct and reliable software that serves as critical infrastructure in the blockchain ecosystem.<p>You can learn more and apply online here: <a href=\"https:&#x2F;&#x2F;informal.systems&#x2F;careers&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;informal.systems&#x2F;careers&#x2F;</a> Feel free to reach out to hello@informal.systems with any questions!",
+      "title": null,
+      "type": "comment",
+      "url": null
+    },
+    {
+      "author": "schneidmaster",
+      "children": [],
+      "created_at": "2020-08-03T15:01:06.000Z",
+      "created_at_i": 1596466866,
+      "id": 24038523,
+      "options": [],
+      "parent_id": 24038520,
+      "points": null,
+      "story_id": 24038520,
+      "text": "Aha! (<a href=\"https:&#x2F;&#x2F;www.aha.io\" rel=\"nofollow\">https:&#x2F;&#x2F;www.aha.io</a>) | Rails &#x2F; React &#x2F; Security | REMOTE<p>Aha! is the #1 tool for product managers to plan strategy and roadmaps. We serve more than 300,000 users worldwide.<p>We are looking for:<p>* Experienced full-stack engineers to work on the Aha! product. Our application is built in Ruby on Rails, with some React on the frontend for rich client-side experiences.<p>* Security engineers, with hands-on Rails development experience plus experience with compliance projects, security policy development, or other security initiatives.<p>Aha! is profitable, you can work from anywhere in North America, and we offer excellent benefits. We use our own product to manage our work (which is especially rewarding) and we deploy continuously.<p>Our entire team is remote - in North American timezones so we can collaborate during the work day.<p>You can view open engineering positions at <a href=\"https:&#x2F;&#x2F;www.aha.io&#x2F;company&#x2F;careers&#x2F;current-openings?category=engineering\" rel=\"nofollow\">https:&#x2F;&#x2F;www.aha.io&#x2F;company&#x2F;careers&#x2F;current-openings?category...</a>, and click through to a specific job for our simple application form.",
+      "title": null,
+      "type": "comment",
+      "url": null
+    },
+    {
+      "author": "mettamage",
+      "children": [
+        {
+          "author": "mvcatsifma",
+          "children": [
+            {
+              "author": "mettamage",
+              "children": [],
+              "created_at": "2020-08-03T19:25:24.000Z",
+              "created_at_i": 1596482724,
+              "id": 24042190,
+              "options": [],
+              "parent_id": 24038915,
+              "points": null,
+              "story_id": 24038520,
+              "text": "We have been in stealth mode for a while and are working on a modern website. In the meantime, you can check out our LinkedIn for more info [1].<p>Moreover, both fraudio.com and fraudio.io are owned by us.<p>[1] <a href=\"https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;fraudio&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;www.linkedin.com&#x2F;company&#x2F;fraudio&#x2F;</a>",
+              "title": null,
+              "type": "comment",
+              "url": null
+            }
+          ],
+          "created_at": "2020-08-03T15:28:06.000Z",
+          "created_at_i": 1596468486,
+          "id": 24038915,
+          "options": [],
+          "parent_id": 24038524,
+          "points": null,
+          "story_id": 24038520,
+          "text": "Neither the domain fraudio.com nor fraudio.io returns your homepage??",
+          "title": null,
+          "type": "comment",
+          "url": null
+        }
+      ],
+      "created_at": "2020-08-03T15:01:08.000Z",
+      "created_at_i": 1596466868,
+      "id": 24038524,
+      "options": [],
+      "parent_id": 24038520,
+      "points": null,
+      "story_id": 24038520,
+      "text": "Fraudio | Full-Stack Engineer | Amsterdam, Netherlands | Remote (EU only) | Full-time<p>We are bringing the latest AI technology to the finance and payments sector and are looking to disrupt it. We use cutting-edge technology and research-driven techniques to create tools that productionize AI for our clients, to combat various illicit activites such as:<p>* Transaction Fraud<p>* Merchant Fraud<p>* Money Laundering<p>What we&#x27;re looking for is a Full-Stack Engineer (3+ years experience) who is passionate about programming, continuous improvement and code quality.<p>Our tech stack is: Python, Scala, Go, Postgres, Docker, Kubernetes, AWS, GCP, Spark and TensorFlow<p>Please email me your resume or questions at:<p>hiring [at] fraudio.com",
+      "title": null,
+      "type": "comment",
+      "url": null
+    }
+  ]
+}

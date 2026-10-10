@@ -1,175 +1,383 @@
 {
-  "generated_at": "2026-10-10T02:25:02.525853+00:00",
-  "count": 13,
+  "generated_at": "2026-10-10T07:23:09.140244+00:00",
+  "count": 15,
   "jobs": [
+    {
+      "id": "61fd355191984f01",
+      "title": "Machine Learning Engineer / ML Engineer - Roleplay Sessions",
+      "company": "Synthesia",
+      "url": "https://jobs.ashbyhq.com/synthesia/637a0f3b-fd23-409a-b66b-917d1411d56e",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote",
+      "group": "ai-native",
+      "posted_at": "2026-09-09T06:43:59.378000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering"
+      ],
+      "match_reasons": [
+        "title matches \"ML Engineer\"",
+        "title matches \"Machine Learning Engineer\"",
+        "remote-friendly location",
+        "direct from company board"
+      ],
+      "score": 75,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "c4c7df453fc474d2",
+      "title": "AI Platform Engineer",
+      "company": "Supabase",
+      "url": "https://jobs.ashbyhq.com/supabase/3b5d54ca-741b-45ac-bd3f-31605a0d3541",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote, Global",
+      "group": "ml-platform",
+      "posted_at": "2026-07-31T18:56:39.246000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Business Operations"
+      ],
+      "match_reasons": [
+        "title matches \"AI Platform\"",
+        "title matches \"Platform Engineer\"",
+        "remote-friendly location",
+        "direct from company board"
+      ],
+      "score": 75,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "0af6d965989f1020",
+      "title": "Platform Engineer, Managed Postgres",
+      "company": "Supabase",
+      "url": "https://jobs.ashbyhq.com/supabase/9073c0cd-2545-473a-b2ac-63e4615c69b5",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote, Global",
+      "group": "ml-platform",
+      "posted_at": "2026-10-09T17:17:39.437000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering",
+        "Platform Data"
+      ],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "remote-friendly location",
+        "direct from company board",
+        "posted 0d ago"
+      ],
+      "score": 65,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "9a396e6960737b74",
+      "title": "Cloud Platform Engineer",
+      "company": "Supabase",
+      "url": "https://jobs.ashbyhq.com/supabase/5d09daeb-2d7e-42de-9151-81a1341195c4",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote, Global",
+      "group": "ml-platform",
+      "posted_at": "2026-10-09T08:36:35.363000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering",
+        "Container Engineering"
+      ],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "remote-friendly location",
+        "direct from company board",
+        "posted 0d ago"
+      ],
+      "score": 65,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "07f310262c3f8779",
+      "title": "Platform Engineer, Edge & Networking",
+      "company": "Supabase",
+      "url": "https://jobs.ashbyhq.com/supabase/6c9de03c-e289-4612-9045-492985d0274b",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote, Global",
+      "group": "ml-platform",
+      "posted_at": "2026-09-14T13:27:23.742000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering",
+        "Edge Networking"
+      ],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "remote-friendly location",
+        "direct from company board",
+        "posted 25d ago"
+      ],
+      "score": 60,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "acb67cc120f7d6af",
+      "title": "Senior Manager, Forward Deployed Engineering (UAE)",
+      "company": "Databricks",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8849279002",
+      "source": "greenhouse",
+      "tier": 1,
+      "location": "United Arab Emirates",
+      "group": "ml-platform",
+      "posted_at": "2026-10-05T10:48:25+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"Forward Deployed Engineer\"",
+        "direct from company board",
+        "posted 4d ago",
+        "senior-leaning"
+      ],
+      "score": 55,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:36:24.087278+00:00"
+    },
+    {
+      "id": "40e0220372975f04",
+      "title": "Platform Engineer - Compute Capacity",
+      "company": "Supabase",
+      "url": "https://jobs.ashbyhq.com/supabase/4eb14408-51e6-4c58-812a-3782d5c0b045",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote, Global",
+      "group": "ml-platform",
+      "posted_at": "2026-09-02T10:03:09.472000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering",
+        "Compute"
+      ],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "remote-friendly location",
+        "direct from company board"
+      ],
+      "score": 55,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "6c8a86e779471ce1",
+      "title": "IT Operations Lead, Software and Platform engineers",
+      "company": "EggAI",
+      "url": "https://news.ycombinator.com/item?id=49931362",
+      "source": "hn_whoshiring",
+      "tier": 2,
+      "location": "REMOTE (EU)",
+      "group": null,
+      "posted_at": "2026-10-02T09:00:41+00:00",
+      "salary": null,
+      "tags": [
+        "hacker-news"
+      ],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "remote-friendly location",
+        "posted 7d ago",
+        "senior-leaning"
+      ],
+      "score": 50,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:37:22.618427+00:00"
+    },
+    {
+      "id": "72aad65545d72782",
+      "title": "Forward Deployed Engineer - UAE",
+      "company": "OpenAI",
+      "url": "https://jobs.ashbyhq.com/openai/e9d435e1-1b9e-4715-84ce-75f372e5559c",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Abu Dhabi, UAE",
+      "group": "ai-native",
+      "posted_at": "2026-09-21T20:56:19.326000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Forward Deployed Engineering"
+      ],
+      "match_reasons": [
+        "title matches \"Forward Deployed Engineer\"",
+        "direct from company board",
+        "posted 18d ago"
+      ],
+      "score": 50,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "fc5340e1a1d84da1",
+      "title": "Forward Deployed Engineer, Infrastructure Specialist (Middle East)",
+      "company": "Cohere",
+      "url": "https://jobs.ashbyhq.com/cohere/291e5dee-dcda-49e6-a1b6-dae0d48f80af",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Middle East",
+      "group": "ai-native",
+      "posted_at": "2026-09-10T09:55:34.718000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering & Infra",
+        "Delivery Engineering | Infrastructure"
+      ],
+      "match_reasons": [
+        "title matches \"Forward Deployed Engineer\"",
+        "direct from company board",
+        "posted 29d ago"
+      ],
+      "score": 50,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "5428da18ce585988",
+      "title": "IT Infrastructure Engineer",
+      "company": "BlueGeko",
+      "url": "https://weworkremotely.com/remote-jobs/bluegeko-it-infrastructure-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-10-08T07:54:30+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "via alias \"Infrastructure Engineer\"",
+        "remote-friendly location",
+        "posted 1d ago"
+      ],
+      "score": 50,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "c7ddfb4c83c04545",
+      "title": "Forward Deployed Engineer, Agentic Platform",
+      "company": "Cohere",
+      "url": "https://jobs.ashbyhq.com/cohere/75c0032c-7200-48bf-9d6d-355880dd93d9",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Middle East",
+      "group": "ai-native",
+      "posted_at": "2026-03-04T13:57:24.549000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering & Infra",
+        "Delivery Engineering | Agentic Platform"
+      ],
+      "match_reasons": [
+        "title matches \"Forward Deployed Engineer\"",
+        "direct from company board"
+      ],
+      "score": 45,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
     {
       "id": "69b1c0ab45b6e242",
       "title": "DevOps Engineer (Remote)",
       "company": "thehivecareers.co",
-      "location": "Remote",
       "url": "https://weworkremotely.com/remote-jobs/thehivecareers-co-devops-engineer-remote",
       "source": "weworkremotely",
       "tier": 2,
+      "location": "Remote",
       "group": null,
       "posted_at": "2026-09-25T00:33:21+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"DevOps Engineer\"",
+        "remote-friendly location",
+        "posted 15d ago"
+      ],
+      "score": 45,
       "is_senior": false,
+      "also_on": [],
       "first_seen": "2026-09-25T03:55:34.270984+00:00"
-    },
-    {
-      "id": "4198518d3ec4c752",
-      "title": "AI Engineer Data APIs",
-      "company": "Benzinga",
-      "location": "Remote",
-      "url": "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
-      "source": "remoteok",
-      "tier": 2,
-      "group": null,
-      "posted_at": "2026-08-30T21:00:01+00:00",
-      "is_senior": false,
-      "first_seen": "2026-09-23T12:12:01.708964+00:00"
-    },
-    {
-      "id": "bf044f747992dc79",
-      "title": "Applied AI Engineer",
-      "company": "Arize AI",
-      "location": "Remote (San Francisco)",
-      "url": "https://job-boards.greenhouse.io/arizeai/jobs/6128122004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "ml-lifecycle",
-      "posted_at": "2026-08-27T20:43:02+00:00",
-      "is_senior": false,
-      "first_seen": "2026-09-21T20:28:35.410383+00:00"
-    },
-    {
-      "id": "e3d09eaf5bff078c",
-      "title": "DevOps Engineer",
-      "company": "Arize AI",
-      "location": "Remote (United States)",
-      "url": "https://job-boards.greenhouse.io/arizeai/jobs/6203635004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "ml-lifecycle",
-      "posted_at": "2026-09-21T18:32:21+00:00",
-      "is_senior": false,
-      "first_seen": "2026-09-21T20:28:35.410383+00:00"
-    },
-    {
-      "id": "e5ff5194bcd6a039",
-      "title": "Forward Deployed AI Engineer, West",
-      "company": "Arize AI",
-      "location": "Remote (San Francisco)",
-      "url": "https://job-boards.greenhouse.io/arizeai/jobs/6030953004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "ml-lifecycle",
-      "posted_at": "2026-06-15T19:56:09+00:00",
-      "is_senior": false,
-      "first_seen": "2026-08-23T09:57:18.852101+00:00"
     },
     {
       "id": "83ac8e1f19d02704",
       "title": "Applied AI Engineer",
       "company": "OpenAI",
-      "location": "Abu Dhabi, UAE",
       "url": "https://jobs.ashbyhq.com/openai/2226c39d-371b-4dec-bf60-2d76dbe4c445",
       "source": "ashby",
       "tier": 1,
+      "location": "Abu Dhabi, UAE",
       "group": "ai-native",
       "posted_at": "2026-08-18T16:32:27.941000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Go To Market"
+      ],
+      "match_reasons": [
+        "title matches \"AI Engineer\"",
+        "direct from company board"
+      ],
+      "score": 45,
       "is_senior": false,
+      "also_on": [],
       "first_seen": "2026-08-18T17:02:26.098919+00:00"
     },
     {
-      "id": "253f4d0d7c5d8dad",
-      "title": "Staff AI Engineer | Canada | Remote",
-      "company": "Grafana Labs",
-      "location": "Canada (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6092954004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-18T18:14:46+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "e1eccc2121931722",
-      "title": "Staff AI Engineer | US | Remote",
-      "company": "Grafana Labs",
-      "location": "United States (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6092955004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-18T18:14:46+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "2a8697346c1eb335",
-      "title": "Staff Software Engineer - Databases SRE | Germany | Remote",
-      "company": "Grafana Labs",
-      "location": "Germany (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6103688004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-29T13:24:07+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "f30ef99a4756fe3d",
-      "title": "Staff Software Engineer - Databases SRE | Ireland | Remote",
-      "company": "Grafana Labs",
-      "location": "Republic of Ireland (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6107502004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-07-02T12:20:02+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "fbbef35dea991970",
-      "title": "Staff Software Engineer - Databases SRE | Spain | Remote",
-      "company": "Grafana Labs",
-      "location": "Spain (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6103685004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-29T13:21:49+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "f4f8bef427d1392e",
-      "title": "Staff Software Engineer - Databases SRE | Sweden | Remote",
-      "company": "Grafana Labs",
-      "location": "Sweden (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6103687004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-29T13:23:05+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
-    },
-    {
-      "id": "1d3dc28ee89acce4",
-      "title": "Staff Software Engineer - Databases SRE | UK | Remote",
-      "company": "Grafana Labs",
-      "location": "United Kingdom (Remote)",
-      "url": "https://job-boards.greenhouse.io/grafanalabs/jobs/6101637004",
-      "source": "greenhouse",
-      "tier": 1,
-      "group": "aiops",
-      "posted_at": "2026-06-29T13:20:17+00:00",
-      "is_senior": true,
-      "first_seen": "2026-08-16T06:46:11.402225+00:00"
+      "id": "4198518d3ec4c752",
+      "title": "AI Engineer Data APIs",
+      "company": "Benzinga",
+      "url": "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
+      "source": "remoteok",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-08-30T21:00:01+00:00",
+      "salary": "0",
+      "tags": [
+        "golang",
+        "video",
+        "engineer"
+      ],
+      "match_reasons": [
+        "title matches \"AI Engineer\"",
+        "remote-friendly location"
+      ],
+      "score": 40,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-09-23T12:12:01.708964+00:00"
     }
   ]
 }
