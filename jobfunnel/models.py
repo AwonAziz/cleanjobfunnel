@@ -26,6 +26,12 @@ class Job:
     is_senior: bool = False
     also_on: list[str] = field(default_factory=list)
     first_seen: str | None = None
+    # Full posting text where a source provides it. Only the relevance scorer
+    # reads this, because it is the only thing that can tell a genuine
+    # entry-level role from one that says "junior" and means three years.
+    # Sources that cannot supply it leave it None, and scoring degrades to
+    # title and location rather than guessing.
+    description: str | None = None
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)

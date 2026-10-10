@@ -11,10 +11,111 @@ run, and commits the result to `docs/data/jobs.json`. GitHub Pages serves
 back tomorrow — the data's already there waiting.
 
 **v2 rewrite:** the scanner is now a small package (`jobfunnel/`) instead of a
-single script, with a CLI (`scan` / `validate` / `doctor` / `clean`), word-boundary
-keyword matching with synonyms and score explanations, cross-source duplicate
-merging, retries + ETag caching, and triple the sources — including Hacker
+single script, with a CLI (`scan` / `suggest` / `validate` / `doctor` / `clean`),
+word-boundary keyword matching with synonyms and score explanations, cross-source
+duplicate merging, retries + ETag caching, and triple the sources — including Hacker
 News' monthly "Who is hiring?" thread. Everything below reflects the new shape.
+
+**v3 relevance layer:** `suggest` answers the question `scan` cannot — not
+*"does this job look like the kind I want?"* but *"can I actually get this one,
+and why is it a good fit?"* It reads a structured profile (`config/profile.json`)
+rather than a keyword list, gates on the traps a keyword search sails straight
+through, and reports why every job scored the way it did.
+
+---
+
+## `suggest` — the part that decides what you actually apply to
+
+```
+python -m jobfunnel scan          # collect, as before
+python -m jobfunnel suggest       # rank what scan found, best first, with reasons
+python -m jobfunnel suggest --json --min-score 50
+```
+
+Every job gets a score **and a reason for every point of it**. A number you
+cannot explain is a number you cannot trust, so nothing here is opaque:
+
+```
+ 1.  80  Big Byte Insights      Junior DevOps Engineer
+        Lahore, Pakistan (hybrid)
+        - skill overlap 14: aws, ci/cd, docker, gcp, git, github actions
+        - preferred title 'devops engineer'
+        - location tier 1 (Lahore, Pakistan (hybrid))
+        - posted 6d ago
+        - explicit junior signal 'Junior'
+        - direct from company board
+```
+
+### Eligibility gates
+
+These are not scoring terms — they are pass/fail, and each one fired for a real
+reason during the research this repo was built on:
+
+| Gate | Fires on | Why it exists |
+|---|---|---|
+| Nationality | "UAE National", "Emirati-national role", "Saudi nationals only" | A junior-titled posting restricted to a nationality you don't hold is not a junior posting. |
+| Citizenship / clearance | "security clearance", "must be a US citizen" | In practice means someone else. |
+| Senior title | Staff, Principal, Lead, Architect, Director, Senior | For a hard experience ceiling this is not a weak match, it is an ineligible one. |
+| Experience floor | asks more years than `max_years` | See below. |
+| Pipeline posting | "talent pooling", "not associated with an immediate vacancy" | An ad for a future ad. |
+| Stale | posted more than 60 days ago | Almost certainly closed. |
+
+**Experience is read from the floor, not the ceiling.** `"1 to 3 years"` means
+someone at one year is inside the band, so it gates on one. `"5+ years"` is a
+stated floor and gates on five. Reading the upper bound instead turns every
+range into a three- or five-year requirement and silently discards the roles you
+can win — which is the single most common way a filter becomes a filter *against*
+you rather than *for* you.
+
+### The `absent` contract
+
+`config/profile.json` lists skills you do **not** have, and demanding one costs
+the posting points but never blocks it. That is deliberate: a missing skill you
+could close in a month should show up as the reason you ranked eighth, not as the
+reason you were never shown. Claiming a skill you don't have is what this whole
+module exists to prevent, so the profile carries the negatives explicitly.
+
+### Certification names are not seniority
+
+`"Solutions Architect Associate"` is a certification, not a job level. Scoring
+`associate` anywhere in a description credited entry-level postings ten points.
+Junior-ness is therefore asserted from the *title*, where it leads, and only from
+phrases that are written about the role everywhere else.
+
+### Scoring
+
+| Signal | Points |
+|---|---|
+| Skill overlap with `critical` | 4 each, capped at 40 |
+| Skill overlap with `valuable` | 2 each, capped at 40 |
+| Demanding an `absent` skill | −5 each, capped at −15 |
+| Preferred title, in preference order | 20 down to 4 |
+| Location tier, in preference order | 15 down to 3 |
+| Explicitly remote | +3 |
+| Posted within a week | +10 |
+| Posted within a month | +5 |
+| Entry-level signal | +10 |
+| Direct from a company board | +5 |
+
+Location tiers are matched most-specific-first and must not overlap — a bare
+country name in a remote tier will swallow that country's onsite postings and
+collapse both into the same score. There is a test for exactly that.
+
+### How it is scored itself
+
+`tests/test_relevance.py` runs the engine against `tests/fixtures/golden_postings.jsonl`
+— 23 real postings, each one verified open during the week this was written,
+hand-labelled good or bad. The suite asserts a floor on both precision and
+recall, that every good posting that was kept explains itself, that every bad
+posting was blocked for a reason *it states*, and that the scores do not bunch
+into one band. A ranking with no spread carries no information.
+
+There is no synthetic input, because the failure mode this guards against is not
+arithmetic — it is a human reading the same posting and reaching the opposite
+conclusion. Two of my own hand-labels were wrong when the tests disagreed with
+me, and the engine was right both times.
+
+---
 
 ## Setup
 
