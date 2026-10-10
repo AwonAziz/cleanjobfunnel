@@ -256,6 +256,28 @@ def test_remoteok_skips_legal_entry_and_captures_salary(fake_http_factory):
     assert jobs[0].tier == 2
 
 
+def test_remoteok_zero_salary_yields_no_salary(fake_http_factory):
+    payload = [
+        {"legal": "notice, not a job"},
+        {
+            "id": "125",
+            "position": "Data Journalist",
+            "company": "Benzinga",
+            "location": "Remote",
+            "url": "https://remoteok.com/remote-jobs/125",
+            "date": "2026-08-15T00:00:00",
+            "salary_min": 0,
+            "salary_max": 0,
+        },
+    ]
+    http = fake_http_factory({"remoteok.com/api": payload})
+    jobs, err = feeds.fetch_remoteok(http)
+    assert err is None
+    assert len(jobs) == 1
+    assert jobs[0].title == "Data Journalist"
+    assert jobs[0].salary is None
+
+
 def test_remotive_against_real_payload(fake_http_factory):
     http = fake_http_factory({"remotive.com": load_fixture("remotive_jobs.json")})
     jobs, err = feeds.fetch_remotive(http)

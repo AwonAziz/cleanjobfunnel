@@ -116,7 +116,7 @@ def format_salary(
     """Format a salary range like '$120k-131k/yr' or 'USD 120000-131500'."""
 
     def fmt(v: Any) -> str | None:
-        if v in (None, ""):
+        if v in (None, "") or v == 0:
             return None
         try:
             n = int(float(v))
