@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T07:30:14.103965+00:00",
+  "generated_at": "2026-10-10T07:37:45.606890+00:00",
   "count": 15,
   "jobs": [
     {
@@ -364,7 +364,7 @@
       "location": "Remote",
       "group": null,
       "posted_at": "2026-08-30T21:00:01+00:00",
-      "salary": "0",
+      "salary": null,
       "tags": [
         "golang",
         "video",
