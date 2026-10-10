@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T08:58:40.102073+00:00",
+  "generated_at": "2026-10-10T15:13:42.100765+00:00",
   "count": 15,
   "jobs": [
     {
@@ -128,7 +128,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 25d ago"
+        "posted 26d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -150,7 +150,7 @@
       "match_reasons": [
         "title matches \"Forward Deployed Engineer\"",
         "direct from company board",
-        "posted 4d ago",
+        "posted 5d ago",
         "senior-leaning"
       ],
       "score": 55,
@@ -185,27 +185,26 @@
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
-      "id": "6c8a86e779471ce1",
-      "title": "IT Operations Lead, Software and Platform engineers",
-      "company": "EggAI",
-      "url": "https://news.ycombinator.com/item?id=49931362",
+      "id": "78ed77594bd4ce07",
+      "title": "AI Engineer",
+      "company": "Mastra",
+      "url": "https://news.ycombinator.com/item?id=49995549",
       "source": "hn_whoshiring",
       "tier": 2,
-      "location": "REMOTE (EU)",
+      "location": "REMOTE (AMER or EMEA time zones)",
       "group": null,
-      "posted_at": "2026-10-02T09:00:41+00:00",
+      "posted_at": "2026-10-07T16:59:27+00:00",
       "salary": null,
       "tags": [
         "hacker-news"
       ],
       "match_reasons": [
-        "title matches \"Platform Engineer\"",
+        "title matches \"AI Engineer\"",
         "remote-friendly location",
-        "posted 7d ago",
-        "senior-leaning"
+        "posted 2d ago"
       ],
       "score": 50,
-      "is_senior": true,
+      "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-10T06:37:22.618427+00:00"
     },
@@ -253,7 +252,7 @@
       "match_reasons": [
         "title matches \"Forward Deployed Engineer\"",
         "direct from company board",
-        "posted 29d ago"
+        "posted 30d ago"
       ],
       "score": 50,
       "is_senior": false,
