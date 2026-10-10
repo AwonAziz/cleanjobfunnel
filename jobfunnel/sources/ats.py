@@ -10,6 +10,7 @@ from __future__ import annotations
 from ..config import Company
 from ..http import Http
 from ..models import Job
+from ..relevance import required_years
 from . import base
 
 
@@ -37,6 +38,9 @@ def fetch_greenhouse(http: Http, company: Company) -> tuple[list[Job], str | Non
                 tier=1,
                 group=company.group,
                 posted_at=base.to_iso(base.get_first(j, "first_published", "updated_at")),
+                # fetched with content=true above; billing it as free would be
+                # wrong, but it costs no extra request either
+                description=base.strip_html(j.get("content")),
             )
         )
     return jobs, None
@@ -121,6 +125,7 @@ def fetch_ashby(http: Http, company: Company) -> tuple[list[Job], str | None]:
                 group=company.group,
                 posted_at=base.to_iso(base.get_first(j, "publishedAt", "publishedDate")),
                 tags=tags,
+                description=base.strip_html(j.get("descriptionPlain")),
             )
         )
     return jobs, None
@@ -146,11 +151,25 @@ def fetch_smartrecruiters(http: Http, company: Company) -> tuple[list[Job], str 
         )
         if loc_obj.get("remote"):
             loc = f"Remote ({loc})" if loc else "Remote"
-        # the postings list carries no URL; SmartRecruiters links are canonical
+        # postings list carries no URL; SmartRecruiters links are canonical
         url = (
             base.get_first(j, "postingUrl", "applyUrl")
             or f"https://jobs.smartrecruiters.com/{token}/{j.get('id')}"
         )
+        # The board publishes a labelled experience enum rather than prose:
+        # internship, entry_level, associate, mid_senior_level, director,
+        # executive. Mapping it beats any regex over a description the list
+        # endpoint does not return anyway.
+        exp_map = {
+            "internship": 0,
+            "entry_level": 0,
+            "associate": 1,
+            "mid_senior_level": 4,
+            "director": 8,
+            "executive": 12,
+        }
+        level = j.get("experienceLevel") or {}
+        exp_years = exp_map.get(str(level.get("id") or "").lower())
         jobs.append(
             Job(
                 id=base.stable_id("smartrecruiters", token, j.get("id")),
@@ -162,6 +181,7 @@ def fetch_smartrecruiters(http: Http, company: Company) -> tuple[list[Job], str 
                 tier=1,
                 group=company.group,
                 posted_at=base.to_iso(base.get_first(j, "releasedDate", "createdOn")),
+                experience_years=exp_years,
             )
         )
     return jobs, None
@@ -212,6 +232,19 @@ def fetch_recruitee(http: Http, company: Company) -> tuple[list[Job], str | None
                 posted_at=base.to_iso(base.get_first(j, "published_at", "created_at")),
                 salary=salary,
                 tags=tags,
+                # Recruitee splits the posting into a description and a separate
+                # requirements block. The years figure usually lives in the
+                # second one, so both are needed.
+                description=base.strip_html(
+                    " ".join(
+                        p
+                        for p in [
+                            j.get("description"),
+                            j.get("requirements") if isinstance(j.get("requirements"), str) else None,
+                        ]
+                        if p
+                    )
+                ),
             )
         )
     return jobs, None
@@ -298,6 +331,18 @@ def fetch_personio(http: Http, company: Company) -> tuple[list[Job], str | None]
         tags = base.clean_tags(pos.findtext("employmentType")) + base.clean_tags(pos.findtext("seniority"))
         if pos.findtext("department"):
             tags.append(pos.findtext("department").strip())
+
+        # Personio publishes the requirement as a range string like "7-10",
+        # which is the same grammar the text parser understands, plus a
+        # <jobDescriptions> block rather than a single <description>.
+        yoe = (pos.findtext("yearsOfExperience") or "").strip()
+        jd_root = pos.find("jobDescriptions")
+        parts = (
+            [jd.text for jd in jd_root if (jd.text or "").strip()]  # noqa: SIM118 - jd_root is not a list
+            if jd_root is not None
+            else []
+        )
+
         jobs.append(
             Job(
                 id=base.stable_id("personio", token, pid),
@@ -310,6 +355,8 @@ def fetch_personio(http: Http, company: Company) -> tuple[list[Job], str | None]
                 group=company.group,
                 posted_at=base.to_iso(pos.findtext("createdAt")),
                 tags=tags,
+                description=base.strip_html(" ".join(parts)),
+                experience_years=required_years(yoe) if yoe else None,
             )
         )
     return jobs, None

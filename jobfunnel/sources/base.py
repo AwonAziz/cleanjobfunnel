@@ -6,23 +6,59 @@ import hashlib
 import re
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
+from html import unescape
 from typing import Any
 
+# Descriptions are kept out of regex-accelerated HTML parsing on purpose: the
+# boards return enough variety of markup that a real parser would be worth its
+# dependency, but the two things we actually need from a description -- distinct
+# words and years-of-experience figures -- survive a crude strip fine.
+_TAG_RE = re.compile(r"<[^>]+>")
+_SCRIPT_RE = re.compile(r"<(script|style)\b[^>]*>.*?</\1>", re.IGNORECASE | re.DOTALL)
+_WS_RE = re.compile(r"\s+")
 
-def get_first(d: Any, *keys: str, default: Any = None) -> Any:
-    """Return the first present, non-empty value among keys in dict d."""
-    if not isinstance(d, dict):
-        return default
-    for k in keys:
-        v = d.get(k)
-        if v not in (None, ""):
-            return v
-    return default
+
+def strip_html(raw: Any, limit: int = 8000) -> str | None:
+    """Flatten a posting's HTML body to capped plain text.
+
+    The cap stops the scorer from holding a full 20k posting in memory for
+    every one of 8,665 fetched jobs, but it is generous enough to reach the
+    requirements and qualifications sections where the experience figure and
+    the must-have skills actually live. 1200 was too tight -- it cut off
+    before any of that, and every job scored as though it had no requirements
+    at all, which flattered nothing and told the reader nothing.
+
+    This text is scoring input only. jobs.json is committed on every scan and
+    stores the verdict, not the evidence, so the cap costs repository space
+    no matter how large it is.
+    """
+    if not raw or not isinstance(raw, str):
+        return None
+    text = _SCRIPT_RE.sub(" ", raw)
+    text = _TAG_RE.sub(" ", text)
+    text = unescape(text)
+    text = _WS_RE.sub(" ", text).strip()
+    return text[:limit] or None
 
 
 def stable_id(*parts: Any) -> str:
     raw = "|".join(str(p) for p in parts if p is not None)
     return hashlib.sha1(raw.encode("utf-8")).hexdigest()[:16]
+
+
+def get_first(d: Any, *keys: str, default: Any = None) -> Any:
+    """First present, non-empty value among `keys`, or `default`.
+
+    Handles both our own objects and the dicts that come straight off the
+    APIs, which is why `d` is typed Any.
+    """
+    for k in keys:
+        v = getattr(d, k, None) if not isinstance(d, dict) else d.get(k)
+        if isinstance(v, str):
+            v = v.strip()
+        if v not in (None, "", [], {}, 0):
+            return v
+    return default
 
 
 def to_iso(dt_value: Any) -> str | None:
