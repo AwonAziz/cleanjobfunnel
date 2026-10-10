@@ -340,10 +340,16 @@ integration suite runs the whole pipeline in a temp directory.
 
 ```bash
 pip install -r requirements-dev.txt
-python -m pytest                       # 87 tests, offline
+python -m pytest                       # 135 tests, offline
 ruff check . && ruff format --check .  # lint
 mypy jobfunnel                         # typecheck
 ```
+
+`tests/test_relevance.py` runs the scorer against `tests/fixtures/golden_postings.jsonl`,
+23 real postings hand-labelled good or bad, and asserts floors on both
+precision and recall. Two of the hand-labels were wrong when the tests
+disagreed, and the engine was right both times — which is the only reason to
+trust a golden set rather than a unit test.
 
 ## Known limitations
 
