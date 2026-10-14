@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T15:28:00.770324+00:00",
+  "generated_at": "2026-10-14T19:41:05.141261+00:00",
   "count": 16,
   "jobs": [
     {
@@ -101,7 +101,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 0d ago"
+        "posted 1d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -128,7 +128,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 4d ago"
+        "posted 5d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -232,7 +232,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "remote-friendly location",
-        "posted 6d ago"
+        "posted 7d ago"
       ],
       "score": 50,
       "is_senior": false,
