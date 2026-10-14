@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-14T05:22:22.760626+00:00",
-  "count": 17,
+  "generated_at": "2026-10-14T10:35:40.098926+00:00",
+  "count": 16,
   "jobs": [
     {
       "id": "61fd355191984f01",
@@ -55,23 +55,23 @@
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
-      "id": "a5af556e6a32f532",
-      "title": "Applied AI Engineer",
+      "id": "d83a0886dfaf1875",
+      "title": "Full-Stack Engineer (Backend Leaning) - Platform Engineering",
       "company": "ElevenLabs",
-      "url": "https://jobs.ashbyhq.com/elevenlabs/b8a111fa-9fd5-44d0-97ed-8fd1280be4ef",
+      "url": "https://jobs.ashbyhq.com/elevenlabs/ce3d5a59-fb8c-482b-bc3f-60e44576c5e0",
       "source": "ashby",
       "tier": 1,
       "location": "Remote",
       "group": "ai-native",
-      "posted_at": "2026-10-13T12:13:37.012000+00:00",
+      "posted_at": "2026-10-14T10:03:44.600000+00:00",
       "salary": null,
       "tags": [
         "FullTime",
-        "Growth",
-        "Paid Marketing"
+        "Engineering & Product",
+        "Core Platform"
       ],
       "match_reasons": [
-        "title matches \"AI Engineer\"",
+        "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
         "posted 0d ago"
@@ -79,7 +79,7 @@
       "score": 65,
       "is_senior": false,
       "also_on": [],
-      "first_seen": "2026-10-13T16:25:36.088370+00:00"
+      "first_seen": "2026-10-14T10:35:40.098926+00:00"
     },
     {
       "id": "6e7ee196bd6b3b7a",
@@ -155,7 +155,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 4d ago"
+        "posted 5d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -303,7 +303,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
-        "posted 5d ago"
+        "posted 6d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -381,30 +381,6 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-09-25T03:55:34.270984+00:00"
-    },
-    {
-      "id": "83ac8e1f19d02704",
-      "title": "Applied AI Engineer",
-      "company": "OpenAI",
-      "url": "https://jobs.ashbyhq.com/openai/2226c39d-371b-4dec-bf60-2d76dbe4c445",
-      "source": "ashby",
-      "tier": 1,
-      "location": "Abu Dhabi, UAE",
-      "group": "ai-native",
-      "posted_at": "2026-08-18T16:32:27.941000+00:00",
-      "salary": null,
-      "tags": [
-        "FullTime",
-        "Go To Market"
-      ],
-      "match_reasons": [
-        "title matches \"AI Engineer\"",
-        "direct from company board"
-      ],
-      "score": 45,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-08-18T17:02:26.098919+00:00"
     },
     {
       "id": "4198518d3ec4c752",
