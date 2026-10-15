@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T12:05:35.695585+00:00",
+  "generated_at": "2026-10-15T17:09:28.491082+00:00",
   "count": 17,
   "jobs": [
     {
@@ -130,7 +130,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 1d ago"
+        "posted 2d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -192,33 +192,6 @@
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
-      "id": "07f310262c3f8779",
-      "title": "Platform Engineer, Edge & Networking",
-      "company": "Supabase",
-      "url": "https://jobs.ashbyhq.com/supabase/6c9de03c-e289-4612-9045-492985d0274b",
-      "source": "ashby",
-      "tier": 1,
-      "location": "Remote, Global",
-      "group": "ml-platform",
-      "posted_at": "2026-09-14T13:27:23.742000+00:00",
-      "salary": null,
-      "tags": [
-        "FullTime",
-        "Engineering",
-        "Edge Networking"
-      ],
-      "match_reasons": [
-        "title matches \"Platform Engineer\"",
-        "remote-friendly location",
-        "direct from company board",
-        "posted 30d ago"
-      ],
-      "score": 60,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-10-10T06:35:10.581342+00:00"
-    },
-    {
       "id": "40e0220372975f04",
       "title": "Platform Engineer - Compute Capacity",
       "company": "Supabase",
@@ -245,26 +218,53 @@
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
-      "id": "78ed77594bd4ce07",
-      "title": "AI Engineer",
-      "company": "Mastra",
-      "url": "https://news.ycombinator.com/item?id=49995549",
+      "id": "07f310262c3f8779",
+      "title": "Platform Engineer, Edge & Networking",
+      "company": "Supabase",
+      "url": "https://jobs.ashbyhq.com/supabase/6c9de03c-e289-4612-9045-492985d0274b",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote, Global",
+      "group": "ml-platform",
+      "posted_at": "2026-09-14T13:27:23.742000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering",
+        "Edge Networking"
+      ],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "remote-friendly location",
+        "direct from company board"
+      ],
+      "score": 55,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "8cf458f949d8da9a",
+      "title": "Lead Platform Engineer",
+      "company": "Ojin",
+      "url": "https://news.ycombinator.com/item?id=50004401",
       "source": "hn_whoshiring",
       "tier": 2,
-      "location": "REMOTE (AMER or EMEA time zones)",
+      "location": "HYBRID (Berlin) or REMOTE (CET ±2h)",
       "group": null,
-      "posted_at": "2026-10-07T16:59:27+00:00",
+      "posted_at": "2026-10-08T11:10:20+00:00",
       "salary": null,
       "tags": [
         "hacker-news"
       ],
       "match_reasons": [
-        "title matches \"AI Engineer\"",
+        "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 7d ago"
+        "posted 7d ago",
+        "senior-leaning"
       ],
       "score": 50,
-      "is_senior": false,
+      "is_senior": true,
       "also_on": [],
       "first_seen": "2026-10-10T06:37:22.618427+00:00"
     },
