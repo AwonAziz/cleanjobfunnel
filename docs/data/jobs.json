@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T04:58:03.718951+00:00",
+  "generated_at": "2026-10-17T09:10:24.048469+00:00",
   "count": 17,
   "jobs": [
     {
@@ -184,9 +184,9 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 7d ago"
+        "posted 8d ago"
       ],
-      "score": 65,
+      "score": 60,
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
@@ -308,7 +308,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 14d ago",
+        "posted 15d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -382,7 +382,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
-        "posted 8d ago"
+        "posted 9d ago"
       ],
       "score": 45,
       "is_senior": false,
