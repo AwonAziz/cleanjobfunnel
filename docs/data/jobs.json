@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T09:10:24.048469+00:00",
+  "generated_at": "2026-10-17T13:01:50.585577+00:00",
   "count": 17,
   "jobs": [
     {
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 1d ago"
+        "posted 2d ago"
       ],
       "score": 85,
       "is_senior": false,
@@ -103,7 +103,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 2d ago"
+        "posted 3d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -258,7 +258,7 @@
       "match_reasons": [
         "title matches \"Forward Deployed Engineer\"",
         "direct from company board",
-        "posted 11d ago",
+        "posted 12d ago",
         "senior-leaning"
       ],
       "score": 50,
