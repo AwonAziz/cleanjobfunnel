@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T19:53:09.579117+00:00",
-  "count": 17,
+  "generated_at": "2026-10-20T22:58:53.633547+00:00",
+  "count": 18,
   "jobs": [
     {
       "id": "19d11853d84f8a59",
@@ -284,12 +284,37 @@
       "match_reasons": [
         "title matches \"Forward Deployed Engineer\"",
         "direct from company board",
-        "posted 28d ago"
+        "posted 29d ago"
       ],
       "score": 50,
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "b65aa106a9946636",
+      "title": "Forward Deployed Engineer - Doha",
+      "company": "Cognition",
+      "url": "https://jobs.ashbyhq.com/cognition/d6d3bc3c-f2e3-4979-a22d-2f897d6b9de1",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Doha",
+      "group": "ai-native",
+      "posted_at": "2026-06-20T16:09:48.067000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Customer Engineering",
+        "Deployed Engineer"
+      ],
+      "match_reasons": [
+        "title matches \"Forward Deployed Engineer\"",
+        "direct from company board"
+      ],
+      "score": 45,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-20T22:58:53.633547+00:00"
     },
     {
       "id": "ea2f3b21995d26b2",
