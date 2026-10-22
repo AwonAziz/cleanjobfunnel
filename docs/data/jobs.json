@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-22T09:13:48.287864+00:00",
-  "count": 19,
+  "generated_at": "2026-10-22T14:33:54.826222+00:00",
+  "count": 20,
   "jobs": [
     {
       "id": "19d11853d84f8a59",
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 6d ago"
+        "posted 7d ago"
       ],
       "score": 85,
       "is_senior": false,
@@ -105,9 +105,9 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 7d ago"
+        "posted 8d ago"
       ],
-      "score": 65,
+      "score": 60,
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-14T10:35:40.098926+00:00"
@@ -246,41 +246,36 @@
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
-      "id": "1817e0cd466a3f6a",
-      "title": "Devops Engineer",
-      "company": "Codest Ltd. Company No. 12590542, VAT number: GB363431020",
-      "url": "https://himalayas.app/companies/codest-ltd-company-no-12590542-vat-number-gb363431020/jobs/devops-engineer?utm_source=api",
+      "id": "eb0983c058d09be6",
+      "title": "ML Engineer (MSc. or PhD)",
+      "company": "micro1",
+      "url": "https://himalayas.app/companies/micro1/jobs/ml-engineer-msc-or-phd?utm_source=api",
       "source": "himalayas",
       "tier": 2,
       "location": "Worldwide",
       "group": null,
-      "posted_at": "2026-10-22T06:46:49+00:00",
-      "salary": "PLN 21k-25k/monthly",
+      "posted_at": "2026-10-22T13:00:25+00:00",
+      "salary": null,
       "tags": [
-        "DevOps-Engineer",
-        "Cloud-Engineer",
-        "Site-Reliability-Engineer",
-        "Platform-Engineer",
-        "DevOps-Software-Engineer",
-        "Cloud-DevOps-Engineer",
-        "ProdOps-Engineer",
-        "DevOps-Automation-Engineer",
-        "Infrastructure-DevOps-Engineer",
-        "AWS-DevOps-Engineer",
-        "TechOps-Engineer",
-        "Lead-DevOps-Engineer",
-        "CloudOps-Engineer",
+        "AI-ML-Engineer",
+        "Machine-Learning-Engineer",
+        "ML-AI-Research-Engineer",
+        "ML-Research-Engineer",
+        "AI-ML-Research-Engineer",
+        "Senior-ML-Engineer",
+        "Senior-AI-ML-Engineer",
+        "Mid-level",
         "Senior"
       ],
       "match_reasons": [
-        "title matches \"DevOps Engineer\"",
+        "title matches \"ML Engineer\"",
         "remote-friendly location",
         "posted 0d ago"
       ],
       "score": 50,
       "is_senior": false,
       "also_on": [],
-      "first_seen": "2026-10-22T09:13:48.287864+00:00"
+      "first_seen": "2026-10-22T14:33:54.826222+00:00"
     },
     {
       "id": "acb67cc120f7d6af",
@@ -297,7 +292,7 @@
       "match_reasons": [
         "title matches \"Forward Deployed Engineer\"",
         "direct from company board",
-        "posted 16d ago",
+        "posted 17d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -473,6 +468,37 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-09-25T03:55:34.270984+00:00"
+    },
+    {
+      "id": "2f39c7262f478b7b",
+      "title": "Senior Systems Engineer",
+      "company": "dell",
+      "url": "https://himalayas.app/companies/dell/jobs/senior-systems-engineer?utm_source=api",
+      "source": "himalayas",
+      "tier": 2,
+      "location": "United Arab Emirates",
+      "group": null,
+      "posted_at": "2026-10-22T12:59:04+00:00",
+      "salary": null,
+      "tags": [
+        "Systems-Engineer",
+        "Solutions-Engineer",
+        "Technical-Support-Engineer",
+        "Pre-Sales-Engineer",
+        "Senior-Systems-Engineer",
+        "Senior-Systems-Engineering",
+        "Senior"
+      ],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "via alias \"Systems Engineer\"",
+        "posted 0d ago",
+        "senior-leaning"
+      ],
+      "score": 40,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-10-22T14:33:54.826222+00:00"
     },
     {
       "id": "4198518d3ec4c752",
