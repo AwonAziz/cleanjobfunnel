@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T03:43:30.710112+00:00",
+  "generated_at": "2026-10-22T09:13:48.287864+00:00",
   "count": 19,
   "jobs": [
     {
@@ -30,32 +30,6 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-15T12:05:35.695585+00:00"
-    },
-    {
-      "id": "61fd355191984f01",
-      "title": "Machine Learning Engineer / ML Engineer - Roleplay Sessions",
-      "company": "Synthesia",
-      "url": "https://jobs.ashbyhq.com/synthesia/637a0f3b-fd23-409a-b66b-917d1411d56e",
-      "source": "ashby",
-      "tier": 1,
-      "location": "Remote",
-      "group": "ai-native",
-      "posted_at": "2026-09-09T06:43:59.378000+00:00",
-      "salary": null,
-      "tags": [
-        "FullTime",
-        "Engineering"
-      ],
-      "match_reasons": [
-        "title matches \"ML Engineer\"",
-        "title matches \"Machine Learning Engineer\"",
-        "remote-friendly location",
-        "direct from company board"
-      ],
-      "score": 75,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
       "id": "c4c7df453fc474d2",
@@ -212,7 +186,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 12d ago"
+        "posted 13d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -270,6 +244,43 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "1817e0cd466a3f6a",
+      "title": "Devops Engineer",
+      "company": "Codest Ltd. Company No. 12590542, VAT number: GB363431020",
+      "url": "https://himalayas.app/companies/codest-ltd-company-no-12590542-vat-number-gb363431020/jobs/devops-engineer?utm_source=api",
+      "source": "himalayas",
+      "tier": 2,
+      "location": "Worldwide",
+      "group": null,
+      "posted_at": "2026-10-22T06:46:49+00:00",
+      "salary": "PLN 21k-25k/monthly",
+      "tags": [
+        "DevOps-Engineer",
+        "Cloud-Engineer",
+        "Site-Reliability-Engineer",
+        "Platform-Engineer",
+        "DevOps-Software-Engineer",
+        "Cloud-DevOps-Engineer",
+        "ProdOps-Engineer",
+        "DevOps-Automation-Engineer",
+        "Infrastructure-DevOps-Engineer",
+        "AWS-DevOps-Engineer",
+        "TechOps-Engineer",
+        "Lead-DevOps-Engineer",
+        "CloudOps-Engineer",
+        "Senior"
+      ],
+      "match_reasons": [
+        "title matches \"DevOps Engineer\"",
+        "remote-friendly location",
+        "posted 0d ago"
+      ],
+      "score": 50,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-22T09:13:48.287864+00:00"
     },
     {
       "id": "acb67cc120f7d6af",
@@ -359,7 +370,7 @@
       "match_reasons": [
         "title matches \"Research Engineer\"",
         "remote-friendly location",
-        "posted 17d ago"
+        "posted 18d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -383,7 +394,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 19d ago",
+        "posted 20d ago",
         "senior-leaning"
       ],
       "score": 45,
