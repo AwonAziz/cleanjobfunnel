@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T18:47:15.591369+00:00",
+  "generated_at": "2026-10-22T22:10:42.332248+00:00",
   "count": 17,
   "jobs": [
     {
@@ -246,31 +246,6 @@
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
-      "id": "72aad65545d72782",
-      "title": "Forward Deployed Engineer - UAE",
-      "company": "OpenAI",
-      "url": "https://jobs.ashbyhq.com/openai/e9d435e1-1b9e-4715-84ce-75f372e5559c",
-      "source": "ashby",
-      "tier": 1,
-      "location": "Abu Dhabi, UAE",
-      "group": "ai-native",
-      "posted_at": "2026-09-21T20:56:19.326000+00:00",
-      "salary": null,
-      "tags": [
-        "FullTime",
-        "Forward Deployed Engineering"
-      ],
-      "match_reasons": [
-        "title matches \"Forward Deployed Engineer\"",
-        "direct from company board",
-        "posted 30d ago"
-      ],
-      "score": 50,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-10-10T06:35:10.581342+00:00"
-    },
-    {
       "id": "b65aa106a9946636",
       "title": "Forward Deployed Engineer - Doha",
       "company": "Cognition",
@@ -341,6 +316,30 @@
       "is_senior": true,
       "also_on": [],
       "first_seen": "2026-10-10T06:37:22.618427+00:00"
+    },
+    {
+      "id": "72aad65545d72782",
+      "title": "Forward Deployed Engineer - UAE",
+      "company": "OpenAI",
+      "url": "https://jobs.ashbyhq.com/openai/e9d435e1-1b9e-4715-84ce-75f372e5559c",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Abu Dhabi, UAE",
+      "group": "ai-native",
+      "posted_at": "2026-09-21T20:56:19.326000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Forward Deployed Engineering"
+      ],
+      "match_reasons": [
+        "title matches \"Forward Deployed Engineer\"",
+        "direct from company board"
+      ],
+      "score": 45,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
       "id": "fc5340e1a1d84da1",
