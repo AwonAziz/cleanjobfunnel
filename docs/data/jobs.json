@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T22:10:42.332248+00:00",
+  "generated_at": "2026-10-23T00:43:44.084555+00:00",
   "count": 17,
   "jobs": [
     {
@@ -406,7 +406,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 27d ago"
+        "posted 28d ago"
       ],
       "score": 45,
       "is_senior": false,
