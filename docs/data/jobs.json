@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-24T11:36:19.026449+00:00",
-  "count": 20,
+  "generated_at": "2026-10-24T14:52:41.611786+00:00",
+  "count": 22,
   "jobs": [
     {
       "id": "19d11853d84f8a59",
@@ -84,6 +84,41 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-21T20:54:01.070337+00:00"
+    },
+    {
+      "id": "2b99c32a2c3e244e",
+      "title": "Senior DevOps Engineer (MLOps Focus)",
+      "company": "Flatgigs",
+      "url": "https://himalayas.app/companies/flatgigs/jobs/senior-devops-engineer-mlops-focus?utm_source=api",
+      "source": "himalayas",
+      "tier": 2,
+      "location": "Pakistan",
+      "group": null,
+      "posted_at": "2026-10-24T14:41:46+00:00",
+      "salary": null,
+      "tags": [
+        "DevOps-Engineer",
+        "MLOps-Engineer",
+        "Site-Reliability-Engineer",
+        "Cloud-Infrastructure-Engineer",
+        "Cloud-Security-Engineer",
+        "Senior-MLOps-Engineer",
+        "Senior-DevOps-Engineer-AI-ML",
+        "Senior-DevOps-Platform-Engineer",
+        "Senior-DevOps",
+        "Senior-AWS-DevOps-Engineer",
+        "Senior"
+      ],
+      "match_reasons": [
+        "title matches \"MLOps\"",
+        "title matches \"DevOps Engineer\"",
+        "posted 0d ago",
+        "senior-leaning"
+      ],
+      "score": 60,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-10-24T14:52:41.611786+00:00"
     },
     {
       "id": "d83a0886dfaf1875",
@@ -277,7 +312,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 1d ago",
+        "posted 2d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -306,6 +341,30 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-23T11:10:47.395529+00:00"
+    },
+    {
+      "id": "2197a841d96100c8",
+      "title": "Senior Infrastructure Engineer",
+      "company": "Webflow",
+      "url": "https://weworkremotely.com/remote-jobs/webflow-senior-infrastructure-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-10-06T07:31:05+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "via alias \"Infrastructure Engineer\"",
+        "remote-friendly location",
+        "posted 18d ago",
+        "senior-leaning"
+      ],
+      "score": 45,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-10-24T14:52:41.611786+00:00"
     },
     {
       "id": "b65aa106a9946636",
