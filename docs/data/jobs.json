@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T08:00:34.346844+00:00",
+  "generated_at": "2026-10-27T14:21:48.916729+00:00",
   "count": 22,
   "jobs": [
     {
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 11d ago"
+        "posted 12d ago"
       ],
       "score": 80,
       "is_senior": false,
@@ -105,7 +105,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 12d ago"
+        "posted 13d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -186,7 +186,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 17d ago"
+        "posted 18d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -323,7 +323,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 4d ago",
+        "posted 5d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -441,7 +441,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 24d ago",
+        "posted 25d ago",
         "senior-leaning"
       ],
       "score": 45,
