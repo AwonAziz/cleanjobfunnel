@@ -1,476 +1,476 @@
 {
-  "generated_at": "2026-10-28T15:54:31.244981+00:00",
+  "generated_at": "2026-10-28T20:50:24.787816+00:00",
   "sources": [
     {
       "source": "OpenAI",
       "ok": true,
       "count": 807,
       "error": null,
-      "duration_ms": 627
+      "duration_ms": 562
     },
     {
       "source": "Anthropic",
       "ok": true,
-      "count": 678,
+      "count": 679,
       "error": null,
-      "duration_ms": 489
+      "duration_ms": 690
     },
     {
       "source": "Scale AI",
       "ok": true,
-      "count": 169,
+      "count": 171,
       "error": null,
-      "duration_ms": 93
+      "duration_ms": 110
     },
     {
       "source": "Cohere",
       "ok": true,
       "count": 118,
       "error": null,
-      "duration_ms": 104
+      "duration_ms": 82
     },
     {
       "source": "Perplexity",
       "ok": true,
-      "count": 134,
+      "count": 133,
       "error": null,
-      "duration_ms": 307
+      "duration_ms": 303
     },
     {
       "source": "Cursor (Anysphere)",
       "ok": true,
-      "count": 123,
+      "count": 122,
       "error": null,
-      "duration_ms": 322
+      "duration_ms": 320
     },
     {
       "source": "Cognition",
       "ok": true,
-      "count": 107,
+      "count": 106,
       "error": null,
-      "duration_ms": 262
+      "duration_ms": 280
     },
     {
       "source": "Sierra",
       "ok": true,
       "count": 213,
       "error": null,
-      "duration_ms": 353
+      "duration_ms": 371
     },
     {
       "source": "Harvey",
       "ok": true,
-      "count": 368,
+      "count": 369,
       "error": null,
-      "duration_ms": 354
+      "duration_ms": 349
     },
     {
       "source": "Glean",
       "ok": true,
       "count": 133,
       "error": null,
-      "duration_ms": 84
+      "duration_ms": 93
     },
     {
       "source": "Character",
       "ok": true,
       "count": 13,
       "error": null,
-      "duration_ms": 46
+      "duration_ms": 69
     },
     {
       "source": "Poolside",
       "ok": true,
       "count": 2,
       "error": null,
-      "duration_ms": 429
+      "duration_ms": 334
     },
     {
       "source": "Physical Intelligence",
       "ok": true,
       "count": 44,
       "error": null,
-      "duration_ms": 199
+      "duration_ms": 271
     },
     {
       "source": "Cartesia",
       "ok": true,
-      "count": 23,
+      "count": 21,
       "error": null,
-      "duration_ms": 281
+      "duration_ms": 275
     },
     {
       "source": "Deepgram",
       "ok": true,
       "count": 80,
       "error": null,
-      "duration_ms": 343
+      "duration_ms": 375
     },
     {
       "source": "ElevenLabs",
       "ok": true,
-      "count": 157,
+      "count": 155,
       "error": null,
-      "duration_ms": 325
+      "duration_ms": 345
     },
     {
       "source": "Suno",
       "ok": true,
-      "count": 71,
+      "count": 70,
       "error": null,
-      "duration_ms": 259
+      "duration_ms": 236
     },
     {
       "source": "Writer",
       "ok": true,
       "count": 46,
       "error": null,
-      "duration_ms": 280
+      "duration_ms": 294
     },
     {
       "source": "Synthesia",
       "ok": true,
       "count": 36,
       "error": null,
-      "duration_ms": 297
+      "duration_ms": 278
     },
     {
       "source": "Runway",
       "ok": true,
       "count": 3,
       "error": null,
-      "duration_ms": 297
+      "duration_ms": 276
     },
     {
       "source": "HeyGen",
       "ok": true,
       "count": 19,
       "error": null,
-      "duration_ms": 36
+      "duration_ms": 51
     },
     {
       "source": "Descript",
       "ok": true,
       "count": 9,
       "error": null,
-      "duration_ms": 299
+      "duration_ms": 297
     },
     {
       "source": "Letta",
       "ok": true,
       "count": 4,
       "error": null,
-      "duration_ms": 36
+      "duration_ms": 44
     },
     {
       "source": "Arize AI",
       "ok": true,
       "count": 27,
       "error": null,
-      "duration_ms": 300
+      "duration_ms": 257
     },
     {
       "source": "Databricks",
       "ok": true,
-      "count": 896,
+      "count": 897,
       "error": null,
-      "duration_ms": 577
+      "duration_ms": 4307
     },
     {
       "source": "LangChain",
       "ok": true,
-      "count": 101,
+      "count": 99,
       "error": null,
-      "duration_ms": 86
+      "duration_ms": 164
     },
     {
       "source": "Modal",
       "ok": true,
       "count": 43,
       "error": null,
-      "duration_ms": 273
+      "duration_ms": 236
     },
     {
       "source": "Baseten",
       "ok": true,
       "count": 105,
       "error": null,
-      "duration_ms": 333
+      "duration_ms": 364
     },
     {
       "source": "Fireworks AI",
       "ok": true,
-      "count": 90,
+      "count": 88,
       "error": null,
-      "duration_ms": 302
+      "duration_ms": 236
     },
     {
       "source": "Together AI",
       "ok": true,
       "count": 87,
       "error": null,
-      "duration_ms": 200
+      "duration_ms": 68
     },
     {
       "source": "Cerebras",
       "ok": true,
       "count": 119,
       "error": null,
-      "duration_ms": 117
+      "duration_ms": 292
     },
     {
       "source": "Weaviate",
       "ok": true,
       "count": 2,
       "error": null,
-      "duration_ms": 222
+      "duration_ms": 299
     },
     {
       "source": "Pinecone",
       "ok": true,
       "count": 8,
       "error": null,
-      "duration_ms": 305
+      "duration_ms": 183
     },
     {
       "source": "Redis",
       "ok": true,
       "count": 27,
       "error": null,
-      "duration_ms": 308
+      "duration_ms": 452
     },
     {
       "source": "Confluent",
       "ok": true,
       "count": 0,
       "error": null,
-      "duration_ms": 283
+      "duration_ms": 150
     },
     {
       "source": "Temporal",
       "ok": true,
       "count": 73,
       "error": null,
-      "duration_ms": 351
+      "duration_ms": 407
     },
     {
       "source": "Supabase",
       "ok": true,
       "count": 64,
       "error": null,
-      "duration_ms": 290
+      "duration_ms": 211
     },
     {
       "source": "Stability AI",
       "ok": true,
-      "count": 6,
+      "count": 4,
       "error": null,
-      "duration_ms": 33
+      "duration_ms": 40
     },
     {
       "source": "DeepL",
       "ok": true,
       "count": 9,
       "error": null,
-      "duration_ms": 235
+      "duration_ms": 349
     },
     {
       "source": "Grafana Labs",
       "ok": true,
-      "count": 132,
+      "count": 131,
       "error": null,
-      "duration_ms": 122
+      "duration_ms": 100
     },
     {
       "source": "Datadog",
       "ok": true,
-      "count": 393,
+      "count": 394,
       "error": null,
-      "duration_ms": 388
+      "duration_ms": 1800
     },
     {
       "source": "PagerDuty",
       "ok": true,
-      "count": 48,
+      "count": 49,
       "error": null,
-      "duration_ms": 182
+      "duration_ms": 113
     },
     {
       "source": "Elastic",
       "ok": true,
-      "count": 406,
+      "count": 408,
       "error": null,
-      "duration_ms": 509
+      "duration_ms": 450
     },
     {
       "source": "New Relic",
       "ok": true,
-      "count": 49,
+      "count": 50,
       "error": null,
-      "duration_ms": 83
+      "duration_ms": 97
     },
     {
       "source": "Honeycomb",
       "ok": true,
-      "count": 25,
+      "count": 24,
       "error": null,
-      "duration_ms": 290
+      "duration_ms": 301
     },
     {
       "source": "Kentik",
       "ok": true,
       "count": 4,
       "error": null,
-      "duration_ms": 291
+      "duration_ms": 283
     },
     {
       "source": "Cloudflare",
       "ok": true,
-      "count": 461,
+      "count": 459,
       "error": null,
-      "duration_ms": 534
+      "duration_ms": 532
     },
     {
       "source": "Stripe",
       "ok": true,
-      "count": 717,
+      "count": 719,
       "error": null,
-      "duration_ms": 254
+      "duration_ms": 253
     },
     {
       "source": "Vercel",
       "ok": true,
       "count": 93,
       "error": null,
-      "duration_ms": 135
+      "duration_ms": 146
     },
     {
       "source": "Figma",
       "ok": true,
-      "count": 142,
+      "count": 139,
       "error": null,
-      "duration_ms": 324
+      "duration_ms": 313
     },
     {
       "source": "Airtable",
       "ok": true,
-      "count": 4,
+      "count": 5,
       "error": null,
-      "duration_ms": 246
+      "duration_ms": 252
     },
     {
       "source": "PlanetScale",
       "ok": true,
       "count": 11,
       "error": null,
-      "duration_ms": 298
+      "duration_ms": 302
     },
     {
       "source": "MongoDB",
       "ok": true,
-      "count": 366,
+      "count": 368,
       "error": null,
-      "duration_ms": 432
+      "duration_ms": 538
     },
     {
       "source": "Ramp",
       "ok": true,
-      "count": 172,
+      "count": 167,
       "error": null,
-      "duration_ms": 141
+      "duration_ms": 169
     },
     {
       "source": "Linear",
       "ok": true,
       "count": 32,
       "error": null,
-      "duration_ms": 205
+      "duration_ms": 203
     },
     {
       "source": "Notion",
       "ok": true,
-      "count": 141,
+      "count": 142,
       "error": null,
-      "duration_ms": 379
+      "duration_ms": 354
     },
     {
       "source": "Thales",
       "ok": true,
       "count": 2,
       "error": null,
-      "duration_ms": 541
+      "duration_ms": 571
     },
     {
       "source": "Channable",
       "ok": true,
       "count": 14,
       "error": null,
-      "duration_ms": 333
+      "duration_ms": 315
     },
     {
       "source": "OneDome",
       "ok": true,
       "count": 28,
       "error": null,
-      "duration_ms": 121
+      "duration_ms": 189
     },
     {
       "source": "Personio",
       "ok": true,
       "count": 0,
       "error": null,
-      "duration_ms": 508
+      "duration_ms": 949
     },
     {
       "source": "Celus",
       "ok": true,
       "count": 0,
       "error": null,
-      "duration_ms": 507
+      "duration_ms": 895
     },
     {
       "source": "remoteok",
       "ok": true,
       "count": 99,
       "error": null,
-      "duration_ms": 1052
+      "duration_ms": 572
     },
     {
       "source": "remotive [{'category': 'software-dev'}]",
       "ok": true,
       "count": 11,
       "error": null,
-      "duration_ms": 113
+      "duration_ms": 112
     },
     {
       "source": "himalayas",
       "ok": true,
       "count": 20,
       "error": null,
-      "duration_ms": 203
+      "duration_ms": 235
     },
     {
       "source": "workingnomads",
       "ok": true,
-      "count": 42,
+      "count": 41,
       "error": null,
-      "duration_ms": 153
+      "duration_ms": 635
     },
     {
       "source": "hn_whoshiring [{'threads': 1}]",
       "ok": true,
       "count": 235,
       "error": null,
-      "duration_ms": 871
+      "duration_ms": 1034
     },
     {
       "source": "weworkremotely",
       "ok": true,
       "count": 53,
       "error": null,
-      "duration_ms": 752
+      "duration_ms": 551
     }
   ],
-  "filtered_out": 8688,
+  "filtered_out": 8677,
   "merged_duplicates": 3
 }
