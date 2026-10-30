@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-30T02:56:43.779351+00:00",
-  "count": 24,
+  "generated_at": "2026-10-30T09:46:33.646447+00:00",
+  "count": 26,
   "jobs": [
     {
       "id": "19d11853d84f8a59",
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 14d ago"
+        "posted 15d ago"
       ],
       "score": 80,
       "is_senior": false,
@@ -74,7 +74,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 21d ago"
+        "posted 22d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -98,7 +98,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 21d ago"
+        "posted 22d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -234,7 +234,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 20d ago"
+        "posted 21d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -294,6 +294,52 @@
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
+      "id": "1c9d97e40f82ec64",
+      "title": "Sr. IT Systems Engineer",
+      "company": "Carrot",
+      "url": "https://weworkremotely.com/remote-jobs/carrot-sr-it-systems-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-10-30T07:31:10+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "via alias \"Systems Engineer\"",
+        "remote-friendly location",
+        "posted 0d ago",
+        "senior-leaning"
+      ],
+      "score": 50,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-10-30T09:46:33.646447+00:00"
+    },
+    {
+      "id": "f952f779052692ec",
+      "title": "DevOps Engineer, Edge and Developer Experience (Remote Eligible in Bulgaria)",
+      "company": "Smartsheet",
+      "url": "https://weworkremotely.com/remote-jobs/smartsheet-devops-engineer-edge-and-developer-experience-remote-eligible-in-bulgaria",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-10-30T07:31:10+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"DevOps Engineer\"",
+        "remote-friendly location",
+        "posted 0d ago"
+      ],
+      "score": 50,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-30T09:46:33.646447+00:00"
+    },
+    {
       "id": "56f2af44e6281949",
       "title": "Senior IT Systems Engineer",
       "company": "Upsun",
@@ -309,7 +355,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 2d ago",
+        "posted 3d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -332,7 +378,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 3d ago"
+        "posted 4d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -394,7 +440,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 6d ago"
+        "posted 7d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -417,7 +463,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
-        "posted 23d ago",
+        "posted 24d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -465,7 +511,7 @@
       "match_reasons": [
         "title matches \"Research Engineer\"",
         "remote-friendly location",
-        "posted 25d ago"
+        "posted 26d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -489,7 +535,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 27d ago",
+        "posted 28d ago",
         "senior-leaning"
       ],
       "score": 45,
