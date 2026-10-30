@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-30T09:46:33.646447+00:00",
+  "generated_at": "2026-10-30T16:34:23.754429+00:00",
   "count": 26,
   "jobs": [
     {
@@ -153,7 +153,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 15d ago"
+        "posted 16d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -180,7 +180,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 16d ago"
+        "posted 17d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -386,46 +386,6 @@
       "first_seen": "2026-10-26T13:31:27.830327+00:00"
     },
     {
-      "id": "40bc52246167d13f",
-      "title": "Senior DevOps Engineer",
-      "company": "Lemon.io",
-      "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557",
-      "source": "remoteok",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-10-22T12:58:28+00:00",
-      "salary": "50k-150k",
-      "tags": [
-        "devops",
-        "engineer",
-        "dev",
-        "python",
-        "golang",
-        "aws",
-        "gcp",
-        "kubernetes",
-        "sql",
-        "linux",
-        "ansible",
-        "ai",
-        "full time",
-        "full stack",
-        "remote",
-        "remote work"
-      ],
-      "match_reasons": [
-        "title matches \"DevOps Engineer\"",
-        "remote-friendly location",
-        "posted 7d ago",
-        "senior-leaning"
-      ],
-      "score": 50,
-      "is_senior": true,
-      "also_on": [],
-      "first_seen": "2026-10-23T15:46:42.733145+00:00"
-    },
-    {
       "id": "5384ee5e8df1172c",
       "title": "QA/DevOps Engineer",
       "company": "Discord",
@@ -470,6 +430,46 @@
       "is_senior": true,
       "also_on": [],
       "first_seen": "2026-10-24T14:52:41.611786+00:00"
+    },
+    {
+      "id": "40bc52246167d13f",
+      "title": "Senior DevOps Engineer",
+      "company": "Lemon.io",
+      "url": "https://remoteOK.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557",
+      "source": "remoteok",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-10-22T12:58:28+00:00",
+      "salary": "50k-150k",
+      "tags": [
+        "devops",
+        "engineer",
+        "dev",
+        "python",
+        "golang",
+        "aws",
+        "gcp",
+        "kubernetes",
+        "sql",
+        "linux",
+        "ansible",
+        "ai",
+        "full time",
+        "full stack",
+        "remote",
+        "remote work"
+      ],
+      "match_reasons": [
+        "title matches \"DevOps Engineer\"",
+        "remote-friendly location",
+        "posted 8d ago",
+        "senior-leaning"
+      ],
+      "score": 45,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-10-23T15:46:42.733145+00:00"
     },
     {
       "id": "b65aa106a9946636",
