@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-31T06:43:48.853278+00:00",
-  "count": 30,
+  "generated_at": "2026-10-31T13:24:25.668208+00:00",
+  "count": 32,
   "jobs": [
     {
       "id": "19d11853d84f8a59",
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 15d ago"
+        "posted 16d ago"
       ],
       "score": 80,
       "is_senior": false,
@@ -56,6 +56,33 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
+    },
+    {
+      "id": "591560111a1fd42c",
+      "title": "Software Engineer - AI Tooling Infrastructure",
+      "company": "Supabase",
+      "url": "https://jobs.ashbyhq.com/supabase/fb0b563a-e541-43fd-8555-9eb6473aaa11",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote, Global",
+      "group": "ml-platform",
+      "posted_at": "2026-10-31T08:47:34.051000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering"
+      ],
+      "match_reasons": [
+        "title matches \"AI Platform\"",
+        "via alias \"AI Tooling\"",
+        "remote-friendly location",
+        "direct from company board",
+        "posted 0d ago"
+      ],
+      "score": 65,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-31T13:24:25.668208+00:00"
     },
     {
       "id": "7f6b6144ff386139",
@@ -180,7 +207,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 22d ago"
+        "posted 23d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -204,7 +231,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 22d ago"
+        "posted 23d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -259,7 +286,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 16d ago"
+        "posted 17d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -340,7 +367,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 21d ago"
+        "posted 22d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -415,7 +442,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 0d ago",
+        "posted 1d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -438,7 +465,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 0d ago"
+        "posted 1d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -461,7 +488,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 3d ago",
+        "posted 4d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -484,7 +511,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 4d ago"
+        "posted 5d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -492,26 +519,26 @@
       "first_seen": "2026-10-26T13:31:27.830327+00:00"
     },
     {
-      "id": "5384ee5e8df1172c",
-      "title": "QA/DevOps Engineer",
-      "company": "Discord",
-      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
+      "id": "97fcc9f7e9f84588",
+      "title": "Applied AI Engineers for telecommunications company",
+      "company": "Toptal",
+      "url": "https://weworkremotely.com/remote-jobs/toptal-applied-ai-engineers-for-telecommunications-company",
       "source": "weworkremotely",
       "tier": 2,
       "location": "Remote",
       "group": null,
-      "posted_at": "2026-10-23T07:31:21+00:00",
+      "posted_at": "2026-10-12T16:38:01+00:00",
       "salary": null,
       "tags": [],
       "match_reasons": [
-        "title matches \"DevOps Engineer\"",
+        "title matches \"AI Engineer\"",
         "remote-friendly location",
-        "posted 7d ago"
+        "posted 18d ago"
       ],
-      "score": 50,
+      "score": 45,
       "is_senior": false,
       "also_on": [],
-      "first_seen": "2026-10-23T11:10:47.395529+00:00"
+      "first_seen": "2026-10-31T13:24:25.668208+00:00"
     },
     {
       "id": "2197a841d96100c8",
@@ -529,7 +556,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
-        "posted 24d ago",
+        "posted 25d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -569,13 +596,35 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 8d ago",
+        "posted 9d ago",
         "senior-leaning"
       ],
       "score": 45,
       "is_senior": true,
       "also_on": [],
       "first_seen": "2026-10-23T15:46:42.733145+00:00"
+    },
+    {
+      "id": "5384ee5e8df1172c",
+      "title": "QA/DevOps Engineer",
+      "company": "Discord",
+      "url": "https://weworkremotely.com/remote-jobs/discord-qa-devops-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-10-23T07:31:21+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"DevOps Engineer\"",
+        "remote-friendly location",
+        "posted 8d ago"
+      ],
+      "score": 45,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-23T11:10:47.395529+00:00"
     },
     {
       "id": "b65aa106a9946636",
@@ -617,7 +666,7 @@
       "match_reasons": [
         "title matches \"Research Engineer\"",
         "remote-friendly location",
-        "posted 26d ago"
+        "posted 27d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -641,7 +690,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 28d ago",
+        "posted 29d ago",
         "senior-leaning"
       ],
       "score": 45,
