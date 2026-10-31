@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T13:24:25.668208+00:00",
+  "generated_at": "2026-10-31T17:55:19.664111+00:00",
   "count": 32,
   "jobs": [
     {
@@ -259,7 +259,7 @@
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 9d ago"
+        "posted 10d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -313,7 +313,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 17d ago"
+        "posted 18d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -340,7 +340,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 21d ago"
+        "posted 22d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -533,7 +533,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "remote-friendly location",
-        "posted 18d ago"
+        "posted 19d ago"
       ],
       "score": 45,
       "is_senior": false,
