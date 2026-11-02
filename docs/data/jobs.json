@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T08:59:14.911185+00:00",
+  "generated_at": "2026-11-02T19:25:08.257871+00:00",
   "count": 31,
   "jobs": [
     {
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 17d ago"
+        "posted 18d ago"
       ],
       "score": 80,
       "is_senior": false,
@@ -104,7 +104,7 @@
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 2d ago",
+        "posted 3d ago",
         "senior-leaning"
       ],
       "score": 65,
@@ -125,7 +125,7 @@
       "salary": null,
       "tags": [
         "FullTime",
-        "Engineering"
+        "Research"
       ],
       "match_reasons": [
         "title matches \"Research Engineer\"",
@@ -151,7 +151,7 @@
       "salary": null,
       "tags": [
         "FullTime",
-        "Engineering"
+        "Research"
       ],
       "match_reasons": [
         "title matches \"Research Engineer\"",
@@ -177,7 +177,7 @@
       "salary": null,
       "tags": [
         "FullTime",
-        "Engineering"
+        "Research"
       ],
       "match_reasons": [
         "title matches \"Research Engineer\"",
@@ -239,6 +239,33 @@
       "first_seen": "2026-10-28T08:58:15.415611+00:00"
     },
     {
+      "id": "f6e7c8bbd89003de",
+      "title": "Senior AI/ML Engineer, Senior Backend Engineer",
+      "company": "Confidential (established Saudi engineering & industrial services group, building a new in-house AI unit)",
+      "url": "https://news.ycombinator.com/item?id=50339161",
+      "source": "hn_whoshiring",
+      "tier": 2,
+      "location": "Khobar, Saudi Arabia",
+      "group": null,
+      "posted_at": "2026-11-02T16:22:17+00:00",
+      "salary": null,
+      "tags": [
+        "hacker-news"
+      ],
+      "match_reasons": [
+        "title matches \"ML Engineer\"",
+        "title matches \"AI Engineer\"",
+        "via alias \"AI/ML Engineer\"",
+        "title matches \"AI/ML Engineer\"",
+        "posted 0d ago",
+        "senior-leaning"
+      ],
+      "score": 60,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-11-02T19:25:08.257871+00:00"
+    },
+    {
       "id": "6a0ba29227a51408",
       "title": "IT Systems Engineer",
       "company": "Baseten",
@@ -259,7 +286,7 @@
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 11d ago"
+        "posted 12d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -286,7 +313,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 19d ago"
+        "posted 20d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -313,7 +340,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 23d ago"
+        "posted 24d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -506,7 +533,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "remote-friendly location",
-        "posted 20d ago"
+        "posted 21d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -569,7 +596,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 10d ago",
+        "posted 11d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -645,31 +672,6 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-19T10:57:16.510133+00:00"
-    },
-    {
-      "id": "6c8a86e779471ce1",
-      "title": "IT Operations Lead, Software and Platform engineers",
-      "company": "EggAI",
-      "url": "https://news.ycombinator.com/item?id=49931362",
-      "source": "hn_whoshiring",
-      "tier": 2,
-      "location": "REMOTE (EU)",
-      "group": null,
-      "posted_at": "2026-10-02T09:00:41+00:00",
-      "salary": null,
-      "tags": [
-        "hacker-news"
-      ],
-      "match_reasons": [
-        "title matches \"Platform Engineer\"",
-        "remote-friendly location",
-        "posted 30d ago",
-        "senior-leaning"
-      ],
-      "score": 45,
-      "is_senior": true,
-      "also_on": [],
-      "first_seen": "2026-10-10T06:37:22.618427+00:00"
     },
     {
       "id": "72aad65545d72782",
