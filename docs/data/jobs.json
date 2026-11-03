@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-03T01:46:15.230318+00:00",
-  "count": 32,
+  "generated_at": "2026-11-03T09:08:03.748315+00:00",
+  "count": 31,
   "jobs": [
     {
       "id": "19d11853d84f8a59",
@@ -104,7 +104,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 2d ago"
+        "posted 3d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -234,7 +234,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 25d ago"
+        "posted 26d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -258,7 +258,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 25d ago"
+        "posted 26d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -394,7 +394,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 24d ago"
+        "posted 25d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -469,7 +469,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 3d ago",
+        "posted 4d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -492,7 +492,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 3d ago"
+        "posted 4d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -515,35 +515,13 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 6d ago",
+        "posted 7d ago",
         "senior-leaning"
       ],
       "score": 50,
       "is_senior": true,
       "also_on": [],
       "first_seen": "2026-10-27T08:00:34.346844+00:00"
-    },
-    {
-      "id": "6f217349ccd58da6",
-      "title": "DevOps Engineer II, Cloud Platform",
-      "company": "Upstart",
-      "url": "https://weworkremotely.com/remote-jobs/upstart-devops-engineer-ii-cloud-platform",
-      "source": "weworkremotely",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-10-26T07:31:14+00:00",
-      "salary": null,
-      "tags": [],
-      "match_reasons": [
-        "title matches \"DevOps Engineer\"",
-        "remote-friendly location",
-        "posted 7d ago"
-      ],
-      "score": 50,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-10-26T13:31:27.830327+00:00"
     },
     {
       "id": "97fcc9f7e9f84588",
@@ -568,6 +546,28 @@
       "first_seen": "2026-10-31T13:24:25.668208+00:00"
     },
     {
+      "id": "6f217349ccd58da6",
+      "title": "DevOps Engineer II, Cloud Platform",
+      "company": "Upstart",
+      "url": "https://weworkremotely.com/remote-jobs/upstart-devops-engineer-ii-cloud-platform",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-10-26T07:31:14+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"DevOps Engineer\"",
+        "remote-friendly location",
+        "posted 8d ago"
+      ],
+      "score": 45,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-26T13:31:27.830327+00:00"
+    },
+    {
       "id": "2197a841d96100c8",
       "title": "Senior Infrastructure Engineer",
       "company": "Webflow",
@@ -583,7 +583,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
-        "posted 27d ago",
+        "posted 28d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -646,7 +646,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 10d ago"
+        "posted 11d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -677,28 +677,6 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-20T22:58:53.633547+00:00"
-    },
-    {
-      "id": "ea2f3b21995d26b2",
-      "title": "Abuse Research Engineer",
-      "company": "Stripe",
-      "url": "https://weworkremotely.com/remote-jobs/stripe-abuse-research-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-10-04T07:31:08+00:00",
-      "salary": null,
-      "tags": [],
-      "match_reasons": [
-        "title matches \"Research Engineer\"",
-        "remote-friendly location",
-        "posted 29d ago"
-      ],
-      "score": 45,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-10-19T10:57:16.510133+00:00"
     },
     {
       "id": "72aad65545d72782",
