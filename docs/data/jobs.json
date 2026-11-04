@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T02:41:13.056081+00:00",
+  "generated_at": "2026-11-04T10:35:15.626862+00:00",
   "count": 31,
   "jobs": [
     {
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 19d ago"
+        "posted 20d ago"
       ],
       "score": 80,
       "is_senior": false,
@@ -104,7 +104,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 3d ago"
+        "posted 4d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -234,7 +234,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 26d ago"
+        "posted 27d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -258,7 +258,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 26d ago"
+        "posted 27d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -394,7 +394,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 25d ago"
+        "posted 26d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -502,7 +502,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 4d ago",
+        "posted 5d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -525,36 +525,12 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 4d ago"
+        "posted 5d ago"
       ],
       "score": 50,
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-30T09:46:33.646447+00:00"
-    },
-    {
-      "id": "56f2af44e6281949",
-      "title": "Senior IT Systems Engineer",
-      "company": "Upsun",
-      "url": "https://weworkremotely.com/remote-jobs/upsun-senior-it-systems-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-10-27T07:30:51+00:00",
-      "salary": null,
-      "tags": [],
-      "match_reasons": [
-        "title matches \"Platform Engineer\"",
-        "via alias \"Systems Engineer\"",
-        "remote-friendly location",
-        "posted 7d ago",
-        "senior-leaning"
-      ],
-      "score": 50,
-      "is_senior": true,
-      "also_on": [],
-      "first_seen": "2026-10-27T08:00:34.346844+00:00"
     },
     {
       "id": "97fcc9f7e9f84588",
@@ -579,6 +555,30 @@
       "first_seen": "2026-10-31T13:24:25.668208+00:00"
     },
     {
+      "id": "56f2af44e6281949",
+      "title": "Senior IT Systems Engineer",
+      "company": "Upsun",
+      "url": "https://weworkremotely.com/remote-jobs/upsun-senior-it-systems-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-10-27T07:30:51+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "via alias \"Systems Engineer\"",
+        "remote-friendly location",
+        "posted 8d ago",
+        "senior-leaning"
+      ],
+      "score": 45,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-10-27T08:00:34.346844+00:00"
+    },
+    {
       "id": "6f217349ccd58da6",
       "title": "DevOps Engineer II, Cloud Platform",
       "company": "Upstart",
@@ -593,7 +593,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 8d ago"
+        "posted 9d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -616,7 +616,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
-        "posted 28d ago",
+        "posted 29d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -679,7 +679,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 11d ago"
+        "posted 12d ago"
       ],
       "score": 45,
       "is_senior": false,
