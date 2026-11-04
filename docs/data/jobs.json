@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T10:35:15.626862+00:00",
+  "generated_at": "2026-11-04T18:13:23.701869+00:00",
   "count": 31,
   "jobs": [
     {
@@ -131,7 +131,7 @@
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 4d ago",
+        "posted 5d ago",
         "senior-leaning"
       ],
       "score": 65,
@@ -284,7 +284,7 @@
         "title matches \"AI Engineer\"",
         "via alias \"AI/ML Engineer\"",
         "title matches \"AI/ML Engineer\"",
-        "posted 1d ago",
+        "posted 2d ago",
         "senior-leaning"
       ],
       "score": 60,
@@ -313,7 +313,7 @@
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 13d ago"
+        "posted 14d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -340,7 +340,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 21d ago"
+        "posted 22d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -367,7 +367,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 25d ago"
+        "posted 26d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -479,7 +479,7 @@
       "match_reasons": [
         "title matches \"ML Engineer\"",
         "remote-friendly location",
-        "posted 1d ago"
+        "posted 2d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -547,7 +547,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "remote-friendly location",
-        "posted 22d ago"
+        "posted 23d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -656,7 +656,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 12d ago",
+        "posted 13d ago",
         "senior-leaning"
       ],
       "score": 45,
