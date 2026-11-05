@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T13:29:34.986676+00:00",
+  "generated_at": "2026-11-05T20:48:58.427534+00:00",
   "count": 30,
   "jobs": [
     {
@@ -77,7 +77,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 2d ago"
+        "posted 3d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -131,7 +131,7 @@
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 5d ago",
+        "posted 6d ago",
         "senior-leaning"
       ],
       "score": 65,
@@ -284,7 +284,7 @@
         "title matches \"AI Engineer\"",
         "via alias \"AI/ML Engineer\"",
         "title matches \"AI/ML Engineer\"",
-        "posted 2d ago",
+        "posted 3d ago",
         "senior-leaning"
       ],
       "score": 60,
@@ -313,7 +313,7 @@
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 14d ago"
+        "posted 15d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -340,7 +340,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 22d ago"
+        "posted 23d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -367,7 +367,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 26d ago"
+        "posted 27d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -547,7 +547,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "remote-friendly location",
-        "posted 23d ago"
+        "posted 24d ago"
       ],
       "score": 45,
       "is_senior": false,
