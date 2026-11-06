@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-06T01:24:46.759669+00:00",
-  "count": 30,
+  "generated_at": "2026-11-06T08:29:13.019867+00:00",
+  "count": 31,
   "jobs": [
     {
       "id": "19d11853d84f8a59",
@@ -234,7 +234,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 28d ago"
+        "posted 29d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -258,7 +258,7 @@
         "via alias \"Machine Learning Engineer\"",
         "title matches \"Machine Learning Engineer\"",
         "remote-friendly location",
-        "posted 28d ago"
+        "posted 29d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -402,6 +402,32 @@
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
     },
     {
+      "id": "bbf035839c641423",
+      "title": "Applied AI Engineer, Partner - AWS",
+      "company": "OpenAI",
+      "url": "https://jobs.ashbyhq.com/openai/87989505-81e5-4513-bba0-5f00bb064216",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Bangalore - Remote",
+      "group": "ai-native",
+      "posted_at": "2026-06-01T08:53:34.275000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Go To Market",
+        "Technical Success"
+      ],
+      "match_reasons": [
+        "title matches \"AI Engineer\"",
+        "remote-friendly location",
+        "direct from company board"
+      ],
+      "score": 55,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-11-06T08:29:13.019867+00:00"
+    },
+    {
       "id": "40e0220372975f04",
       "title": "Platform Engineer - Compute Capacity",
       "company": "Supabase",
@@ -502,7 +528,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 6d ago",
+        "posted 7d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -525,7 +551,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 6d ago"
+        "posted 7d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -570,7 +596,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 9d ago",
+        "posted 10d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -593,7 +619,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 10d ago"
+        "posted 11d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -655,7 +681,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 13d ago"
+        "posted 14d ago"
       ],
       "score": 45,
       "is_senior": false,
