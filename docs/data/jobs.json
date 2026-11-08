@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T08:41:35.173695+00:00",
+  "generated_at": "2026-11-08T15:50:22.717161+00:00",
   "count": 32,
   "jobs": [
     {
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 23d ago"
+        "posted 24d ago"
       ],
       "score": 80,
       "is_senior": false,
@@ -83,33 +83,6 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-11-03T01:46:15.230318+00:00"
-    },
-    {
-      "id": "591560111a1fd42c",
-      "title": "Software Engineer - AI Tooling Infrastructure",
-      "company": "Supabase",
-      "url": "https://jobs.ashbyhq.com/supabase/fb0b563a-e541-43fd-8555-9eb6473aaa11",
-      "source": "ashby",
-      "tier": 1,
-      "location": "Remote, Global",
-      "group": "ml-platform",
-      "posted_at": "2026-10-31T08:47:34.051000+00:00",
-      "salary": null,
-      "tags": [
-        "FullTime",
-        "Engineering"
-      ],
-      "match_reasons": [
-        "title matches \"AI Platform\"",
-        "via alias \"AI Tooling\"",
-        "remote-friendly location",
-        "direct from company board",
-        "posted 7d ago"
-      ],
-      "score": 65,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-10-31T13:24:25.668208+00:00"
     },
     {
       "id": "60959f3582f7f860",
@@ -239,6 +212,33 @@
       "is_senior": true,
       "also_on": [],
       "first_seen": "2026-11-02T19:25:08.257871+00:00"
+    },
+    {
+      "id": "591560111a1fd42c",
+      "title": "Software Engineer - AI Tooling Infrastructure",
+      "company": "Supabase",
+      "url": "https://jobs.ashbyhq.com/supabase/fb0b563a-e541-43fd-8555-9eb6473aaa11",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote, Global",
+      "group": "ml-platform",
+      "posted_at": "2026-10-31T08:47:34.051000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Engineering"
+      ],
+      "match_reasons": [
+        "title matches \"AI Platform\"",
+        "via alias \"AI Tooling\"",
+        "remote-friendly location",
+        "direct from company board",
+        "posted 8d ago"
+      ],
+      "score": 60,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-31T13:24:25.668208+00:00"
     },
     {
       "id": "7f6b6144ff386139",
@@ -392,7 +392,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "direct from company board",
-        "posted 1d ago"
+        "posted 2d ago"
       ],
       "score": 55,
       "is_senior": false,
@@ -542,7 +542,7 @@
       "match_reasons": [
         "title matches \"ML Engineer\"",
         "remote-friendly location",
-        "posted 5d ago"
+        "posted 6d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -695,7 +695,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 16d ago",
+        "posted 17d ago",
         "senior-leaning"
       ],
       "score": 45,
