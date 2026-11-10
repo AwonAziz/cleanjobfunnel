@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T04:46:47.826478+00:00",
+  "generated_at": "2026-11-10T13:17:33.935352+00:00",
   "count": 33,
   "jobs": [
     {
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 25d ago"
+        "posted 26d ago"
       ],
       "score": 80,
       "is_senior": false,
@@ -209,7 +209,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 9d ago"
+        "posted 10d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -513,6 +513,28 @@
       "first_seen": "2026-11-06T16:14:43.446900+00:00"
     },
     {
+      "id": "0b46251fa6443347",
+      "title": "Founding Forward Deployed Engineer",
+      "company": "Alloy",
+      "url": "https://weworkremotely.com/remote-jobs/alloy-founding-forward-deployed-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-10-18T07:31:05+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"Forward Deployed Engineer\"",
+        "remote-friendly location",
+        "posted 23d ago"
+      ],
+      "score": 45,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-11-09T14:01:36.588546+00:00"
+    },
+    {
       "id": "b26c80b36878d6e9",
       "title": "AI ML Engineer",
       "company": "Docusketch",
@@ -538,34 +560,12 @@
       "match_reasons": [
         "title matches \"ML Engineer\"",
         "remote-friendly location",
-        "posted 7d ago"
-      ],
-      "score": 50,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-11-03T17:09:37.268220+00:00"
-    },
-    {
-      "id": "0b46251fa6443347",
-      "title": "Founding Forward Deployed Engineer",
-      "company": "Alloy",
-      "url": "https://weworkremotely.com/remote-jobs/alloy-founding-forward-deployed-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-10-18T07:31:05+00:00",
-      "salary": null,
-      "tags": [],
-      "match_reasons": [
-        "title matches \"Forward Deployed Engineer\"",
-        "remote-friendly location",
-        "posted 22d ago"
+        "posted 8d ago"
       ],
       "score": 45,
       "is_senior": false,
       "also_on": [],
-      "first_seen": "2026-11-09T14:01:36.588546+00:00"
+      "first_seen": "2026-11-03T17:09:37.268220+00:00"
     },
     {
       "id": "97fcc9f7e9f84588",
@@ -605,7 +605,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 10d ago",
+        "posted 11d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -628,7 +628,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 10d ago"
+        "posted 11d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -651,7 +651,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 13d ago",
+        "posted 14d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -674,7 +674,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 14d ago"
+        "posted 15d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -713,7 +713,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 18d ago",
+        "posted 19d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -736,7 +736,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 17d ago"
+        "posted 18d ago"
       ],
       "score": 45,
       "is_senior": false,
