@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T07:33:27.599551+00:00",
+  "generated_at": "2026-11-11T15:36:37.803178+00:00",
   "count": 35,
   "jobs": [
     {
@@ -24,7 +24,7 @@
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 26d ago"
+        "posted 27d ago"
       ],
       "score": 80,
       "is_senior": false,
@@ -131,7 +131,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 10d ago"
+        "posted 11d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -314,7 +314,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "direct from company board",
-        "posted 0d ago",
+        "posted 1d ago",
         "senior-leaning"
       ],
       "score": 55,
@@ -337,7 +337,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "direct from company board",
-        "posted 4d ago"
+        "posted 5d ago"
       ],
       "score": 55,
       "is_senior": false,
@@ -610,7 +610,7 @@
       "match_reasons": [
         "title matches \"ML Engineer\"",
         "remote-friendly location",
-        "posted 8d ago"
+        "posted 9d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -763,7 +763,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 19d ago",
+        "posted 20d ago",
         "senior-leaning"
       ],
       "score": 45,
