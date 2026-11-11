@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-10T20:30:02.821582+00:00",
+  "generated_at": "2026-11-11T00:53:55.790167+00:00",
   "count": 35,
   "jobs": [
     {
@@ -85,84 +85,6 @@
       "first_seen": "2026-11-10T20:30:02.821582+00:00"
     },
     {
-      "id": "60959f3582f7f860",
-      "title": "Research Engineer / Scientist, Data & Evals",
-      "company": "Harvey",
-      "url": "https://jobs.ashbyhq.com/harvey/6c87b165-99ad-484e-b34b-1cf2ab0c92d5",
-      "source": "ashby",
-      "tier": 1,
-      "location": "Remote",
-      "group": "ai-native",
-      "posted_at": "2026-11-02T21:04:54.073000+00:00",
-      "salary": null,
-      "tags": [
-        "FullTime",
-        "Research"
-      ],
-      "match_reasons": [
-        "title matches \"Research Engineer\"",
-        "remote-friendly location",
-        "direct from company board",
-        "posted 7d ago"
-      ],
-      "score": 65,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-10-30T21:01:42.212971+00:00"
-    },
-    {
-      "id": "35d61b94309fff31",
-      "title": "Research Engineer, Infrastructure",
-      "company": "Harvey",
-      "url": "https://jobs.ashbyhq.com/harvey/9b63e15d-2d43-4c4a-94be-75908e942ea7",
-      "source": "ashby",
-      "tier": 1,
-      "location": "Remote",
-      "group": "ai-native",
-      "posted_at": "2026-11-02T21:05:20.888000+00:00",
-      "salary": null,
-      "tags": [
-        "FullTime",
-        "Research"
-      ],
-      "match_reasons": [
-        "title matches \"Research Engineer\"",
-        "remote-friendly location",
-        "direct from company board",
-        "posted 7d ago"
-      ],
-      "score": 65,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-10-30T21:01:42.212971+00:00"
-    },
-    {
-      "id": "7047a7624015cd6e",
-      "title": "Research Engineer / Scientist, Reinforcement Learning",
-      "company": "Harvey",
-      "url": "https://jobs.ashbyhq.com/harvey/30df72cf-ee68-4194-864e-47745ca8b6e0",
-      "source": "ashby",
-      "tier": 1,
-      "location": "Remote",
-      "group": "ai-native",
-      "posted_at": "2026-11-02T21:04:35.708000+00:00",
-      "salary": null,
-      "tags": [
-        "FullTime",
-        "Research"
-      ],
-      "match_reasons": [
-        "title matches \"Research Engineer\"",
-        "remote-friendly location",
-        "direct from company board",
-        "posted 7d ago"
-      ],
-      "score": 65,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-10-30T21:01:42.212971+00:00"
-    },
-    {
       "id": "d83a0886dfaf1875",
       "title": "Full-Stack Engineer (Backend Leaning) - Platform Engineering",
       "company": "ElevenLabs",
@@ -241,6 +163,84 @@
       ],
       "score": 60,
       "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-10-30T21:01:42.212971+00:00"
+    },
+    {
+      "id": "60959f3582f7f860",
+      "title": "Research Engineer / Scientist, Data & Evals",
+      "company": "Harvey",
+      "url": "https://jobs.ashbyhq.com/harvey/6c87b165-99ad-484e-b34b-1cf2ab0c92d5",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote",
+      "group": "ai-native",
+      "posted_at": "2026-11-02T21:04:54.073000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Research"
+      ],
+      "match_reasons": [
+        "title matches \"Research Engineer\"",
+        "remote-friendly location",
+        "direct from company board",
+        "posted 8d ago"
+      ],
+      "score": 60,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-30T21:01:42.212971+00:00"
+    },
+    {
+      "id": "35d61b94309fff31",
+      "title": "Research Engineer, Infrastructure",
+      "company": "Harvey",
+      "url": "https://jobs.ashbyhq.com/harvey/9b63e15d-2d43-4c4a-94be-75908e942ea7",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote",
+      "group": "ai-native",
+      "posted_at": "2026-11-02T21:05:20.888000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Research"
+      ],
+      "match_reasons": [
+        "title matches \"Research Engineer\"",
+        "remote-friendly location",
+        "direct from company board",
+        "posted 8d ago"
+      ],
+      "score": 60,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-10-30T21:01:42.212971+00:00"
+    },
+    {
+      "id": "7047a7624015cd6e",
+      "title": "Research Engineer / Scientist, Reinforcement Learning",
+      "company": "Harvey",
+      "url": "https://jobs.ashbyhq.com/harvey/30df72cf-ee68-4194-864e-47745ca8b6e0",
+      "source": "ashby",
+      "tier": 1,
+      "location": "Remote",
+      "group": "ai-native",
+      "posted_at": "2026-11-02T21:04:35.708000+00:00",
+      "salary": null,
+      "tags": [
+        "FullTime",
+        "Research"
+      ],
+      "match_reasons": [
+        "title matches \"Research Engineer\"",
+        "remote-friendly location",
+        "direct from company board",
+        "posted 8d ago"
+      ],
+      "score": 60,
+      "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-30T21:01:42.212971+00:00"
     },
