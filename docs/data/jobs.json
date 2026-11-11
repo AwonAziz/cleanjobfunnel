@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-11T00:53:55.790167+00:00",
+  "generated_at": "2026-11-11T07:33:27.599551+00:00",
   "count": 35,
   "jobs": [
     {
@@ -516,7 +516,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 1d ago"
+        "posted 2d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -577,7 +577,7 @@
       "match_reasons": [
         "title matches \"Forward Deployed Engineer\"",
         "remote-friendly location",
-        "posted 23d ago"
+        "posted 24d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -655,7 +655,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 11d ago",
+        "posted 12d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -678,7 +678,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 11d ago"
+        "posted 12d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -701,7 +701,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 14d ago",
+        "posted 15d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -724,7 +724,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 15d ago"
+        "posted 16d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -786,7 +786,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 18d ago"
+        "posted 19d ago"
       ],
       "score": 45,
       "is_senior": false,
