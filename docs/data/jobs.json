@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T21:36:31.201111+00:00",
+  "generated_at": "2026-11-14T01:45:52.078146+00:00",
   "count": 36,
   "jobs": [
     {
@@ -94,7 +94,22 @@
       "salary": null,
       "tags": [
         "FullTime",
-        "Engineering"
+        "Engineering",
+        "dev",
+        "design",
+        "front end",
+        "customer support",
+        "testing",
+        "marketing",
+        "virtual assistant",
+        "javascript",
+        "education",
+        "typescript",
+        "sys admin",
+        "medical",
+        "engineer",
+        "backend",
+        "digital nomad"
       ],
       "match_reasons": [
         "title matches \"AI Platform\"",
@@ -105,7 +120,9 @@
       ],
       "score": 65,
       "is_senior": false,
-      "also_on": [],
+      "also_on": [
+        "remoteok"
+      ],
       "first_seen": "2026-11-10T20:30:02.821582+00:00"
     },
     {
