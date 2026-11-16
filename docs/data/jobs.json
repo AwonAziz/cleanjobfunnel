@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T05:19:34.050166+00:00",
+  "generated_at": "2026-11-16T13:50:21.989892+00:00",
   "count": 35,
   "jobs": [
     {
@@ -144,7 +144,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 15d ago"
+        "posted 16d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -587,7 +587,7 @@
       "match_reasons": [
         "title matches \"Forward Deployed Engineer\"",
         "remote-friendly location",
-        "posted 28d ago"
+        "posted 29d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -659,7 +659,7 @@
       "match_reasons": [
         "title matches \"ML Engineer\"",
         "remote-friendly location",
-        "posted 13d ago"
+        "posted 14d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -682,7 +682,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 16d ago",
+        "posted 17d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -705,7 +705,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 16d ago"
+        "posted 17d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -728,7 +728,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 19d ago",
+        "posted 20d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -751,7 +751,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 20d ago"
+        "posted 21d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -790,7 +790,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 24d ago",
+        "posted 25d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -813,7 +813,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 23d ago"
+        "posted 24d ago"
       ],
       "score": 45,
       "is_senior": false,
