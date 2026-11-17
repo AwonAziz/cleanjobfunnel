@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T23:14:42.996390+00:00",
+  "generated_at": "2026-11-17T05:07:24.652674+00:00",
   "count": 38,
   "jobs": [
     {
@@ -598,28 +598,6 @@
       "first_seen": "2026-11-13T21:36:31.201111+00:00"
     },
     {
-      "id": "715630478f0bd2c2",
-      "title": "Full-Stack Platform Engineer",
-      "company": "Edgewater Federal Solutions, Inc.",
-      "url": "https://weworkremotely.com/remote-jobs/edgewater-federal-solutions-inc-full-stack-platform-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-11-09T01:53:39+00:00",
-      "salary": null,
-      "tags": [],
-      "match_reasons": [
-        "title matches \"Platform Engineer\"",
-        "remote-friendly location",
-        "posted 7d ago"
-      ],
-      "score": 50,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-11-09T05:06:14.566846+00:00"
-    },
-    {
       "id": "e32a28f812b949cf",
       "title": "Applied AI Engineer",
       "company": "Scale AI",
@@ -662,6 +640,28 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-11-09T14:01:36.588546+00:00"
+    },
+    {
+      "id": "715630478f0bd2c2",
+      "title": "Full-Stack Platform Engineer",
+      "company": "Edgewater Federal Solutions, Inc.",
+      "url": "https://weworkremotely.com/remote-jobs/edgewater-federal-solutions-inc-full-stack-platform-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-11-09T01:53:39+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"Platform Engineer\"",
+        "remote-friendly location",
+        "posted 8d ago"
+      ],
+      "score": 45,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-11-09T05:06:14.566846+00:00"
     },
     {
       "id": "ea72922b8a46a9c0",
