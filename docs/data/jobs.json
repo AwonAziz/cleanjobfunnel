@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T21:08:30.373423+00:00",
+  "generated_at": "2026-11-19T02:39:14.168205+00:00",
   "count": 35,
   "jobs": [
     {
@@ -636,7 +636,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 9d ago"
+        "posted 10d ago"
       ],
       "score": 45,
       "is_senior": false,
