@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T02:39:14.168205+00:00",
+  "generated_at": "2026-11-19T10:45:31.571888+00:00",
   "count": 35,
   "jobs": [
     {
@@ -147,7 +147,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 18d ago"
+        "posted 19d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -708,7 +708,7 @@
       "match_reasons": [
         "title matches \"ML Engineer\"",
         "remote-friendly location",
-        "posted 16d ago"
+        "posted 17d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -730,7 +730,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 19d ago"
+        "posted 20d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -753,7 +753,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 22d ago",
+        "posted 23d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -816,7 +816,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 26d ago"
+        "posted 27d ago"
       ],
       "score": 45,
       "is_senior": false,
