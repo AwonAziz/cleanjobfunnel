@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T19:23:15.381774+00:00",
+  "generated_at": "2026-11-20T01:26:13.316016+00:00",
   "count": 38,
   "jobs": [
     {
@@ -66,31 +66,6 @@
       "location": "Remote",
       "group": null,
       "posted_at": "2026-11-19T18:31:23+00:00",
-      "salary": null,
-      "tags": [],
-      "match_reasons": [
-        "title matches \"Site Reliability Engineer\"",
-        "title matches \"SRE\"",
-        "via alias \"Site Reliability Engineer\"",
-        "remote-friendly location",
-        "posted 0d ago",
-        "senior-leaning"
-      ],
-      "score": 70,
-      "is_senior": true,
-      "also_on": [],
-      "first_seen": "2026-11-19T19:23:15.381774+00:00"
-    },
-    {
-      "id": "f3061a6bafd2f499",
-      "title": "Senior Site Reliability Engineer",
-      "company": "Upsun",
-      "url": "https://weworkremotely.com/remote-jobs/upsun-senior-site-reliability-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-11-19T18:31:14+00:00",
       "salary": null,
       "tags": [],
       "match_reasons": [
@@ -277,7 +252,7 @@
         "title matches \"Research Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 16d ago"
+        "posted 17d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -303,7 +278,7 @@
         "title matches \"Research Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 16d ago"
+        "posted 17d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -329,7 +304,7 @@
         "title matches \"Research Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 16d ago"
+        "posted 17d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -676,6 +651,29 @@
       "first_seen": "2026-11-06T16:14:43.446900+00:00"
     },
     {
+      "id": "174f62463d2c1a4b",
+      "title": "Senior ML Engineer (R14284)",
+      "company": "Oportun",
+      "url": "https://weworkremotely.com/remote-jobs/oportun-senior-ml-engineer-r14284",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-11-01T07:30:35+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"ML Engineer\"",
+        "remote-friendly location",
+        "posted 18d ago",
+        "senior-leaning"
+      ],
+      "score": 45,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-11-20T01:26:13.316016+00:00"
+    },
+    {
       "id": "56c53a28f9e93be7",
       "title": "AI Engineer - Agentic Systems",
       "company": "Toptal",
@@ -962,7 +960,7 @@
       "tags": [
         "FullTime",
         "Engineering & Infra",
-        "Delivery Engineering | Infrastructure"
+        "Infrastructure"
       ],
       "match_reasons": [
         "title matches \"Forward Deployed Engineer\"",
@@ -987,7 +985,7 @@
       "tags": [
         "FullTime",
         "Engineering & Infra",
-        "Delivery Engineering | Agentic Platform"
+        "Engineering"
       ],
       "match_reasons": [
         "title matches \"Forward Deployed Engineer\"",
