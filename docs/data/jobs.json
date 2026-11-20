@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-20T09:09:48.795437+00:00",
-  "count": 39,
+  "generated_at": "2026-11-20T17:53:38.440074+00:00",
+  "count": 38,
   "jobs": [
     {
       "id": "19d11853d84f8a59",
@@ -94,13 +94,14 @@
       "salary": null,
       "tags": [
         "FullTime",
-        "Engineering"
+        "Engineering",
+        "Disk"
       ],
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 0d ago"
+        "posted 1d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -127,7 +128,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 2d ago"
+        "posted 3d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -148,6 +149,7 @@
       "tags": [
         "FullTime",
         "Engineering",
+        "AI Tooling",
         "dev",
         "design",
         "front end",
@@ -169,7 +171,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 9d ago"
+        "posted 10d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -191,7 +193,8 @@
       "salary": null,
       "tags": [
         "FullTime",
-        "Engineering"
+        "Engineering",
+        "AI Tooling"
       ],
       "match_reasons": [
         "title matches \"AI Platform\"",
@@ -332,7 +335,7 @@
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 29d ago"
+        "posted 30d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -384,7 +387,7 @@
         "title matches \"AI Engineer\"",
         "via alias \"AI/ML Engineer\"",
         "title matches \"AI/ML Engineer\"",
-        "posted 17d ago",
+        "posted 18d ago",
         "senior-leaning"
       ],
       "score": 55,
@@ -484,7 +487,7 @@
       "tags": [
         "FullTime",
         "Engineering",
-        "Compute"
+        "Compute Capacity"
       ],
       "match_reasons": [
         "title matches \"Platform Engineer\"",
@@ -591,43 +594,6 @@
       "first_seen": "2026-11-16T23:14:42.996390+00:00"
     },
     {
-      "id": "cbad896da702e799",
-      "title": "Research Engineer Privacy and Anonymization",
-      "company": "Pragmatike",
-      "url": "https://remoteOK.com/remote-jobs/remote-research-engineer-privacy-and-anonymization-pragmatike-1137792",
-      "source": "remoteok",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-11-12T16:00:38+00:00",
-      "salary": null,
-      "tags": [
-        "design",
-        "embedded",
-        "infosec",
-        "python",
-        "education",
-        "technical",
-        "finance",
-        "content writing",
-        "ops",
-        "medical",
-        "recruiter",
-        "engineer",
-        "full time",
-        "digital nomad"
-      ],
-      "match_reasons": [
-        "title matches \"Research Engineer\"",
-        "remote-friendly location",
-        "posted 7d ago"
-      ],
-      "score": 50,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-11-13T21:36:31.201111+00:00"
-    },
-    {
       "id": "075709a517b15ab2",
       "title": "Senior Applied AI Engineer",
       "company": "Scale AI",
@@ -642,7 +608,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "direct from company board",
-        "posted 9d ago",
+        "posted 10d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -665,7 +631,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "direct from company board",
-        "posted 13d ago"
+        "posted 14d ago"
       ],
       "score": 50,
       "is_senior": false,
@@ -716,6 +682,43 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-11-17T14:38:28.863190+00:00"
+    },
+    {
+      "id": "cbad896da702e799",
+      "title": "Research Engineer Privacy and Anonymization",
+      "company": "Pragmatike",
+      "url": "https://remoteOK.com/remote-jobs/remote-research-engineer-privacy-and-anonymization-pragmatike-1137792",
+      "source": "remoteok",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-11-12T16:00:38+00:00",
+      "salary": null,
+      "tags": [
+        "design",
+        "embedded",
+        "infosec",
+        "python",
+        "education",
+        "technical",
+        "finance",
+        "content writing",
+        "ops",
+        "medical",
+        "recruiter",
+        "engineer",
+        "full time",
+        "digital nomad"
+      ],
+      "match_reasons": [
+        "title matches \"Research Engineer\"",
+        "remote-friendly location",
+        "posted 8d ago"
+      ],
+      "score": 45,
+      "is_senior": false,
+      "also_on": [],
+      "first_seen": "2026-11-13T21:36:31.201111+00:00"
     },
     {
       "id": "715630478f0bd2c2",
@@ -771,7 +774,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "remote-friendly location",
-        "posted 14d ago"
+        "posted 15d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -804,7 +807,7 @@
       "match_reasons": [
         "title matches \"ML Engineer\"",
         "remote-friendly location",
-        "posted 17d ago"
+        "posted 18d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -889,7 +892,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 28d ago",
+        "posted 29d ago",
         "senior-leaning"
       ],
       "score": 45,
@@ -1017,31 +1020,6 @@
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-10-10T06:35:10.581342+00:00"
-    },
-    {
-      "id": "4198518d3ec4c752",
-      "title": "AI Engineer Data APIs",
-      "company": "Benzinga",
-      "url": "https://remoteOK.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224",
-      "source": "remoteok",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-08-30T21:00:01+00:00",
-      "salary": null,
-      "tags": [
-        "golang",
-        "video",
-        "engineer"
-      ],
-      "match_reasons": [
-        "title matches \"AI Engineer\"",
-        "remote-friendly location"
-      ],
-      "score": 40,
-      "is_senior": false,
-      "also_on": [],
-      "first_seen": "2026-09-23T12:12:01.708964+00:00"
     }
   ]
 }
