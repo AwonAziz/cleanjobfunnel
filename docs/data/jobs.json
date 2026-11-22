@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T15:59:58.681235+00:00",
+  "generated_at": "2026-11-22T21:41:31.256410+00:00",
   "count": 35,
   "jobs": [
     {
@@ -73,7 +73,7 @@
         "title matches \"SRE\"",
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
-        "posted 2d ago",
+        "posted 3d ago",
         "senior-leaning"
       ],
       "score": 70,
@@ -128,7 +128,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 4d ago"
+        "posted 5d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -156,7 +156,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 11d ago"
+        "posted 12d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -211,7 +211,7 @@
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 22d ago",
+        "posted 23d ago",
         "senior-leaning"
       ],
       "score": 60,
@@ -238,7 +238,7 @@
         "title matches \"Research Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 19d ago"
+        "posted 20d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -264,7 +264,7 @@
         "title matches \"Research Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 19d ago"
+        "posted 20d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -290,7 +290,7 @@
         "title matches \"Research Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 19d ago"
+        "posted 20d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -342,7 +342,7 @@
         "title matches \"AI Engineer\"",
         "via alias \"AI/ML Engineer\"",
         "title matches \"AI/ML Engineer\"",
-        "posted 19d ago",
+        "posted 20d ago",
         "senior-leaning"
       ],
       "score": 55,
@@ -522,7 +522,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 0d ago",
+        "posted 1d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -567,7 +567,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 5d ago",
+        "posted 6d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -590,7 +590,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 5d ago",
+        "posted 6d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -659,7 +659,7 @@
         "title matches \"SRE\"",
         "via alias \"Reliability Engineer\"",
         "remote-friendly location",
-        "posted 18d ago"
+        "posted 19d ago"
       ],
       "score": 45,
       "is_senior": false,
