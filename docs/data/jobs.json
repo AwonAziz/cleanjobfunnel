@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T06:48:53.364901+00:00",
-  "count": 38,
+  "generated_at": "2026-11-24T18:42:02.551105+00:00",
+  "count": 39,
   "jobs": [
     {
       "id": "19d11853d84f8a59",
@@ -73,7 +73,7 @@
         "title matches \"SRE\"",
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
-        "posted 0d ago"
+        "posted 1d ago"
       ],
       "score": 70,
       "is_senior": false,
@@ -97,7 +97,7 @@
         "title matches \"SRE\"",
         "via alias \"Site Reliability Engineer\"",
         "remote-friendly location",
-        "posted 4d ago",
+        "posted 5d ago",
         "senior-leaning"
       ],
       "score": 70,
@@ -125,7 +125,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 4d ago"
+        "posted 5d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -152,7 +152,7 @@
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 6d ago"
+        "posted 7d ago"
       ],
       "score": 65,
       "is_senior": false,
@@ -180,7 +180,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 13d ago"
+        "posted 14d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -208,7 +208,7 @@
         "via alias \"AI Tooling\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 23d ago"
+        "posted 24d ago"
       ],
       "score": 60,
       "is_senior": false,
@@ -235,7 +235,7 @@
         "via alias \"Infrastructure Engineer\"",
         "remote-friendly location",
         "direct from company board",
-        "posted 24d ago",
+        "posted 25d ago",
         "senior-leaning"
       ],
       "score": 60,
@@ -366,7 +366,7 @@
         "title matches \"AI Engineer\"",
         "via alias \"AI/ML Engineer\"",
         "title matches \"AI/ML Engineer\"",
-        "posted 21d ago",
+        "posted 22d ago",
         "senior-leaning"
       ],
       "score": 55,
@@ -569,7 +569,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 2d ago",
+        "posted 3d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -600,52 +600,6 @@
       "first_seen": "2026-11-20T09:09:48.795437+00:00"
     },
     {
-      "id": "500f5a1b4737fdc4",
-      "title": "Senior DevOps Engineer",
-      "company": "EPAM Systems",
-      "url": "https://weworkremotely.com/remote-jobs/epam-systems-senior-devops-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-11-16T18:32:34+00:00",
-      "salary": null,
-      "tags": [],
-      "match_reasons": [
-        "title matches \"DevOps Engineer\"",
-        "remote-friendly location",
-        "posted 7d ago",
-        "senior-leaning"
-      ],
-      "score": 50,
-      "is_senior": true,
-      "also_on": [],
-      "first_seen": "2026-11-16T23:14:42.996390+00:00"
-    },
-    {
-      "id": "d47c65b5957a46da",
-      "title": "Staff DevOps Engineer",
-      "company": "Bloomreach",
-      "url": "https://weworkremotely.com/remote-jobs/bloomreach-staff-devops-engineer",
-      "source": "weworkremotely",
-      "tier": 2,
-      "location": "Remote",
-      "group": null,
-      "posted_at": "2026-11-16T18:32:34+00:00",
-      "salary": null,
-      "tags": [],
-      "match_reasons": [
-        "title matches \"DevOps Engineer\"",
-        "remote-friendly location",
-        "posted 7d ago",
-        "senior-leaning"
-      ],
-      "score": 50,
-      "is_senior": true,
-      "also_on": [],
-      "first_seen": "2026-11-16T23:14:42.996390+00:00"
-    },
-    {
       "id": "075709a517b15ab2",
       "title": "Senior Applied AI Engineer",
       "company": "Scale AI",
@@ -660,7 +614,7 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "direct from company board",
-        "posted 13d ago",
+        "posted 14d ago",
         "senior-leaning"
       ],
       "score": 50,
@@ -683,12 +637,35 @@
       "match_reasons": [
         "title matches \"AI Engineer\"",
         "direct from company board",
-        "posted 17d ago"
+        "posted 18d ago"
       ],
       "score": 50,
       "is_senior": false,
       "also_on": [],
       "first_seen": "2026-11-06T16:14:43.446900+00:00"
+    },
+    {
+      "id": "7d17dc7517255927",
+      "title": "Senior Applied AI Engineer, Document Intelligence",
+      "company": "Vertican",
+      "url": "https://weworkremotely.com/remote-jobs/vertican-senior-applied-ai-engineer-document-intelligence",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-11-05T17:12:27+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"AI Engineer\"",
+        "remote-friendly location",
+        "posted 19d ago",
+        "senior-leaning"
+      ],
+      "score": 45,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-11-24T18:42:02.551105+00:00"
     },
     {
       "id": "11daee90e3988c6a",
@@ -706,7 +683,7 @@
         "title matches \"SRE\"",
         "via alias \"Reliability Engineer\"",
         "remote-friendly location",
-        "posted 20d ago"
+        "posted 21d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -728,13 +705,59 @@
       "match_reasons": [
         "title matches \"ML Engineer\"",
         "remote-friendly location",
-        "posted 22d ago",
+        "posted 23d ago",
         "senior-leaning"
       ],
       "score": 45,
       "is_senior": true,
       "also_on": [],
       "first_seen": "2026-11-20T01:26:13.316016+00:00"
+    },
+    {
+      "id": "500f5a1b4737fdc4",
+      "title": "Senior DevOps Engineer",
+      "company": "EPAM Systems",
+      "url": "https://weworkremotely.com/remote-jobs/epam-systems-senior-devops-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-11-16T18:32:34+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"DevOps Engineer\"",
+        "remote-friendly location",
+        "posted 8d ago",
+        "senior-leaning"
+      ],
+      "score": 45,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-11-16T23:14:42.996390+00:00"
+    },
+    {
+      "id": "d47c65b5957a46da",
+      "title": "Staff DevOps Engineer",
+      "company": "Bloomreach",
+      "url": "https://weworkremotely.com/remote-jobs/bloomreach-staff-devops-engineer",
+      "source": "weworkremotely",
+      "tier": 2,
+      "location": "Remote",
+      "group": null,
+      "posted_at": "2026-11-16T18:32:34+00:00",
+      "salary": null,
+      "tags": [],
+      "match_reasons": [
+        "title matches \"DevOps Engineer\"",
+        "remote-friendly location",
+        "posted 8d ago",
+        "senior-leaning"
+      ],
+      "score": 45,
+      "is_senior": true,
+      "also_on": [],
+      "first_seen": "2026-11-16T23:14:42.996390+00:00"
     },
     {
       "id": "715630478f0bd2c2",
@@ -773,7 +796,7 @@
       "match_reasons": [
         "title matches \"DevOps Engineer\"",
         "remote-friendly location",
-        "posted 24d ago"
+        "posted 25d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -796,7 +819,7 @@
         "title matches \"Platform Engineer\"",
         "via alias \"Systems Engineer\"",
         "remote-friendly location",
-        "posted 27d ago",
+        "posted 28d ago",
         "senior-leaning"
       ],
       "score": 45,
