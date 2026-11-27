@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-26T22:55:56.777013+00:00",
+  "generated_at": "2026-11-27T04:51:37.642245+00:00",
   "count": 42,
   "jobs": [
     {
@@ -900,7 +900,7 @@
       "match_reasons": [
         "title matches \"Platform Engineer\"",
         "remote-friendly location",
-        "posted 17d ago"
+        "posted 18d ago"
       ],
       "score": 45,
       "is_senior": false,
@@ -1019,7 +1019,7 @@
       ],
       "match_reasons": [
         "title matches \"Research Engineer\"",
-        "posted 3d ago"
+        "posted 4d ago"
       ],
       "score": 40,
       "is_senior": false,
